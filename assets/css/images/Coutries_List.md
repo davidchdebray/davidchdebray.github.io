@@ -1,0 +1,15 @@
+- France
+- Spain
+- Portugal
+- Germany
+- Czech Republic
+- Crete
+- Poland
+- Ireland
+- England
+- United-States
+- Gabon
+- South Africa
+- Namibia
+- Egypt
+- 
