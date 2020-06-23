@@ -1,23 +1,44 @@
-#  David DEBRAY
-##### Administrateur Systèmes & Réseaux - Chef de Projet - Technicien maintenance
-<link rel="icon" href="favicon.png" type="image/png" />
-> **Contact:** <u>Mail:</u> ***ddavid.debray@pm.me*** | <u>Tél:</u> *(+33)7.67.43.99.28)* | <u>Site:</u> [***daviddebray.freeboxos.fr***](daviddebray.freeboxos.fr) 
-
 ---
-## <span style="color:red">COMP</span>ETENCES <span style="color:red">
-##### Compétences Personnelles
-> CURIOUS, PATIENT, DIPLOMATIC, EAGER TO LEARN AND SHARE, WITH STRONG LEARNING AND ADAPTIVE SKILLS.
-- Positive and rational, with an ability to put things in perspective.
-- Always on the lookout for continous improvment and positive criticism
-- Tolerant and a good teacher I envoy sharing my knowledge.
-- Fluent in English, intermediate in Spanish, interested in learning new languages.
-##### Compétences Professionelles
+title: David Debray CV
+linkcolor: lightblue
+pdf-engine: xelatex
+header-includes:
+ - \usepackage[margin=.5in]{geometry}
+classoption: "12pt"
+---
 
- 
-## <span style="color:red">EXP</span>ERIENCES <span style="color:red">PRO</span>FESSIONNELLES
+<link rel="icon" href="favicon.png" type="image/png" />
 
-### Polyclinique de l'Ormeau, Tarbes
-##### Responsable Ingénierie Systèmes et Réseaux 
+# <span style="color:red"> Présentation personnelle </span>
+
+ Curieux, patient, diplomate, désireux d'apprendre et de partager mes connaissances et capable de m'adapter rapidement.
+
+- Positif, rationnel avec une capacité à mettre les choses en perspective.
+- Toujours à l’affût d’amélioration continue et de critiques constructives.
+- Pédagogue, j'aime partager mes connaissances
+- Anglais courant et espagnol intermédiaire.
+
+## <span style="color:green">Contact</span>
+
+- Email: [david.debray@pm.me](mailto:david.debray@pm.me)
+- Website: [davidchdebray.github.io](https://davidchdebray.github.io)
+- Téléphone: [+33.6.78.76.38.81](+33.6.78.76.38.81)
+
+## <span style="color:green">Intérêts</span>
+
+- **Voyages:** 
+
+    - <u>Afrique:</u> Gabon, Afrique du Sud, Namibie, Maroc, Tunisie, Egypte
+    - <u>Europe:</u> France, Espagne, Portugal, Royaume-Uni, Irlande, Allemagne, République-Tchèque, Pologne, Grèce, Crète
+    - <u>Amérique du Nord:</u> Etats-Unis, Canada
+
+- **Activités:** 
+
+Musique, Cinéma, Lecture, Sport (Crossfit, Course), Cuisine, Culture Bio, Langues étrangères, Veille informatique, Culture générale.
+
+# <span style="color:red">Expériences professionnelles</span>
+## <span style="color:green">Polyclinique de l'Ormeau, Tarbes</span>
+#### <span style="color:lightblue">Responsable Ingénierie Systèmes et Réseaux </span>
 > *(Octobre 2017 - Septembre 2018)*
 
 - **Alternance** sur 2 ans en formation avec le CESI de Pau, formation [***RISR***](https://catalogue.cesi.fr/responsable-en-ingenierie-systemes-et-reseaux-en-alternance-24-mois-1609807-2019/) (Bac+4)
@@ -29,8 +50,8 @@
 - Maintenance de parc informatique
 
 
-### MGI Consultants, Pau
-##### Technicien Helpdesk 
+## <span style="color:green"> MGI Consultants, Pau </span>
+#### <span style="color:lightblue"> Technicien Helpdesk </span>
 > *(Février - Juin 2015)*
 
 - Prise d’appel & traçage sur EasyVista.
@@ -39,11 +60,9 @@
 - Migration parc Vista vers Windows 10.
 - Support et accompagnement dans la mise en place de nouveaux outils et des applications de mobilité (configuration et support iPhone, iPad et VPN CISCO).
 
-
-### Institut du Travail Social, Pau
-##### Chef de Projet / Administrateur Systèmes & Réseaux 
+## <span style="color:green"> Institut du Travail Social, Pau </span>
+#### <span style="color:lightblue"> Chef de Projet / Administrateur Systèmes & Réseaux </span>
 > *(Avril - Août 2014)*
-
 
 - Etude de l’architecture existante physique et logicielle.
 - Organisation de la nouvelle infrastructure (allocation ressources, performances, virtualisation serveurs...)
@@ -52,8 +71,8 @@
 - Migration de la nouvelle infrastructure (DATA, logiciels...)
 - Déploiement clients légers (linux) & formation utilisateurs.
 
-### Centre de Rééducation Fonctionnelle, Saint-Blancard
-##### Chef de Projet / Auditeur / Administrateur Systèmes & Réseaux
+## <span style="color:green"> Centre de Rééducation Fonctionnelle, Saint-Blancard </span>
+#### <span style="color:lightblue"> Chef de Projet / Auditeur / Administrateur Systèmes & Réseaux </span>
 > *Mai - Juin 2012 & Janvier - Mars 2013*
 
 - Audit réseau CISCO (Stack & switches).
@@ -68,73 +87,71 @@
 - Support utilisateur & Traduction de documents
 
 
-### LABAT, Pau
-##### Technicien maintenance / Conseiller commercial
+## <span style="color:green"> LABAT, Pau </span>
+#### <span style="color:lightblue"> Technicien maintenance / Conseiller commercial </span>
 > *Septembre - Octobre 2012*
 
 - Réparation, montage, configuration, livraison & installation de matériel en magasin et chez clients.
 - Conseil client & Vente d’équipement
 
 
-### Autres expériences professionnelles
+## <span style="color:green"> Autres expériences professionnelles </span>
 
 - **Interventions chez particuliers:** Montage, installation, configuration de matériel informatique et multimédia (PC, Serveurs, VPN, FTP, Sauvegarde, etc.)
 - **Cours particuliers:** Mathématiques, Physique, Chimie et Anglais en préparation du Baccalauréat et Brevet des collèges.
 - **Auchan:** Service livraison à Auchan électroménager et multimédia.
 - **TOTAL:** Copie et Sauegarde de données de puits sur bande magnétiques vers disques réseau.
 
-----
+# <span style="color:red"> Formations </span>
 
-## <span style="color:red">FORM</span>ATIONS
-
-- *<u>2017-2019:</u>* 
+## <span style="color:green"> 2017-2019 </span>
 > - **Responsable Ingénierie Systèmes & Réseaux** (Bac+4) [***RISR***](https://catalogue.cesi.fr/responsable-en-ingenierie-systemes-et-reseaux-en-alternance-24-mois-1609807-2019/), *CESI de Pau*
 
-- *<u>2010-2014:</u>* 
+## <span style="color:green"> 2010-2014 </span>
 > - **Manager des Systèmes d'Informations** (3ème année validée), *EXIA de Pau*
 > - *Projets tutorés, 1 par trimestre*
 > - *1 stage de 3 mois et 1 stage de 4 mois*
 
-
-- *<u>2010-2012:</u>* 
+## <span style="color:green"> 2010-2012 </span>
 > - **Analyste Programmeur** (Bac+2), *EXIA de Pau*
 > - *Projets tutorés, 1 par trimestre*
 > - *2 fois 2 mois de stage*
 
-- *<u>2007-2010:</u>* 
+## <span style="color:green"> 2007-2010 </span>
 > - **IUT Génie Thermique & Energie**, *Université de Pau et des Pays de l'Adour*. 
 > - *Conception d'un banc de TP pour l'ENSGTI et Réalisation d'un déshumidificateur à but humanitaire*
 
-- *<u>2006-2007:</u>* 
+## <span style="color:green"> 2006-2007 </span>
 > - **Baccalauréat S Option Sciences de l'Ingénieur**, *Immaculée Conception, Pau*
 
-----
+# <span style="color:red"> Compétences </span>
 
-## <span style="color:red">COMP</span>ETENCES
+## <span style="color:green"> Techniques </span>
 
-| **Techniques** 												| **Projet** 				| **Transverses** 				|
-|----------------												|------------				|-----------------				|
-| Windows Server *(AD, DNS, DHCP, GPO, Exchange, etc.)* 		| Planification 			| Anglais Courant 				|
-| LINUX *(Debian, CentOS, Arch)* 								| Gestion des Risques 		| Espagnol Intermédiaire 		|
-| Réseaux *(CISCO, Alcatel)* 									| Management d'équipe 		| Communication 				|
-| Sécurité *(Pare-Feu Fortigate, PfSense)* 						| Budget 					| Traduction de Documentation 	|
-| Virtualisation *(vSphere, Hyper-V)* 							| Clôture de Projet & REX 	| Formation utilisateur 		|
-| Sauvegarde *(Veeam)* 											| ITIL 						| 								|
-| Automatisation *(Scripting, cron, planification de tâche)* 	| Contrat de Service 		| 								|
+- Windows Server *(AD, DNS, DHCP, GPO, Exchange, etc.)*
+- LINUX *(Debian, CentOS, Arch)*
+- Réseaux *(CISCO, Alcatel)*
+- Sécurité *(Pare-Feu Fortigate, PfSense)*
+- Virtualisation *(vSphere, Hyper-V)*
+- Sauvegarde & Restauration *(Veeam)*
+- Automatisation *(Scripting, cron, planification de tâche)*
 
----
+## <span style="color:green"> Gestion de Projet </span>
 
-## <span style="color:red">INTE</span>RETS
+- Planification
+- Gestion des Risques
+- Management d'équipe
+- Budget
+- Clôture de Projet & REX
+- ITIL
+- Contrat de service
+- Rédaction d'appel d'offre.
 
-- **Voyages:** 
+## <span style="color:green"> Transverses </span>
 
-	- <u>Afrique:</u> Gabon, Afrique du Sud, Namibie, Maroc, Tunisie, Egypte
-	- <u>Europe:</u> France, Espagne, Portugal, Royaume-Uni, Irlande, Allemagne, République-Tchèque, Pologne, Grèce, Crète
-	- <u>Amérique du Nord:</u> Etats-Unis, Canada
-
-
-- **Activités:** 
-
-Musique, Cinéma, Lecture, Sport (Crossfit, Course), Cuisine, Culture Bio, Langues étrangères, Veille informatique, Culture générale
-
----
+- Anglais courant (oral et écrit)
+- Espagnol intermédiaire
+- Communication
+- Traduction de Documentations Techniques
+- Formation d'utilisateurs
+- Rédaction de Documentation Techniques & Manuel d'utilisation.
