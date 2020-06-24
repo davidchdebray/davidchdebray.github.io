@@ -1,6 +1,6 @@
 /* Do not show subsubsections in menu: */
 
-nav li li li {display: none !important; }
+nav li li li {display: inline-block; }
 
 nav {
 	display: inline-block;
