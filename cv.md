@@ -127,7 +127,6 @@ Musique, Cinéma, Lecture, Sport (Crossfit, Course), Cuisine, Culture Bio, Langu
 > - **Baccalauréat S Option Sciences de l'Ingénieur**, *Immaculée Conception, Pau*
 
 # <span style="color:red"> Compétences </span>
-
 ## <span style="color:green"> Techniques </span>
 
 - Windows Server *(AD, DNS, DHCP, GPO, Exchange, etc.)*
