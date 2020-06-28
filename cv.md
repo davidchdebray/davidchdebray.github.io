@@ -156,3 +156,10 @@ Musique, Cinéma, Lecture, Sport (Crossfit, Course), Cuisine, Culture Bio, Langu
 - Traduction de Documentations Techniques
 - Formation d'utilisateurs
 - Rédaction de Documentation Techniques & Manuel d'utilisation.
+
+---
+
+<ul>
+  <li><a href="cv.pdf" data-toggle="tooltip" data-placement="left" title="Mon CV" target="_blank" class="fas fa-file-pdf"><span class="label" style="text-color:blue;">CV (Version PDF)</span></a></li>
+  <li><a href="https://daviddebray.typeform.com/to/lSO4J7" data-toggle="tooltip" data-placement="left" title="Me contacter" target="_blank" class="fas fa-envelope"><span class="label" style="text-color:blue;">Me contacter</span></a></li>
+</ul>
