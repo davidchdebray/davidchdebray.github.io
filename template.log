@@ -1,0 +1,15 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.6.23)  27 JUN 2020 14:48
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**template.tex
+(./template.tex
+LaTeX2e <2020-02-02> patch level 2
+L3 programming layer <2020-02-14>
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                 
