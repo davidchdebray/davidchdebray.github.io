@@ -136,6 +136,8 @@ Musique, Cinéma, Lecture, Sport (Crossfit, Course), Cuisine, Culture Bio, Langu
 - Virtualisation *(vSphere, Hyper-V)*
 - Sauvegarde & Restauration *(Veeam)*
 - Automatisation *(Scripting, cron, planification de tâche)*
+- Programmation *(Shell, bat, Python, PowerShell)*
+- Autres langages *(Markdown, LaTeX, html)*
 
 ## <span style="color:green"> Gestion de Projet </span>
 
