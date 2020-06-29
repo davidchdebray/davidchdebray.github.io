@@ -65,12 +65,23 @@ $endif$
 \newcommand{\www}{\includegraphics[height=.85em]{cv/www.png}}
 \newcommand{\email}{\includegraphics[height=.85em]{cv/email.png}}
 
+% Color definitions
+% Awesome colors
+\definecolor{awesome-emerald}{HTML}{00A388}
+\definecolor{awesome-skyblue}{HTML}{0395DE}
+\definecolor{awesome-red}{HTML}{DC3522}
+\definecolor{awesome-pink}{HTML}{EF4089}
+\definecolor{awesome-orange}{HTML}{FF6138}
+\definecolor{awesome-nephritis}{HTML}{27AE60}
+\definecolor{awesome-concrete}{HTML}{95A5A6}
+\definecolor{awesome-darknight}{HTML}{131A28}
+
 
 % Custom section spacing and formatting
 \titleformat{\part}{\Huge\scshape\filcenter}{}{1em}{}
-\titleformat{\section}{\Large\bf\raggedright}{}{1em}{}[{\titlerule[2pt]}]
+\titleformat{\section}{\Large\bf\raggedright}{}{1em}{\color{awesome-red}}[{\titlerule[2pt]}]
 \titlespacing{\section}{0pt}{3pt}{7pt}
-\titleformat{\subsection}{\large\bfseries\raggedright}{}{0em}{\underline}%[\rule{3cm}{.2pt}]
+\titleformat{\subsection}{\large\bfseries\raggedright}{}{0em}{\color{awesome-emerald}\underline}%[\rule{3cm}{.2pt}]
 \titlespacing{\subsection}{0pt}{7pt}{7pt}
 
 \let\lineheight\baselineskip

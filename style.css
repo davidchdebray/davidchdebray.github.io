@@ -137,6 +137,8 @@ h1:after {
 
 h2 {
   font-size: x-large;
+  text-decoration: underline;
+  text-decoration-color: green;
 }
 
 h3 {
