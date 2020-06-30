@@ -15,7 +15,7 @@ nav ul {
 
 nav a {
 	padding: 10px;
-	background: #111;
+	background: #e3e7e8;
 	border-radius: 20px;
 }
 
@@ -28,6 +28,7 @@ nav li {
 nav a {
 	display: block;
 	width: 200px;
+  align-items: center;
 }
 
 nav ul ul {
@@ -42,12 +43,13 @@ nav li:hover ul {
 }
 
 nav li:hover a {
-	background-color: #222;
+	background-color: #fff;
 }
 
 nav li:hover a:hover {
-	background-color: #333;
+	background-color: #e3e7e8;
 }
+
 
 html {
 	margin-top: 2.5em;
@@ -68,20 +70,30 @@ body {
 	margin: auto;
 	width: 1000px;
 	font-size: 16px;
-	color: #ddd;
-	background: black;
+	color: white;
+	background: #131A28;
 }
 
-a {
-color: teal;
+ /* unvisited link */
+a:link {
+  color: #0395DE;
 }
 
+/* visited link */
+a:visited {
+  color: #00A388;
+}
+
+/* mouse over link */
 a:hover {
-  color: lightblue;
+  color: #0395DE;
 }
 
+/* selected link */
 a:active {
-}
+  color: #0395DE;
+} 
+
 
 a:focus {
   outline: thin dotted;
@@ -126,7 +138,7 @@ h4, h5, h6 {
 }
 
 h1 {
-	font-size: xx-large;
+	font-size: xx-large;color: #dc3522;
 }
 
 h1:after {
@@ -136,9 +148,9 @@ h1:after {
 }
 
 h2 {
-  font-size: x-large;
+  font-size: x-large;color: #00A388;
   text-decoration: underline;
-  text-decoration-color: green;
+  text-decoration-color: #00A388;
 }
 
 h3 {

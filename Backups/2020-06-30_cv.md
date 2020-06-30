@@ -12,6 +12,7 @@ classoption: "12pt"
 Présentation Personnelle
 ============
 **Administrateur Systèmes & Réseaux**
+
 Curieux, patient, diplomate, désireux d'apprendre et de partager mes connaissances et capable de m'adapter rapidement. Positif, rationnel avec une capacité à mettre les choses en perspective. Toujours à l’affût d’amélioration continue et de critiques constructives. Pédagogue, j'aime partager mes connaissances. 
 
 Anglais courant (TOEIC: 980) et Espagnol intermédiaire.
@@ -19,14 +20,14 @@ Anglais courant (TOEIC: 980) et Espagnol intermédiaire.
 Contact:
 ----------
 
-Email: [*david.debray@pm.me*](mailto:david.debray@pm.me) / Tél: *(+33)6.78.76.38.81* / Site: [*https://davidchdebray.github.io*](https://davidchdebray.github.io)
-
+<p style="text-align: center;">
+  Email: [*david.debray@pm.me*](mailto:david.debray@pm.me) / Tél: *(+33)6.78.76.38.81* / Site: [*https://davidchdebray.github.io*](https://davidchdebray.github.io)
+</p>
 
 Intérêts:
 ----------
 
 Musique, Cinéma, Lecture, Sport (Crossfit, Course), Cuisine, Culture Bio, Langues étrangères, Veille informatique, Culture générale, voyages.
-
 
 Expériences Professionnelles
 ============
@@ -95,15 +96,11 @@ Formations
 
 2010-2014:
 ----------
-- **Manager des Systèmes d'Informations**, *EXIA de Pau*
-  + *Projets tutorés, 1 par trimestre*
-  + *1 stage de 3 mois et 1 stage de 4 mois*
+- **Manager des Systèmes d'Informations**, *EXIA de Pau*: Projets tutorés *(1 par trimestre)* & 1 stage de 3 mois et 1 stage de 4 mois.
 
 2010-2012:
 ----------
-- **Analyste Programmeur** (Bac+2), *EXIA de Pau*
-  + *Projets tutorés, 1 par trimestre*
-  + *2 fois 2 mois de stage*
+- **Analyste Programmeur** (Bac+2), *EXIA de Pau*: Projets tutorés *(1 par trimestre)* & 2 fois 2 mois de stage.
 
 Compétences
 ==========
@@ -121,23 +118,11 @@ Techniques
 
 Gestion de Projet
 ----------
-- Planification
-- Gestion des Risques
-- Management d'équipe
-- Budget
-- Clôture de Projet & REX
-- ITIL
-- Contrat de service
-- Rédaction d'appel d'offre.
+Planification, Gestion de Risques, Management d'équipe, Organisation de Budget, Clôture de Projet & REX, Processus ITIL, Contrat de service, Rédaction d'appel d'offre.
 
 Transverses
 ----------
-- Anglais courant (oral et écrit)
-- Espagnol intermédiaire
-- Communication
-- Traduction de Documentations Techniques
-- Formation d'utilisateurs
-- Rédaction de Documentation Techniques & Manuel d'utilisation.
+Anglais courant (oral et écrit), Espagnol intermédiaire, Communication, Traduction de Documentations Techniques, Formation d'utilisateurs, Rédaction de Documentation Techniques & Manuel d'utilisation.
 
 
 ---
