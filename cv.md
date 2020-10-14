@@ -13,7 +13,7 @@ Présentation Personnelle
 ============
 **Administrateur Systèmes & Réseaux**
 
-Curieux, patient, diplomate, désireux d'apprendre et de partager mes connaissances et capable de m'adapter rapidement. Positif, rationnel avec une capacité à mettre les choses en perspective. Toujours à l’affût d’amélioration continue et de critiques constructives. Pédagogue, j'aime partager mes connaissances. 
+Curieux, patient, diplomate, désireux d'apprendre et de partager mes connaissances et capable de m'adapter rapidement. Positif, rationnel avec une capacité à mettre les choses en perspective. Toujours à l’affût d'opportunités d’amélioration continue et de critiques constructives. Pédagogue, j'aime partager mes connaissances. 
 
 Anglais courant (TOEIC: 980) et Espagnol intermédiaire.
 
@@ -35,45 +35,34 @@ Responsable Ingénierie Systèmes & Réseaux
 ----------
 **Polyclinique de l'Ormeau, Tarbes** - *(Octobre 2017 - Septembre 2019)*
 
-- **Alternance** sur 2 ans en formation avec le CESI de Pau, formation [***RISR***](https://catalogue.cesi.fr/responsable-en-ingenierie-systemes-et-reseaux-en-alternance-24-mois-1609807-2019/) (Bac+4)
-- Administration Systèmes & Réseau (*Maintient en condition opérationelle, Automatisations, Sauvegardes, etc*)
-- Migration de l'outil de Supervision: The Dude vers PRTG
-- Migration de l'Antivirus: Trend Micro vers Sophos
-- Gestion de Projets / Déploiements de Solutions Techniques (*[***WAPT***](https://www.tranquil.it/en/solutions/wapt/), GLPI, Supervision PRTG, Antivirus Sophos*)
-- Helpdesk / SPOC (*Interventions, Maintient à jour de Base de connaissances, etc*)
+- **Alternance** sur 2 ans en formation avec le **CESI** de Pau, formation [***RISR***](https://catalogue.cesi.fr/responsable-en-ingenierie-systemes-et-reseaux-en-alternance-24-mois-1609807-2019/) (Bac+4)
+- Migration de l'outil de Supervision: *The Dude* vers *PRTG*
+- Migration de l'Antivirus: *Trend Micro* vers *Sophos*
+- Gestion de Projets / Applications (*[***WAPT***](https://www.tranquil.it/en/solutions/wapt/), GLPI, Supervision PRTG, Antivirus Sophos*)
+- Helpdesk
 
 Technicien Helpdesk
 ----------
 **MGI Consultants, Pau** - *(Février - Juin 2015)*
 
-- Prise d’appel & traçage. Traitement dysfonctionnements, résolutions de problèmes et/ou attribution à l’entité concernée.
-- Migration parc informatique Vista vers Windows 10.
+- SPOC. Migration parc informatique Vista vers Windows 10.
 - Support et accompagnement dans la mise en place de nouveaux outils et des applications de mobilité.
 
 Chef de Projet / Administrateur Systèmes & Réseaux
 ----------
 **Institut du Travail Social, Pau** - *(Avril - Août 2014)*
 
-- Analyse de l’architecture existante physique et logicielle.
-- Organisation de la nouvelle infrastructure (allocation ressources, performances, virtualisation serveurs...)
-- Sauvegardes systèmes et données.
-- Mise en place GPO (accès, sécurité)
-- Migration de la nouvelle infrastructure (DATA, logiciels, etc)
+- Préparation de la nouvelle infrastructure & Implémentation. Formations et Documentations.
 - Déploiement clients légers (linux) & rédaction de documentation, formation des utilisateurs.
 
 Chef de Projet / Auditeur / Administrateur Systèmes & Réseaux
 ----------
 **Centre de Rééducation Fonctionnelle, Saint-Blancard** - *(Mai - Juin 2012 & Janvier - Mars 2013)*
 
-- Audit  de l'infrastructure Réseau, étude des faiblesses (*SPOF*), rédaction de rapport & présentation.
-- Automatisation de Sauvegardes.
-- Mise en place de redondances et répartition de charges du réseau, rédaction **PRA** & **PCA**.
-- Création d'un "Kit de dépannage" + Formation utilisateur.
-- Sécurité (vlans, ACL) & Optimisation (Spanning-tree)
-- Migration Windows Server / Active Directory.
-- Supervision (Nagios/Centreon).
-- Configuration d’un wifi dédié aux visiteurs avec option de facturation.
-- Support utilisateur & Traduction de documents
+- Audit de l'infrastructure Réseau
+- Automatisation & Sécurisation du SI
+- Rédaction **PRA** & **PCA**.
+- Formations utilisateurs & Traduction de documents
 
 Technicien maintenance / Conseiller commercial
 ----------
@@ -86,6 +75,8 @@ Formations
 ==========
 2019-2020:
 ----------
+- **Formations sur** [***LinkedIn***](https://www.linkedin.com/in/david-debray-a85b8629/)
+  + [Devenir un développeur Python](https://www.linkedin.com/learning/paths/devenir-un-developpeur-python)
 - **Formations sur** [***Linux Academy***](https://linuxacademy.com)
   + Linux Essentials
   + Certified Entry-Level Python Programmer Certification
@@ -110,11 +101,11 @@ Techniques
 - LINUX *(Debian, CentOS, Arch)*
 - Réseaux *(CISCO, Alcatel)*
 - Sécurité *(Pare-Feu Fortigate, PfSense)*
-- Virtualisation *(vSphere, Hyper-V)*
+- Virtualisation *(VMWare, Hyper-V, Docker)*
 - Sauvegarde & Restauration *(Veeam)*
-- Automatisation *(Scripting, cron, planification de tâche)*
+- Automatisation *(Scripting, cron, planification de tâche, Ansible)*
 - Programmation *(Shell, bat, Python, PowerShell)*
-- Autres langages *(Markdown, LaTeX, html)*
+- Autres langages *(Markdown, LaTeX, html, css)*
 
 Gestion de Projet
 ----------
@@ -122,7 +113,6 @@ Planification, Gestion de Risques, Management d'équipe, Organisation de Budget,
 
 Transverses
 ----------
-Anglais courant (oral et écrit), Espagnol intermédiaire, Communication, Traduction de Documentations Techniques, Formation d'utilisateurs, Rédaction de Documentation Techniques & Manuel d'utilisation.
-
+Anglais courant (oral et écrit), Espagnol intermédiaire, Communication, Formation aux utilisateurs, Traduction & Rédaction de Documentations Techniques & Manuels d'utilisation.
 
 ---
