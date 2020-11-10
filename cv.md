@@ -21,7 +21,7 @@ Contact:
 ----------
 
 <p style="text-align: center;">
-  Email: [*david.debray@pm.me*](mailto:david.debray@pm.me) / Tél: *(+33)6.78.76.38.81* / Site: [*https://davidchdebray.github.io*](https://davidchdebray.github.io)
+  Email: [*david.debray@protonmail.com*](mailto:david.debray@protonmail.com) / Tél: *(+33)6.78.76.38.81* / Site: [*https://davidchdebray.github.io*](https://davidchdebray.github.io)
 </p>
 
 Intérêts:
@@ -35,7 +35,7 @@ Responsable Ingénierie Systèmes & Réseaux
 ----------
 **Polyclinique de l'Ormeau, Tarbes** - *(Octobre 2017 - Septembre 2019)*
 
-- **Alternance** sur 2 ans en formation avec le **CESI** de Pau, formation [***RISR***](https://catalogue.cesi.fr/responsable-en-ingenierie-systemes-et-reseaux-en-alternance-24-mois-1609807-2019/) (Bac+4)
+- **Alternance** sur 2 ans en formation avec le **CESI** de Pau, formation [***RISR***](https://catalogue.cesi.fr/bachelor-responsable-en-ingenierie-systemes-et-reseaux-2169028-2020/) (Bac+4)
 - Migration de l'outil de Supervision: *The Dude* vers *PRTG*
 - Migration de l'Antivirus: *Trend Micro* vers *Sophos*
 - Gestion de Projets / Applications (*[***WAPT***](https://www.tranquil.it/en/solutions/wapt/), GLPI, Supervision PRTG, Antivirus Sophos*)
@@ -77,13 +77,15 @@ Formations
 ----------
 - **Formations sur** [***LinkedIn***](https://www.linkedin.com/in/david-debray-a85b8629/)
   + [Devenir un développeur Python](https://www.linkedin.com/learning/paths/devenir-un-developpeur-python)
+  + [Devenir un Administrateur Système Linux](https://www.linkedin.com/learning/paths/devenir-un-administrateur-systeme-linux)
+  + [Become a DevOps Engineer](https://www.linkedin.com/learning/paths/become-a-devops-engineer)
 - **Formations sur** [***Linux Academy***](https://linuxacademy.com)
   + Linux Essentials
   + Certified Entry-Level Python Programmer Certification
 
 2017-2019:
 ----------
-- **Responsable Ingénierie Systèmes & Réseaux** (Bac+4) [***RISR***](https://catalogue.cesi.fr/responsable-en-ingenierie-systemes-et-reseaux-en-alternance-24-mois-1609807-2019/), *CESI de Pau*
+- **Responsable Ingénierie Systèmes & Réseaux** (Bac+4) [***RISR***](https://catalogue.cesi.fr/bachelor-responsable-en-ingenierie-systemes-et-reseaux-2169028-2020/), *CESI de Pau*
 
 2010-2014:
 ----------
