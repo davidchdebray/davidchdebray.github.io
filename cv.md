@@ -16,6 +16,7 @@ Curieux, patient, diplomate, désireux d'apprendre et de partager mes connaissan
 Anglais courant (TOEIC: 980) et Espagnol intermédiaire.
 
 ## Contact:
+
 <p style="text-align: center;">
   Email: [*david.debray@pm.me*](mailto:david.debray@pm.me) / Tél: *(+33)6.78.76.38.81* / Site: [*https://davidchdebray.github.io*](https://davidchdebray.github.io)
 </p>
