@@ -69,7 +69,7 @@ Musique, Cinéma, Lecture, Sport *(Crossfit, Course, Yoga)*, Cuisine, Langues é
 
 ## *Juin* 2021 - *Août* 2021
 
-- **Formation POEI DevOps [Dawan](https://dawan.fr/)
+- Formation POEI **DevOps** [Dawan](https://dawan.fr/)
 
 ## 2019-2021:
 - **Formations sur** [***LinkedIn***](https://www.linkedin.com/in/david-debray-a85b8629/)
