@@ -28,3 +28,6 @@ Make changes to the markdown file `index.md`. Run `make` (or `make compile`) and
 ## Dependencies
 
 pandoc, LaTeX, and if you want to use the makefile, make (you can copy the commands and run them manually if you want).
+
+
+END
