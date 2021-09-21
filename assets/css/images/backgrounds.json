@@ -1,18 +1,46 @@
 {
-   "backgrounds":[
+   "backgrounds": [
       {
-         "filename": "backgrounds/background_stars.jpg",
+         "filename": "backgrounds/pyrenees-351266_960_720.jpg",
          "title": "Les Pyrénées, Aquitaine, France",
          "source": "Iris Vallejo",
          "sourceUrl": "http://pixabay.com/en/pyrenees-mountains-snow-zenith-351266/",
-         "id": "background_stars"
+         "id": "pyrenees-351266_960_720"
       },
       {
-         "filename": "backgrounds/seul-cosmos.jpg",
-         "title": "Les Pyrénées, Aquitaine, France",
-         "source": "Iris Vallejo",
-         "sourceUrl": "http://pixabay.com/en/pyrenees-mountains-snow-zenith-351266/",
-         "id": "seul-cosmos"
+         "filename": "backgrounds/beach-bridge-dawn-201101.jpg",
+         "title": "San Francisco, California, USA",
+         "source": "James Donovan",
+         "sourceUrl": "https://www.pexels.com/photo/golden-gate-bridge-during-nighttime-201101/",
+         "id": "beach-bridge-dawn-201101"
+      },
+      {
+         "filename": "backgrounds/automobiles-bay-bus-1210611.jpg",
+         "title": "Port-Gentil, Gabon",
+         "source": "Peter Fazekas",
+         "sourceUrl": "",
+         "id": "automobiles-bay-bus-1210611"
+      },
+      {
+         "filename": "backgrounds/architecture-bridge-buildings-713456.jpg",
+         "title": "Los Angeles, California, USA",
+         "source": "Jc Dubi",
+         "sourceUrl": "https://www.pexels.com/photo/black-ferris-wheel-near-body-of-water-713456/",
+         "id": "architecture-bridge-buildings-713456"
+      },
+      {
+         "filename": "backgrounds/architecture-blue-bridge-421654.jpg",
+         "title": "Miami, Florida, USA",
+         "source": "Elvis Vasquez",
+         "sourceUrl": "https://www.pexels.com/photo/architecture-blue-bridge-buildings-421654/",
+         "id": "architecture-blue-bridge-421654"
+      },
+      {
+         "filename": "backgrounds/bg.jpg",
+         "title": "Rocky Moutains, Canada",
+         "source": "HTLM5UP",
+         "sourceUrl": "https://html5up.net/aerial",
+         "id": "bg"
       }
    ]
 }
