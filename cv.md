@@ -1,5 +1,5 @@
 ---
-title: David Debray
+title: David Debray CV
 linkcolor: lightblue
 pdf-engine: xelatex
 header-includes:
@@ -90,6 +90,9 @@ Musique, Cinéma, Lecture, Sport *(Crossfit, Course, Yoga)*, Cuisine, Langues é
 - **Analyste Programmeur** (Bac+2), *EXIA de Pau*: Projets tutorés *(1 par trimestre)* & 2 fois 2 mois de stage.
 
 # Compétences
+## Certifications
+- Microsoft Azure Fundamentals [AZ-900](https://www.linkedin.com/posts/david-debray-a85b8629_microsoft-certified-azure-fundamentals-was-activity-6848978476737847296-x3Vx) *(29/09/2021)*
+
 ## Techniques
 ### DevOps
 - Linux, Shell, Python
