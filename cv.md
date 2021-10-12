@@ -67,7 +67,7 @@ Musique, Cinéma, Lecture, Sport *(Crossfit, Course, Yoga)*, Cuisine, Langues é
 
 # Formations
 
-## *Juin* 2021 - *Août* 2021
+## Juin 2021 - Août 2021
 
 - Formation POEI **DevOps** [Dawan](https://dawan.fr/)
 
