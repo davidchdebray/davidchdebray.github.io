@@ -1,0 +1,18 @@
+# Fdb version 3
+["pdflatex"] 1633871082 "/Users/daviddebray/GitHub/davidchdebray.github.io/template.tex" "/Users/daviddebray/GitHub/davidchdebray.github.io/template.pdf" "template" 1633871082
+  "$documentclass$.cls" 0 -1 0 ""
+  "/Users/daviddebray/GitHub/davidchdebray.github.io/$documentclass$.cls" 0 -1 0 ""
+  "/Users/daviddebray/GitHub/davidchdebray.github.io/template.aux" 1633871082 8 a94a2480d3289e625eea47cd1b285758 ""
+  "/Users/daviddebray/GitHub/davidchdebray.github.io/template.tex" 1633871080 12883 f6b851d22bea406f1accec59414632cb ""
+  "/usr/local/texlive/2021/texmf-dist/tex/latex/hyperref/hyperref.sty" 1614638310 230839 177eac084bda18ae827a77792a17292e ""
+  "/usr/local/texlive/2021/texmf-dist/tex/latex/url/url.sty" 1388531844 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
+  "/usr/local/texlive/2021/texmf-dist/tex/latex/xcolor/xcolor.sty" 1463002160 55589 34128738f682d033422ca125f82e5d62 ""
+  "/usr/local/texlive/2021/texmf-dist/tex/xelatex/bidi/bidi.sty" 1589754895 10848 6b03ea4c4261781248c502dfa7454157 ""
+  "/usr/local/texlive/2021/texmf-dist/web2c/texmf.cnf" 1616443989 39972 3d6bb4d9d719e93193fa020b58adf5d4 ""
+  "/usr/local/texlive/2021/texmf-var/web2c/pdftex/pdflatex.fmt" 1633556983 2724737 4c368ae95000423df9177b5962fb5dc8 ""
+  "/usr/local/texlive/2021/texmf.cnf" 1616695596 577 4c1911a7228e554c6032256d3cf5567d ""
+  "template.tex" 1633871080 12883 f6b851d22bea406f1accec59414632cb ""
+  (generated)
+  "/Users/daviddebray/GitHub/davidchdebray.github.io/template.pdf"
+  "template.log"
+  "/Users/daviddebray/GitHub/davidchdebray.github.io/template.log"
