@@ -92,6 +92,7 @@ Musique, Cinéma, Lecture, Sport *(Crossfit, Course, Yoga)*, Cuisine, Langues é
 # Compétences
 ## Certifications
 - Microsoft Azure Fundamentals [AZ-900](https://www.linkedin.com/posts/david-debray-a85b8629_microsoft-certified-azure-fundamentals-was-activity-6848978476737847296-x3Vx) *(29/09/2021)*
+- ITIL 4 Foundation *(12/10/2021)*
 
 ## Techniques
 ### DevOps
