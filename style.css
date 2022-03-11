@@ -316,4 +316,6 @@ ul li::before {
   /*background-color: #5f08ff;*/
   color: #00A388;
   text-align: center;
+  border-top-left-radius: 200% 750px;
+  border-top-right-radius: 200% 750px;
 }
