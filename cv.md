@@ -29,7 +29,6 @@ Musique, Cinéma, Lecture, Sport *(Crossfit, Course, Yoga)*, Cuisine, Langues é
 ## Analyste Applications
 **Capgemini, Rouen** - *(Septembre 2021 - )* 
 
-
 ## Responsable Ingénierie Systèmes & Réseaux
 **Polyclinique de l'Ormeau, Tarbes** - *(Octobre 2017 - Septembre 2019)*
 
