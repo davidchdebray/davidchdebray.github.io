@@ -6,6 +6,7 @@ nav {
 	display: inline-block;
     	text-align:center;
 	margin: 0px auto;
+  align-content: center;
 }
 
 nav ul {
@@ -17,6 +18,7 @@ nav a {
 	padding: 10px;
 	background: #e3e7e8;
 	border-radius: 24px 4px;
+  border: 1px solid #0395DE;
 }
 
 nav li {
@@ -37,15 +39,15 @@ nav ul ul {
 	position: absolute;
 	display: none;
 }
-
 nav li:hover ul {
 	display: block;
 }
-
 nav li:hover a {
-	background-color: #fff;
+	background-color: #363636;
+  font-size: large;
+  transition: .4s all ease;
+  padding: 5px; 
 }
-
 nav li:hover a:hover {
 	background-color: #e3e7e8;
 }
@@ -59,12 +61,31 @@ html {
 	-webkit-text-size-adjust: 100%;
 	-ms-text-size-adjust: 100%;
   scroll-behavior: smooth;
+  /* background-color: #000; */
+  background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2F1.bp.blogspot.com%2F-FVWybqGHhcg%2FXPUu0pC-5pI%2FAAAAAAAAQ1w%2F1yuwEI0dZBs7Gwtg5Wq-5OLHq4gTjVSegCLcBGAs%2Fs2560%2Fsekiro-shadows-die-twice-fanart-fi-2560x1440.jpg&f=1&nofb=1");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: auto;
+
+
+
+  --awesome-emerald: #00A388;
+  --awesome-skyblue: #0395DE;
+  --awesome-red: #dc3522;
+  --awesome-pink: #EF4089;
+  --awesome-orange: #FF6138;
+  --awesome-nephritis: #27AE60;
+  --awesome-concrete: #95A5A6;
+  --awesome-darknight: #131A28;
+  --awesome-violet: #B200FF;
+
 }
 
 
 body {
 	border-radius: 20px;
-	font-family: Georgia, Palatino, 'Palatino Linotype', Times, 'Times New Roman', serif;
+	/* font-family: Georgia, Palatino, 'Palatino Linotype', Times, 'Times New Roman', serif; */
+  font-family: "Comic Sans MS", "Comic Sans", cursive;
 	font-size: 12px;
 	line-height: 1.7;
 	padding: .125em 1em 0.5em 1em;
@@ -72,7 +93,7 @@ body {
 	width: 1000px;
 	font-size: 16px;
 	color: white;
-	background: #131A28;
+	background: #363636;
   border: 3px double #ccc;
   padding: 2.5em;
   -moz-box-shadow: 4px 4px 14px 7px #000;
@@ -80,57 +101,73 @@ body {
   box-shadow: 4px 4px 14px 7px #aaa;
 }
 
+a {
+  text-decoration: none;
+  font-style: italic;
+  font-weight: normal;
+  transition: .4s;
+}
  /* unvisited link */
 a:link {
   color: #0395DE;
 }
-
 /* visited link */
 a:visited {
   color: #0395DE;
 }
-
 /* mouse over link */
 a:hover {
-  color: #b200ff;
+  /* color: #B200FF; */
+  color: #0395DE;
+  background-color: whitesmoke;
+  border: 1px solid #0395DE;
+  padding: 5px;
+  
+  font-weight: bold;
+  /* font-size: large; */
+  transition: .4s ;
 }
-
 /* selected link */
 a:active {
   color: #FF7400;
-}
-
+  border: 1px solid #FF7400;
+  border-radius: 25px;
+  background-color: yellow;
+} 
 a:focus {
-  outline: thin dotted;
+  color: #FF7400;
+  border: 1px solid #FF7400;
+  border-radius: 25px;
+  background-color: yellow;
 }
-
-*::-moz-selection {
-  background: rgba(255, 255, 0, 0.3);
-}
-
 *::selection {
-  background: rgba(255, 255, 0, 0.3);
+  background: yellow;
+  color: red;
+  font-weight: bolder;
+  padding: 5px;
 }
-
 a::-moz-selection {
   background: rgba(255, 255, 0, 0.3);
 }
-
 a::selection {
-  background: rgba(255, 255, 0, 0.3);
+  background: yellow;
+  color: #B200FF;
+  font-weight: bolder;
+  padding: 5px;
 }
-
+a::selection:hover {
+  border: 1px solid black;
+}
 p {
   margin: 1em 0;
 }
-
 img {
   max-width: 100%;
 }
 
 h1, h2, h3, h4, h5, h6 {
   line-height: 100%;
-  font-weight: normal;
+  font-weight: bold;
 }
 
 h4, h5, h6 {
