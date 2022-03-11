@@ -51,6 +51,9 @@ nav li:hover a {
 nav li:hover a:hover {
 	background-color: #e3e7e8;
 }
+nav ul li::before {
+  content: none;
+}
 
 
 html {
@@ -289,7 +292,18 @@ li p:last-child {
 ul ul, ol ol {
   margin: .3em 0;
 }
-
+/* Styling Unordered Lists */
+ul {
+  list-style: none; /* Remove default bullets */
+}
+ul li::before {
+  content: "\27AD";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: yellow; /* Change the color */
+  /* font-weight: bold; If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
 
 /* Footer */
 .footer {
