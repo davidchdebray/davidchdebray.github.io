@@ -1,5 +1,5 @@
 ---
-title: David Debray CV
+title: David DEBRAY CV
 linkcolor: lightblue
 pdf-engine: xelatex
 header-includes:
