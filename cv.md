@@ -12,7 +12,7 @@ classoption: "12pt"
 # Analyste Applications
 ## Présentation Personnelle
 Curieux, débrouillard, autonome. Aussi bien capable de travailler seul que en équipe, j'aime les challenges et découvrir sans arrêt de nouvelles choses.
-Je souhaite me spécialiser dans le DevOps et la sécurité.
+Je souhaite me spécialiser dans le ***DevOps*** et la sécurité.
 
 Anglais courant (TOEIC: 980) et Espagnol intermédiaire.
 
@@ -22,12 +22,17 @@ Anglais courant (TOEIC: 980) et Espagnol intermédiaire.
 </p>
 
 ## Intérêts & Loisirs:
-Musique, Cinéma, Lecture, Sport *(Crossfit, Course, Yoga)*, Cuisine, Langues étrangères, Veille informatique.
+Musique, Cinéma, Lecture, Sport *(Crossfit, Course, Yoga)*, Cuisine, Langues étrangères, Veille informatique, Gaming.
 
 # Expériences Professionnelles
 
 ## Analyste Applications
 **Capgemini, Rouen** - *(Septembre 2021 - )* 
+
+- Intégrateur Systèmes Windows & Linux, Administration de machines virtuelles VMWare
+- Scripting PowerShell
+- Gestion Active Directory & Exchange
+- Gestion d'incidents
 
 ## Responsable Ingénierie Systèmes & Réseaux
 **Polyclinique de l'Ormeau, Tarbes** - *(Octobre 2017 - Septembre 2019)*
@@ -116,7 +121,7 @@ Musique, Cinéma, Lecture, Sport *(Crossfit, Course, Yoga)*, Cuisine, Langues é
 - Scripting/Programmation *(Shell, bat, Python, PowerShell)*
 
 ### Documentation Skills
-- Markdown, LaTeX, Html, CSS
+- Markdown, LaTeX, Html, CSS, Jekyll
 
 ## Gestion de Projet
 Planification, Gestion de Risques, Management d'équipe, Organisation de Budget, Clôture de Projet & REX, Processus ITIL, Contrat de service, Rédaction d'appel d'offre.

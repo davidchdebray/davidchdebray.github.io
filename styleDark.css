@@ -162,7 +162,6 @@ a:hover {
   background-color: whitesmoke;
   border: 1px solid #0395DE;
   padding: 5px;
-  
   font-weight: bold;
   /* font-size: large; */
   transition: .4s ;
@@ -174,17 +173,20 @@ a:active {
   border-radius: 25px;
 } 
 a:focus {
-  outline: thin dotted;
+  color: #FF6138;
+  border: 1px solid #FF6138;
+  background-color: yellow;
+  padding: 5px;
 }
+
 p {
   margin: 1em 0;
 }
 h1, h2, h3, h4, h5, h6 {
   line-height: 100%;
   font-weight: bold;
-
-
-}::selection {text-shadow(shadow( $selection-bg,0,0.1em));} /* Modification de la selection pour les titres */
+}
+/*::selection {text-shadow(shadow( $selection-bg,0,0.1em));} /* Modification de la selection pour les titres */
 .title {
 	font-size: 3.5em;
 	text-align: center;
