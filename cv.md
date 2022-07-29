@@ -9,6 +9,7 @@ classoption: "12pt"
 
 <link rel="icon" href="favicon.png" type="image/png" />
 
+
 # Analyste Applications
 ## Présentation Personnelle
 Curieux, débrouillard, autonome. Aussi bien capable de travailler seul que en équipe, j'aime les challenges et découvrir sans arrêt de nouvelles choses.
