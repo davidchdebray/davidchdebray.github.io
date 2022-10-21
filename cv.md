@@ -76,6 +76,7 @@ Musique, Cinéma, Lecture, Sport *(Crossfit, Course, Yoga)*, Cuisine, Langues é
 
 - **Microsoft Security Virtual Training Day: *Notions de base sur la sécurité, la conformité et l’identité***
   - 2 jours de formation *(23 & 24 Février)*
+  - Préparation à la certification [SC-900: Azure Security Fundamentals](#certifications)
 
 ## Septembre - Octobre 2021
 
