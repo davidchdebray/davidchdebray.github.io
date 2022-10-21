@@ -1,5 +1,5 @@
 ---
-title: David Debray CV
+title: "David DEBRAY CV"
 linkcolor: lightblue
 pdf-engine: xelatex
 header-includes:
@@ -9,10 +9,11 @@ classoption: "12pt"
 
 <link rel="icon" href="favicon.png" type="image/png" />
 
+
 # Analyste Applications
 ## Présentation Personnelle
 Curieux, débrouillard, autonome. Aussi bien capable de travailler seul que en équipe, j'aime les challenges et découvrir sans arrêt de nouvelles choses.
-Je souhaite me spécialiser dans le DevOps et la sécurité.
+Je souhaite me spécialiser dans le ***DevOps*** et la sécurité.
 
 Anglais courant (TOEIC: 980) et Espagnol intermédiaire.
 
@@ -22,13 +23,17 @@ Anglais courant (TOEIC: 980) et Espagnol intermédiaire.
 </p>
 
 ## Intérêts & Loisirs:
-Musique, Cinéma, Lecture, Sport *(Crossfit, Course, Yoga)*, Cuisine, Langues étrangères, Veille informatique.
+Musique, Cinéma, Lecture, Sport *(Crossfit, Course, Yoga)*, Cuisine, Langues étrangères, Veille informatique, Gaming.
 
 # Expériences Professionnelles
 
 ## Analyste Applications
 **Capgemini, Rouen** - *(Septembre 2021 - )* 
 
+- Intégrateur Systèmes Windows & Linux, Administration de machines virtuelles VMWare
+- Scripting PowerShell
+- Gestion Active Directory & Exchange
+- Gestion d'incidents
 
 ## Responsable Ingénierie Systèmes & Réseaux
 **Polyclinique de l'Ormeau, Tarbes** - *(Octobre 2017 - Septembre 2019)*
@@ -66,6 +71,21 @@ Musique, Cinéma, Lecture, Sport *(Crossfit, Course, Yoga)*, Cuisine, Langues é
 - Conseil client & Vente d’équipement
 
 # Formations
+
+## Février 2022
+
+- **Microsoft Security Virtual Training Day: *Notions de base sur la sécurité, la conformité et l’identité***
+  - 2 jours de formation *(23 & 24 Février)*
+
+## Septembre - Octobre 2021
+
+- **ITIL v4 Foundation**
+  - 3 jours de formations *(4-6 Octobre)*
+  - Préparation à la certification [ITIL v4 Foundation](#certifications)
+- **Microsoft Azure Virtual Training Day : *Notions de base***
+  - 2 jours de formation *(13 & 14 Septembre)*
+  - Préparation à la certification: [AZ-900: Azure Fundamentals](#certifications)
+
 
 ## Juin 2021 - Août 2021
 
@@ -117,7 +137,7 @@ Musique, Cinéma, Lecture, Sport *(Crossfit, Course, Yoga)*, Cuisine, Langues é
 - Scripting/Programmation *(Shell, bat, Python, PowerShell)*
 
 ### Documentation Skills
-- Markdown, LaTeX, Html, CSS
+- Markdown, LaTeX, Html, CSS, Jekyll
 
 ## Gestion de Projet
 Planification, Gestion de Risques, Management d'équipe, Organisation de Budget, Clôture de Projet & REX, Processus ITIL, Contrat de service, Rédaction d'appel d'offre.
