@@ -72,6 +72,21 @@ Musique, Cinéma, Lecture, Sport *(Crossfit, Course, Yoga)*, Cuisine, Langues é
 
 # Formations
 
+## Février 2022
+
+- **Microsoft Security Virtual Training Day: *Notions de base sur la sécurité, la conformité et l’identité***
+  - 2 jours de formation *(23 & 24 Février)*
+
+## Septembre - Octobre 2021
+
+- **ITIL v4 Foundation**
+  - 3 jours de formations *(4-6 Octobre)*
+  - Préparation à la certification [ITIL v4 Foundation](#certifications)
+- **Microsoft Azure Virtual Training Day : *Notions de base***
+  - 2 jours de formation *(13 & 14 Septembre)*
+  - Préparation à la certification: [AZ-900: Azure Fundamentals](#certifications)
+
+
 ## Juin 2021 - Août 2021
 
 - Formation POEI **DevOps** [Dawan](https://dawan.fr/)
