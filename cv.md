@@ -112,6 +112,7 @@ Musique, Cinéma, Lecture, Sport *(Crossfit, Course, Yoga)*, Cuisine, Langues é
 
 # Compétences
 ## Certifications
+- HashiCorp Certified: [Terraform Associate (002)](https://www.credly.com/badges/654a0b1c-887d-4d3a-9fd3-14a9cc9297bd/public_url) *(28/02/2023)*
 - Microsoft Certified: Security, Compliance, and Identity Fundamentals [SC900](https://www.credly.com/badges/b0a65f46-7f22-4a0c-ac69-26ace19c4c4a?source=linked_in_profile) *(10/03/2022)*
 - Microsoft Azure Fundamentals [AZ-900](https://www.linkedin.com/posts/david-debray-a85b8629_microsoft-certified-azure-fundamentals-was-activity-6848978476737847296-x3Vx) *(29/09/2021)*
 - ITIL 4 Foundation [Certification](ITILv4-cert.pdf) *(12/10/2021)*
