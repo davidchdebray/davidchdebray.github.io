@@ -19,7 +19,7 @@ Anglais courant (TOEIC: 980) et Espagnol intermédiaire.
 
 ## Contact:
 <p style="text-align: center;">
-  Email: [*david.debray@pm.me*](mailto:david.debray@pm.me) / Tél: *(+33)6.78.76.38.81* / Site: [*https://davidchdebray.github.io*](https://davidchdebray.github.io)
+  LinkedIn: [*David DEBRAY*](https://www.linkedin.com/in/david-debray-a85b8629/) / Site: [*https://davidchdebray.github.io*](https://davidchdebray.github.io)
 </p>
 
 ## Intérêts & Loisirs:
