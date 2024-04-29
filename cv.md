@@ -27,13 +27,12 @@ Musique, Cinéma, Lecture, Sport *(Crossfit, Course, Yoga)*, Cuisine, Langues é
 
 # Expériences Professionnelles
 
-## Analyste Applications
+## Ingénieur Systèmes
 **Capgemini, Rouen** - *(Septembre 2021 - )* 
 
-- Intégrateur Systèmes Windows & Linux, Administration de machines virtuelles VMWare
-- Scripting PowerShell
-- Gestion Active Directory & Exchange
-- Gestion d'incidents
+- Intégrateur Systèmes Windows & Linux:
+  - Scripting PowerShell & Shell, Ansible Automation Platform, VSphere, IAM, AzureDevops
+  - Documentations Techniques
 
 ## Responsable Ingénierie Systèmes & Réseaux
 **Polyclinique de l'Ormeau, Tarbes** - *(Octobre 2017 - Septembre 2019)*
@@ -71,6 +70,12 @@ Musique, Cinéma, Lecture, Sport *(Crossfit, Course, Yoga)*, Cuisine, Langues é
 - Conseil client & Vente d’équipement
 
 # Formations
+
+## Février - Avril 2023:
+- **Master DevOps**
+  - Terraform
+  - Ansible
+  - Kubernetes
 
 ## Février 2022
 
@@ -112,6 +117,7 @@ Musique, Cinéma, Lecture, Sport *(Crossfit, Course, Yoga)*, Cuisine, Langues é
 
 # Compétences
 ## Certifications
+- Certified Kubernetes Administrator [CKA](https://www.credly.com/badges/bbdcb0ef-5f6b-474d-b668-1fcf17567cf1/public_url) *(26/04/2024)*
 - Red Hat Accredited Professional: [Red Hat Delivery Specialist - Automation](Red_Hat_Delivery_Specialist_Automation.pdf) *(14/04/2023)*
 - HashiCorp Certified: [Terraform Associate (002)](https://www.credly.com/badges/654a0b1c-887d-4d3a-9fd3-14a9cc9297bd/public_url) *(28/02/2023)*
 - Microsoft Certified: Security, Compliance, and Identity Fundamentals [SC900](https://www.credly.com/badges/b0a65f46-7f22-4a0c-ac69-26ace19c4c4a?source=linked_in_profile) *(10/03/2022)*
