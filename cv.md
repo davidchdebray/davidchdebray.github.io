@@ -113,6 +113,7 @@ Musique, Cinéma, Lecture, Sport *(Crossfit, Course, Yoga)*, Cuisine, Langues é
 
 # Compétences
 ## Certifications
+- The Linux Foundation: [CKA: Certified Kubernetes Administrator](https://www.credly.com/badges/bbdcb0ef-5f6b-474d-b668-1fcf17567cf1/linked_in_profile) *(25/04/2024)*
 - Red Hat Accredited Professional: [Red Hat Delivery Specialist - Automation](Red Hat Delivery Specialist - Automation.pdf) *(14/04/2023)*
 - HashiCorp Certified: [Terraform Associate (002)](https://www.credly.com/badges/654a0b1c-887d-4d3a-9fd3-14a9cc9297bd/public_url) *(28/02/2023)*
 - Microsoft Certified: Security, Compliance, and Identity Fundamentals [SC900](https://www.credly.com/badges/b0a65f46-7f22-4a0c-ac69-26ace19c4c4a?source=linked_in_profile) *(10/03/2022)*
