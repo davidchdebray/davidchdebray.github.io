@@ -10,7 +10,7 @@ classoption: "12pt"
 <link rel="icon" href="favicon.png" type="image/png" />
 
 
-# Analyste Applications
+# Ingénieur Systèmes
 ## Présentation Personnelle
 Curieux, débrouillard, autonome. Aussi bien capable de travailler seul que en équipe, j'aime les challenges et découvrir sans arrêt de nouvelles choses.
 Je souhaite me spécialiser dans le ***DevOps*** et la sécurité.
@@ -23,15 +23,16 @@ Anglais courant (TOEIC: 980) et Espagnol intermédiaire.
 </p>
 
 ## Intérêts & Loisirs:
-Musique, Cinéma, Lecture, Sport *(Crossfit, Course, Yoga)*, Cuisine, Langues étrangères, Veille informatique, Gaming.
+Musique, Cinéma, Lecture, Sport *(Crossfit, Course, Yoga)*, Cuisine, Langues étrangères, Veille informatique, Gaming, Guitare.
 
 # Expériences Professionnelles
 
-## Analyste Applications
+## Ingénieur Système
 **Capgemini, Rouen** - *(Septembre 2021 - )* 
 
-- Intégrateur Systèmes Windows & Linux, Administration de machines virtuelles VMWare
-- Scripting PowerShell
+- Intégrateur Systèmes Windows & Linux, VMWare
+- POC *Ansible Automation Platform*
+- Scripting Shell & PowerShell
 - Gestion Active Directory & Exchange
 - Gestion d'incidents
 
