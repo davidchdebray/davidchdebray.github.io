@@ -10,7 +10,7 @@ classoption: "12pt"
 <link rel="icon" href="favicon.png" type="image/png" />
 
 
-# Ingénieur Systèmes
+# Ingénieur Systèmes & Réseaux - DevOps
 ## Présentation Personnelle
 Curieux, débrouillard, autonome. Aussi bien capable de travailler seul que en équipe, j'aime les challenges et découvrir sans arrêt de nouvelles choses.
 Je souhaite me spécialiser dans le ***DevOps*** et la sécurité.
@@ -30,11 +30,13 @@ Musique, Cinéma, Lecture, Sport *(Crossfit, Course, Yoga)*, Cuisine, Langues é
 ## Ingénieur Système
 **Capgemini, Rouen** - *(Septembre 2021 - )* 
 
-- Intégrateur Systèmes Windows & Linux, VMWare
-- POC *Ansible Automation Platform*
+- Intégrateur Systèmes Windows & RHEL, VMWare
+- *Ansible Automation Platform*
+- IAM - IdentityIQ
 - Scripting Shell & PowerShell
 - Gestion Active Directory & Exchange
 - Gestion d'incidents
+- Rédaction de documentations techniques, notes d'exploitation
 
 ## Responsable Ingénierie Systèmes & Réseaux
 **Polyclinique de l'Ormeau, Tarbes** - *(Octobre 2017 - Septembre 2019)*
@@ -60,7 +62,7 @@ Musique, Cinéma, Lecture, Sport *(Crossfit, Course, Yoga)*, Cuisine, Langues é
 ## Chef de Projet / Auditeur / Administrateur Systèmes & Réseaux
 **Centre de Rééducation Fonctionnelle, Saint-Blancard** - *(Mai - Juin 2012 & Janvier - Mars 2013)*
 
-- Audit de l'infrastructure Réseau
+- Audit et réorganisation de l'infrastructure Réseau CISCO
 - Automatisation & Sécurisation du SI
 - Rédaction **PRA** & **PCA**.
 - Formations utilisateurs & Traduction de documents
@@ -72,22 +74,14 @@ Musique, Cinéma, Lecture, Sport *(Crossfit, Course, Yoga)*, Cuisine, Langues é
 - Conseil client & Vente d’équipement
 
 # Formations
-
 ## Février 2022
 
-- **Microsoft Security Virtual Training Day: *Notions de base sur la sécurité, la conformité et l’identité***
-  - 2 jours de formation *(23 & 24 Février)*
-  - Préparation à la certification [SC-900: Azure Security Fundamentals](#certifications)
+- [SC-900: Azure Security Fundamentals](#certifications)
 
 ## Septembre - Octobre 2021
 
-- **ITIL v4 Foundation**
-  - 3 jours de formations *(4-6 Octobre)*
-  - Préparation à la certification [ITIL v4 Foundation](#certifications)
-- **Microsoft Azure Virtual Training Day : *Notions de base***
-  - 2 jours de formation *(13 & 14 Septembre)*
-  - Préparation à la certification: [AZ-900: Azure Fundamentals](#certifications)
-
+- [ITIL v4 Foundation](#certifications)
+- [AZ-900: Azure Fundamentals](#certifications)
 
 ## Juin 2021 - Août 2021
 
@@ -111,8 +105,8 @@ Musique, Cinéma, Lecture, Sport *(Crossfit, Course, Yoga)*, Cuisine, Langues é
 ## 2010-2012:
 - **Analyste Programmeur** (Bac+2), *EXIA de Pau*: Projets tutorés *(1 par trimestre)* & 2 fois 2 mois de stage.
 
-# Compétences
-## Certifications
+
+# Certifications
 - The Linux Foundation: [CKA: Certified Kubernetes Administrator](https://www.credly.com/badges/bbdcb0ef-5f6b-474d-b668-1fcf17567cf1/linked_in_profile) *(25/04/2024)*
 - Red Hat Accredited Professional: [Red Hat Delivery Specialist - Automation](Red Hat Delivery Specialist - Automation.pdf) *(14/04/2023)*
 - HashiCorp Certified: [Terraform Associate (002)](https://www.credly.com/badges/654a0b1c-887d-4d3a-9fd3-14a9cc9297bd/public_url) *(28/02/2023)*
@@ -120,6 +114,7 @@ Musique, Cinéma, Lecture, Sport *(Crossfit, Course, Yoga)*, Cuisine, Langues é
 - Microsoft Azure Fundamentals [AZ-900](https://www.linkedin.com/posts/david-debray-a85b8629_microsoft-certified-azure-fundamentals-was-activity-6848978476737847296-x3Vx) *(29/09/2021)*
 - ITIL 4 Foundation [Certification](ITILv4-cert.pdf) *(12/10/2021)*
 
+# Compétences
 ## Techniques
 ### DevOps
 - Linux, Shell, Python
@@ -149,5 +144,10 @@ Planification, Gestion de Risques, Management d'équipe, Organisation de Budget,
 
 ## Transverses
 Anglais courant (oral et écrit), Espagnol intermédiaire, Communication, Formation aux utilisateurs, Traduction & Rédaction de Documentations Techniques & Manuels d'utilisation.
+
+
+
+
+
 
 ---
