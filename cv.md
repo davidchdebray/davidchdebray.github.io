@@ -28,10 +28,11 @@ Musique, Cinéma, Lecture, Sport *(Crossfit, Course, Yoga)*, Cuisine, Langues é
 # Expériences Professionnelles
 
 ## Ingénieur Système
-**Capgemini, Rouen** - *(Septembre 2021 - )* 
+**Capgemini, Rouen** - *(Septembre 2021 - )*
 
-- Intégrateur Systèmes Windows & RHEL, VMWare
-- *Ansible Automation Platform*
+- Intégrateur Systèmes Windows & RHEL
+- VMWare
+- Ansible *(Core, APP, Semaphore)*
 - IAM - IdentityIQ
 - Scripting Shell & PowerShell
 - Gestion Active Directory & Exchange
@@ -145,10 +146,5 @@ Planification, Gestion de Risques, Management d'équipe, Organisation de Budget,
 
 ## Transverses
 Anglais courant (oral et écrit), Espagnol intermédiaire, Communication, Formation aux utilisateurs, Traduction & Rédaction de Documentations Techniques & Manuels d'utilisation.
-
-
-
-
-
 
 ---
