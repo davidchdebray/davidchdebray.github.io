@@ -19,7 +19,7 @@ Anglais courant (TOEIC: 980) et Espagnol intermédiaire.
 
 ## Contact:
 <p style="text-align: center;">
-  LinkedIn: [*David DEBRAY*](https://www.linkedin.com/in/david-debray-a85b8629/) / Site: [*https://davidchdebray.github.io*](https://davidchdebray.github.io)
+  LinkedIn: [*David DEBRAY*](https://www.linkedin.com/in/david-debray-a85b8629/) / Site: [*davidchdebray.github.io*](https://davidchdebray.github.io) / Mail: [*david.debray@pm.me*](david.debray@pm.me)
 </p>
 
 ## Intérêts & Loisirs:
