@@ -15,7 +15,7 @@ classoption: "12pt"
 Curieux, débrouillard, autonome. Aussi bien capable de travailler seul que en équipe, j'aime les challenges et découvrir sans arrêt de nouvelles choses.
 Je souhaite me spécialiser dans le ***DevOps*** et la sécurité.
 
-Anglais courant (TOEIC: 980) et Espagnol intermédiaire.
+Anglais **C2** et Espagnol intermédiaire.
 
 ## Contact:
 <p style="text-align: center;">
