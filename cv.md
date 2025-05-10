@@ -144,7 +144,7 @@ Musique, Cinéma, Lecture, Sport *(Crossfit, Course, Yoga)*, Cuisine, Langues é
 Planification, Gestion de Risques, Management d'équipe, Organisation de Budget, Clôture de Projet & REX, Processus ITIL, Contrat de service, Rédaction d'appel d'offre.
 
 ## Transverses
-Anglais courant (oral et écrit), Espagnol intermédiaire, Communication, Formation aux utilisateurs, Traduction & Rédaction de Documentations Techniques & Manuels d'utilisation.
+Anglais **C2**, Espagnol intermédiaire, Communication, Formation aux utilisateurs, Traduction & Rédaction de Documentations Techniques & Manuels d'utilisation.
 
 
 
