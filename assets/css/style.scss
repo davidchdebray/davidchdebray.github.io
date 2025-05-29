@@ -48,9 +48,9 @@ nav {
 
 /* Headings Customizations */
 h1 {
+    color: $color-primary;
     font-size: x-large;
     font-weight: bold;
-    // color: $color-primary;
 
     &:after {
         content: " ";
