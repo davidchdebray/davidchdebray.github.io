@@ -25,6 +25,116 @@
 //     color: #581845;
 // }
 
+
+// -------------------------------------------------------------------------
+#navbar {
+    position: fixed;
+    min-width: 290px;
+    top: 30px;
+    left: 0px;
+    width: 300px;
+    height: 100%;
+    border-right: solid;
+    border-color: rgba(0, 22, 22, 0.4);
+    font-family: timesnewroman;
+    font-size: 20px;
+}
+
+
+nav ul {
+    counter-reset: item;
+    list-style-type: none;
+    list-style: none;
+    /* list-style: disc inside url("orange.gif"); */
+}
+
+nav ul li {
+    color: #dc3522;
+    list-style: none;
+}
+
+nav ul li::before {
+    content: counter(item) ".  ";
+    counter-increment: item;
+    color: #dc3522;
+    /* content:  */
+    font-weight: bolder;
+}
+
+nav ul ul {
+    counter-reset: item_2;
+    list-style-type: none;
+}
+
+nav ul ul li:before {
+    content: counter(item_2) ".  ";
+    counter-increment: item_2;
+    color: #00e08b;
+}
+
+nav ul ul ul {
+    counter-reset: item_3;
+    list-style-type: none;
+}
+
+nav ul ul ul li:before {
+    content: counter(item_3) ".  ";
+    counter-increment: item_3;
+    color: #FF7400;
+}
+
+nav ul ul ul ul {
+    counter-reset: item_4;
+    list-style-type: none;
+}
+
+nav ul ul ul ul li:before {
+    content: counter(item_4) ".  ";
+    counter-increment: item_4;
+    color: #FF6138;
+}
+
+nav li:hover a {
+    /* background-color: #5f08ff; */
+    font-size: large;
+    transition: .4s all ease;
+    /* color: black; */
+    padding: 5px;
+}
+
+nav li:hover a:hover {
+    /* color: #ccc; */
+    font-size: x-large;
+    transition: .4 all ease;
+}
+
+nav li:active a:hover {
+    color: #FF6138;
+}
+
+header::after {
+    display: block;
+    height: 2px;
+    border: 0;
+    border-top: 1px solid #aaa;
+    border-bottom: 1px solid #eee;
+    margin: 1em 0;
+    padding: 0;
+}
+
+html {
+    margin-top: 2.5em;
+    padding-bottom: 20em;
+    font-size: 100%;
+    overflow-y: scroll;
+
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+
+    background-image: url("Dark.jpg");
+    background-repeat: repeat-y repeat-x;
+    background-position: right top;
+    scroll-behavior: smooth;   }
 h1,
 h2,
 h3,
