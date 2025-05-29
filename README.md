@@ -1,11 +1,11 @@
----
+<!-- ---
 title: "David DEBRAY CV"
 theme: jekyll-theme-minimal
 title: "My Professional CV"
 description: "David DEBRAY - Curriculum Vitae"
 ---
 
-<link rel="icon" href="favicon.png" type="image/png" />
+<link rel="icon" href="favicon.png" type="image/png" /> -->
 
 
 # Ingénieur Systèmes & Réseaux - DevOps
