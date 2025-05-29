@@ -61,17 +61,20 @@ h1 {
 }
 
 h2 {
-    text-decoration: underline;
+    color: $color-secondary;
     font-size: large;
+    font-weight: normal;
+    text-decoration: underline;
     // color: $color-secondary;
     // text-decoration-color: $color-secondary;
     // padding-left: 5px;
 }
 
 h3 {
+    color: $color-tertiary;
     font-size: medium;
     font-weight: bold;
-    color: $color-tertiary;
+    font-style: italic;
     // color: $color-link;
     text-decoration: underline;
     // text-decoration-color: $color-link;
@@ -99,7 +102,7 @@ a {
     &:focus {
         color: $color-tertiary;
         // border: 1px solid #FF7400;
-        background-color: yellow;
+        // background-color: yellow;
     }
 }
 
