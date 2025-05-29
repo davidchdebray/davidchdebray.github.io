@@ -22,7 +22,7 @@ a {
 
     &:hover {
         color: #0395DE;
-        background-color: whitesmoke;
+        // background-color: whitesmoke;
         // border: 1px solid #0395DE;
         padding: 5px;
         font-weight: bold;
@@ -170,12 +170,12 @@ dfn {
 }
 
 ins {
-    background: #ff9;
+    // background: #ff9;
     text-decoration: none;
 }
 
 mark {
-    background: #ff0;
+    // background: #ff0;
     font-style: italic;
     font-weight: bold;
 }
@@ -240,7 +240,7 @@ ul {
     left: 0;
     bottom: 0;
     width: 100%;
-    background-color: var(--awesome-darknight);
+    // background-color: var(--awesome-darknight);
     color: #00A388;
     text-align: center;
     border-top-left-radius: 200% 750px;
