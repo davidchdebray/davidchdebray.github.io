@@ -23,7 +23,7 @@ a {
     &:hover {
         color: #0395DE;
         background-color: whitesmoke;
-        border: 1px solid #0395DE;
+        // border: 1px solid #0395DE;
         padding: 5px;
         font-weight: bold;
         transition: 0.4s;
@@ -87,7 +87,7 @@ h6 {
 }
 
 h1 {
-    font-size: xx-large;
+    // font-size: xx-large;
     color: #dc3522;
 
     &:after {
@@ -98,7 +98,7 @@ h1 {
 }
 
 h2 {
-    font-size: x-large;
+    // font-size: x-large;
     color: #00e08b;
     text-decoration: underline;
     text-decoration-color: #00e08b;
@@ -106,7 +106,7 @@ h2 {
 }
 
 h3 {
-    font-size: 1.25em;
+    // font-size: 1.25em;
     color: #FF7400;
     text-decoration: underline;
     text-decoration-color: #FF7400;
@@ -118,7 +118,7 @@ h4 {
 }
 
 h5 {
-    font-size: 1em;
+    // font-size: 1em;
     color: #B200FF;
 }
 
@@ -223,7 +223,8 @@ ul {
     li {
         &::before {
             content: "\27AD"; // Unicode for a bullet (you can change as needed)
-            color: yellow;
+            // color: yellow;
+            color: black;
             display: inline-block;
             width: 1em;
             margin-left: -1em;
