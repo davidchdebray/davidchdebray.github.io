@@ -1,116 +1,363 @@
---- 
-# Jekyll requires this front matter for Sass processing. 
----
-/* -------------------------------------------------
-   Override Tactile Theme Sass Variables
-   -------------------------------------------------
-   To change the default look of the theme, you can override variables here.
-   Check the theme’s documentation (or inspect its _sass partials) for available options.
-*/
-$color-primary: #dc3522; // Example: header title color
-$color-secondary: #00A388; // Example: subtitle color
-$color-tertiary: #FF7400;
-$color-link: #0059ad;    // Example: link color
-// $nav-bg: #e3e7e8; // Example: Navigation background
+--- # SCSS file generated from your original CSS. Jekyll will process this file. ---
 
-/* -------------------------------------------------
-   Import the Tactile Theme Styles
-   -------------------------------------------------
-   This line imports all of the theme’s core SCSS.
-   The variable {{ site.theme }} should resolve to the remote theme.
-*/
-@import "{{ site.theme }}";
-
-
-/* -------------------------------------------------
-   Additional Custom Styles
-   ------------------------------------------------- */
-
-/* Navigation Customizations */
+/* -----------------------------------------------
+   Navigation Styles
+----------------------------------------------- */
 nav {
+    display: inline-block;
+    text-align: center;
+    margin: 0 auto;
+    align-content: center;
+
+    // Make third-level menu items display inline
+    li {
+        // First-level li
+        list-style: none;
+        position: relative;
+        float: left;
+
+        // For nested li li li elements, using nesting:
+        li {
+            li {
+                display: inline-block;
+            }
+        }
+
+        &:hover {
+            a {
+                background-color: #363636;
+                font-size: large;
+                transition: 0.4s all ease;
+                padding: 5px;
+
+                &:hover {
+                    background-color: #e3e7e8;
+                }
+            }
+
+            ul {
+                display: block;
+            }
+        }
+    }
+
     a {
         padding: 10px;
-        // background: $nav-bg;
+        background: #e3e7e8;
         border-radius: 24px 4px;
-        border: 1px solid $color-link;
+        border: 1px solid #0395DE;
         display: block;
         width: 200px;
         align-items: center;
+    }
 
-        &:hover {
-            background-color: #363636;
-            font-size: large;
-            transition: 0.4s all ease;
-            padding: 5px;
+    ul {
+        padding: 0;
+        margin: 0 auto;
+
+        ul {
+            padding: 0;
+            margin: 0;
+            position: absolute;
+            display: none;
+        }
+
+        li::before {
+            content: none;
         }
     }
 }
 
-/* Headings Customizations */
-h1 {
-    color: $color-primary;
-    font-size: x-large;
-    font-weight: bold;
+/* -----------------------------------------------
+   Global HTML and CSS Variables
+----------------------------------------------- */
+html {
+    margin-top: 2.5em;
+    padding-bottom: 20em;
+    font-size: 100%;
+    overflow-y: scroll;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    scroll-behavior: smooth;
+    background-color: #111;
+    /* 
+  Optional: Uncomment to use a background image
+  background-image: url("https://...your-image-url...");
+  */
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
 
-    &:after {
-        content: " ";
-        display: block;
-        border: 1px solid $color-primary;
-        // border: 1px solid;
-    }
+    // CSS custom properties (variables)
+    --awesome-emerald: #00A388;
+    --awesome-skyblue: #0395DE;
+    --awesome-red: #dc3522;
+    --awesome-pink: #EF4089;
+    --awesome-orange: #FF6138;
+    --awesome-nephritis: #27AE60;
+    --awesome-concrete: #95A5A6;
+    --awesome-darknight: #131A28;
+    --awesome-violet: #B200FF;
 }
 
-h2 {
-    color: $color-secondary;
-    font-size: large;
-    font-weight: normal;
-    text-decoration: underline;
-    // color: $color-secondary;
-    // text-decoration-color: $color-secondary;
-    // padding-left: 5px;
+/* -----------------------------------------------
+   Body Styles
+----------------------------------------------- */
+body {
+    border-radius: 20px;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-size: 16px;
+    line-height: 1.7;
+    margin: auto;
+    width: 1000px;
+    color: white;
+    background: #363636;
+    border: 3px double #ccc;
+    padding: 2.5em;
+    -moz-box-shadow: 4px 4px 14px 7px #000;
+    -webkit-box-shadow: 4px 4px 14px 7px #000;
+    box-shadow: 4px 4px 14px 7px #aaa;
 }
 
-h3 {
-    color: $color-tertiary;
-    font-size: medium;
-    font-weight: bold;
-    font-style: italic;
-    // color: $color-link;
-    text-decoration: underline;
-    // text-decoration-color: $color-link;
-    padding-left: 10px;
-}
-
-/* Link customizations (overriding anchor styles) */
+/* -----------------------------------------------
+   Anchor (Link) Styles
+----------------------------------------------- */
 a {
-    // text-decoration: none;
+    text-decoration: none;
     font-style: italic;
     font-weight: normal;
     transition: 0.4s;
-    &:link,
-    &:visited {
-        color: $color-link;
+
+    &:link {
+        color: #0395DE;
     }
+
+    &:visited {
+        color: #0395DE;
+    }
+
     &:hover {
-        // background-color: whitesmoke;
-        // border: 1px solid $color-link;
+        color: #0395DE;
+        background-color: whitesmoke;
+        border: 1px solid #0395DE;
         padding: 5px;
         font-weight: bold;
         transition: 0.4s;
     }
-    &:active,
+
+    &:active {
+        color: #FF7400;
+        border: 1px solid #FF7400;
+        border-radius: 25px;
+        background-color: yellow;
+    }
+
     &:focus {
-        color: $color-tertiary;
-        // border: 1px solid #FF7400;
-        // background-color: yellow;
+        color: #FF7400;
+        border: 1px solid #FF7400;
+        background-color: yellow;
+    }
+
+    &::selection {
+        background: yellow;
+        color: red;
+        font-weight: bolder;
+        padding: 5px;
+    }
+
+    &::-moz-selection {
+        background: rgba(255, 255, 0, 0.3);
+    }
+
+    // Additional ::selection rules can be merged or adjusted as needed
+    // &:hover::selection {
+    //   border: 1px solid black;
+    // }
+}
+
+/* -----------------------------------------------
+   General Element Styles
+----------------------------------------------- */
+p {
+    margin: 1em 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    line-height: 100%;
+    font-weight: bold;
+}
+
+.title {
+    font-size: 3.5em;
+    text-align: center;
+}
+
+h1 {
+    font-size: xx-large;
+    color: #dc3522;
+
+    &:after {
+        content: " ";
+        display: block;
+        border: 1px solid white;
     }
 }
 
-/* Footer Customizations */
+h2 {
+    font-size: x-large;
+    color: #00e08b;
+    text-decoration: underline;
+    text-decoration-color: #00e08b;
+    padding-left: 5px;
+}
+
+h3 {
+    font-size: 1.25em;
+    color: #FF7400;
+    text-decoration: underline;
+    text-decoration-color: #FF7400;
+    padding-left: 10px;
+}
+
+h4 {
+    font-size: 1.2em;
+}
+
+h5 {
+    font-size: 1em;
+    color: #B200FF;
+}
+
+h6 {
+    font-size: 0.9em;
+}
+
+/* Blockquotes, Horizontal Rules, and Code Styles */
+blockquote {
+    margin: 0;
+    padding-left: 3em;
+    border-left: 0.5em solid #EEE;
+}
+
+hr {
+    display: block;
+    height: 2px;
+    border: 0;
+    border-top: 1px solid #aaa;
+    border-bottom: 1px solid #eee;
+    margin: 1em 0;
+    padding: 0;
+}
+
+pre,
+code,
+kbd,
+samp {
+    font-family: monospace, monospace;
+    font-size: 0.98em;
+}
+
+pre {
+    white-space: pre;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+/* -----------------------------------------------
+   Inline Elements
+----------------------------------------------- */
+b,
+strong {
+    font-weight: bold;
+}
+
+dfn {
+    font-style: italic;
+}
+
+ins {
+    background: #ff9;
+    text-decoration: none;
+}
+
+mark {
+    background: #ff0;
+    font-style: italic;
+    font-weight: bold;
+}
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sup {
+    top: -0.5em;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+/* -----------------------------------------------
+   Lists
+----------------------------------------------- */
+ul,
+ol {
+    margin: 1em 0;
+    padding: 0 0 0 2em;
+
+    li {
+        p:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+ul ul,
+ol ol {
+    margin: 0.3em 0;
+}
+
+// Unordered List Custom Bullets
+ul {
+    list-style: none;
+
+    li {
+        &::before {
+            content: "\27AD"; // Unicode for a bullet (you can change as needed)
+            color: yellow;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+    }
+}
+
+/* -----------------------------------------------
+   Footer
+----------------------------------------------- */
 .footer {
-    padding: 1em;
-    background-color: #131A28; // You can also use a variable here if preferred.
-    color: #00A388; // Use your chosen color or a variable.
+    position: sticky;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--awesome-darknight);
+    color: #00A388;
     text-align: center;
     border-top-left-radius: 200% 750px;
     border-top-right-radius: 200% 750px;
