@@ -33,7 +33,7 @@ Musique, Cinéma, Lecture, Sport *(Crossfit, Course, Yoga)*, Cuisine, Langues é
 - **Alternance** sur 2 ans en formation avec le **CESI** de Pau, formation [***RISR***](files/RISR.pdf) (Bac+4)
 - Migration de l'outil de Supervision: *The Dude* vers *PRTG*
 - Migration de l'Antivirus: *Trend Micro* vers *Sophos*
-- Gestion de Projets / Applications (*[***WAPT***](https://www.tranquil.it/en/solutions/wapt/), GLPI, Supervision PRTG, Antivirus Sophos*)
+- Gestion de Projets / Applications ([***WAPT***](https://www.tranquil.it/en/solutions/wapt/), GLPI, Supervision PRTG, Antivirus Sophos*)
 - Helpdesk
 
 ## Technicien Helpdesk
