@@ -1,4 +1,0 @@
-pandoc
-texlive-xetex
-texlive
-texlive-fonts-extra
