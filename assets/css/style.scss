@@ -62,13 +62,13 @@ a {
 /* -----------------------------------------------
    General Element Styles
 ----------------------------------------------- */
-p {
-    margin: 1em 0;
-}
+// p {
+//     margin: 1em 0;
+// }
 
-img {
-    max-width: 100%;
-}
+// img {
+//     max-width: 100%;
+// }
 
 /* Headings */
 h1,
@@ -82,18 +82,17 @@ h6 {
 }
 
 .title {
-    font-size: 3.5em;
+    // font-size: 3.5em;
     text-align: center;
 }
 
 h1 {
     // font-size: xx-large;
     color: #dc3522;
-
     &:after {
         content: " ";
         display: block;
-        border: 1px solid white;
+        border: 1px solid #dc3522;
     }
 }
 
