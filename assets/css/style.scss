@@ -1,6 +1,6 @@
----
- # This front matter is necessary for Jekyll to process the file with Sass. 
----
+// ---
+//  # This front matter is necessary for Jekyll to process the file with Sass. 
+// ---
 
 @import "tactile"; // This imports the tactile theme’s styles
 
@@ -27,6 +27,7 @@
 
 
 // -------------------------------------------------------------------------
+@media only screen and (min-width: 100px) {
 #navbar {
     position: fixed;
     min-width: 290px;
@@ -326,3 +327,5 @@ ul li::before {
     /* Also needed for space (tweak if needed) */
     margin-left: -1em;
     /* Also needed for space (tweak if needed) */ }
+
+}
