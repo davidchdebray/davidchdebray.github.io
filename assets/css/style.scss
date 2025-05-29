@@ -8,7 +8,7 @@
    Check the theme’s documentation (or inspect its _sass partials) for available options.
 */
 $color-primary: #dc3522; // Example: header title color
-$color-secondary: #00e08b; // Example: subtitle color
+$color-secondary: #008451; // Example: subtitle color
 $color-link: #0395DE; // Example: link color
 $nav-bg: #e3e7e8; // Example: Navigation background
 
@@ -47,18 +47,18 @@ nav {
 
 /* Headings Customizations */
 h1 {
-    font-size: xx-large;
+    font-size: x-large;
     color: $color-primary;
 
     &:after {
         content: " ";
         display: block;
-        border: 1px solid white;
+        border: 1px solid $color-primary;
     }
 }
 
 h2 {
-    font-size: x-large;
+    font-size: large;
     color: $color-secondary;
     text-decoration: underline;
     text-decoration-color: $color-secondary;
