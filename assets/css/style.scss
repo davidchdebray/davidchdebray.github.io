@@ -49,7 +49,7 @@ nav {
 h1 {
     font-size: x-large;
     font-weight: bold;
-    color: $color-primary;
+    // color: $color-primary;
 
     &:after {
         content: " ";
@@ -87,7 +87,7 @@ a {
     }
     &:hover {
         // background-color: whitesmoke;
-        border: 1px solid $color-link;
+        // border: 1px solid $color-link;
         padding: 5px;
         font-weight: bold;
         transition: 0.4s;
@@ -95,7 +95,7 @@ a {
     &:active,
     &:focus {
         color: #FF7400;
-        border: 1px solid #FF7400;
+        // border: 1px solid #FF7400;
         background-color: yellow;
     }
 }
