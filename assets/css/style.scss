@@ -29,7 +29,7 @@ $nav-bg: #e3e7e8; // Example: Navigation background
 nav {
     a {
         padding: 10px;
-        background: $nav-bg;
+        // background: $nav-bg;
         border-radius: 24px 4px;
         border: 1px solid $color-link;
         display: block;
@@ -47,22 +47,23 @@ nav {
 
 /* Headings Customizations */
 h1 {
-    font-size: x-large;
-    color: $color-primary;
+    // font-size: x-large;
+    // color: $color-primary;
 
     &:after {
         content: " ";
         display: block;
-        border: 1px solid $color-primary;
+        // border: 1px solid $color-primary;
+        border: 1px solid;
     }
 }
 
 h2 {
-    font-size: large;
-    color: $color-secondary;
     text-decoration: underline;
-    text-decoration-color: $color-secondary;
-    padding-left: 5px;
+    // font-size: large;
+    // color: $color-secondary;
+    // text-decoration-color: $color-secondary;
+    // padding-left: 5px;
 }
 
 h3 {
@@ -73,19 +74,9 @@ h3 {
     padding-left: 10px;
 }
 
-/* Footer Customizations */
-.footer {
-    padding: 1em;
-    background-color: #131A28; // You can also use a variable here if preferred.
-    color: #00A388; // Use your chosen color or a variable.
-    text-align: center;
-    border-top-left-radius: 200% 750px;
-    border-top-right-radius: 200% 750px;
-}
-
 /* Link customizations (overriding anchor styles) */
 a {
-    text-decoration: none;
+    // text-decoration: none;
     font-style: italic;
     font-weight: normal;
     transition: 0.4s;
@@ -96,7 +87,7 @@ a {
     }
 
     &:hover {
-        background-color: whitesmoke;
+        // background-color: whitesmoke;
         border: 1px solid $color-link;
         padding: 5px;
         font-weight: bold;
@@ -123,4 +114,14 @@ ul {
             margin-left: -1em;
         }
     }
+}
+
+/* Footer Customizations */
+.footer {
+    padding: 1em;
+    background-color: #131A28; // You can also use a variable here if preferred.
+    color: #00A388; // Use your chosen color or a variable.
+    text-align: center;
+    border-top-left-radius: 200% 750px;
+    border-top-right-radius: 200% 750px;
 }
