@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>{{ page.title }} - {{ site.title }}</title>
+</head>
+
+<body>
+    <header>
+        <h1>{{ site.title }}</h1>
+        <p>{{ site.description }}</p>
+        <ul>
+            <li>
+                Email: <a href="mailto:{{ site.social.email }}">{{ site.social.email }}</a>
+            </li>
+            <li>
+                LinkedIn: <a href="{{ site.social.linkedin }}">LinkedIn</a>
+            </li>
+            <li>
+                Telegram: <a href="{{ site.social.telegram }}">Telegram</a>
+            </li>
+            {% if site.social.twitter %}
+            <li>
+                Twitter: <a href="{{ site.social.twitter }}">Twitter</a>
+            </li>
+            {% endif %}
+            <li>
+                Website: <a href="{{ site.social.website }}">Website</a>
+            </li>
+        </ul>
+    </header>
+    <main>
+        {{ content }}
+    </main>
+</body>
+
+</html>
