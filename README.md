@@ -1,14 +1,18 @@
 <!-- # *David DEBRAY* -->
-## Présentation Personnelle
+# Présentation Personnelle
 Curieux, débrouillard, autonome. Aussi bien capable de travailler seul que en équipe, j'aime les challenges et découvrir sans arrêt de nouvelles choses.
 Je souhaite me spécialiser dans le ***DevOps*** et la sécurité.
 
 Anglais **C2** et Espagnol intermédiaire.
 
 ## Contact:
-<p style="text-align: center;">
+<!-- <p style="text-align: center;">
   LinkedIn: [*David DEBRAY*](https://www.linkedin.com/in/david-debray-a85b8629/) / Site: [*davidchdebray.github.io*](https://davidchdebray.github.io) / Mail: [*david.debray@pm.me*](david.debray@pm.me)
-</p>
+</p> -->
+
+- LinkedIn: [*David DEBRAY*](https://www.linkedin.com/in/david-debray-a85b8629/)
+- Site: [*davidchdebray.github.io*](https://davidchdebray.github.io)
+- Mail: [*david.debray@pm.me*](david.debray@pm.me)
 
 
 
