@@ -5,7 +5,22 @@ url: "https://davidchdebray.github.io"  # Replace with your GitHub Pages URL
 baseurl: ""  # Leave empty for user or organization sites
 
 # Theme configuration
+theme: architect
+# theme: cayman
+# theme: dinky
+# theme: hacker
+# theme: leap day
+# theme: merlot
+# theme: midnight
+# theme: minima
+# theme: minimal
+# theme: modernist
+# theme: slate
+# theme: tactile
+# theme: time machine
 theme: jekyll-theme-minimal
+
+
 
 # Markdown processing
 markdown: kramdown
