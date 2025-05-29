@@ -52,30 +52,6 @@ h1 {
     color: #DC3522;
     text-decoration: none;
     padding: 15px;
-
-    /* border-left: 5px solid #DC3522;
-    border-bottom: 2px solid #DC3522; */
-
-    /* -moz-box-shadow: 2px 2px 15px #DC3522;
-    -webkit-box-shadow: 2px 2px 15px #DC3522;
-    box-shadow: 2px 2px 15px #DC3522; */
-}
-
-h1::first-letter {
-    font-size: 300%;
-    font-family: "Lucida Calligraphy";
-}
-
-h1::before {
-    content: "\00a0  ";
-    display: block;
-    border: 25px transparent;
-}
-
-h1:after {
-    content: " ";
-    display: block;
-    border: 1px solid white;
 }
 
 h2 {
@@ -85,17 +61,6 @@ h2 {
     padding-left: 10px;
     text-decoration: underline;
     text-decoration-color: #00E08B;
-
-    /* border-left: 5px solid #00E08B;
-    border-bottom: 2px solid #00E08B; */
-
-    /* -moz-box-shadow: 2px 2px 15px #00E08B;
-    -webkit-box-shadow: 2px 2px 15px #00E08B;
-    box-shadow: 2px 2px 15px #00E08B; */
-}
-
-h2::before {
-    content: "> ";
 }
 
 h3 {
@@ -105,18 +70,11 @@ h3 {
     padding-left: 20px;
     text-decoration: underline;
     text-decoration-color: #FF7400;
-
-    /* border-left: 5px solid #FF7400;
-    border-bottom: 2px solid #FF7400; */
-
-    /* -moz-box-shadow: 2px 2px 15px #FF7400;
-    -webkit-box-shadow: 2px 2px 15px #FF7400;
-    box-shadow: 2px 2px 15px #FF7400; */
 }
 
-h3::before {
-    content: ">> ";
-}
+// h3::before {
+//     content: ">> ";
+// }
 
 h4 {
     font-size: 125%;
@@ -126,24 +84,12 @@ h4 {
     text-decoration: underline;
 }
 
-h4::before {
-    content: ">>> ";
-}
-
 h5 {
     font-size: 115%;
     color: #B200FF;
     padding: 15px;
     padding-left: 40px;
     text-decoration: underline;
-}
-
-h5::before {
-    content: ">>>> ";
-}
-
-h5::after {
-    content: " <<<<";
 }
 
 h6 {
@@ -160,4 +106,23 @@ hr {
     border-top: 1px solid #aaa;
     border-bottom: 1px solid #eee;
     margin: 1em 0;
-    padding: 0; }
+    padding: 0; 
+}
+
+ul {
+    list-style: none;
+    /* Remove default bullets */
+}
+
+ul li::before {
+    content: "\27AD";
+    /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: yellow;
+    /* Change the color */
+    /* font-weight: bold; If you want it to be bold */
+    display: inline-block;
+    /* Needed to add space between the bullet and the text */
+    width: 1em;
+    /* Also needed for space (tweak if needed) */
+    margin-left: -1em;
+    /* Also needed for space (tweak if needed) */ }
