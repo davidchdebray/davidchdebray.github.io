@@ -1,4 +1,8 @@
 # Basic site settings
+title: "David DEBRAY Curriculum Vitae"
+author: "David DEBRAY"
+email: "david.debray@pm.me"
+
 description: "Ingénieur Systèmes & Réseaux - DevOps"
 url: "https://davidchdebray.github.io"  # Replace with your GitHub Pages URL
 baseurl: ""  # Leave empty for user or organization sites
