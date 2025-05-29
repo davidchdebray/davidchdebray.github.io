@@ -110,3 +110,17 @@ a {
         background-color: yellow;
     }
 }
+// Unordered List Custom Bullets
+ul {
+    list-style: none;
+
+    li {
+        &::before {
+            content: "\27AD"; // Unicode for a bullet (you can change as needed)
+            color: $color-link;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+    }
+}
