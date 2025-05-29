@@ -1,5 +1,5 @@
 <!-- # *David DEBRAY* -->
-# Présentation Personnelle
+# Présentation personnelle
 Curieux, débrouillard, autonome. Aussi bien capable de travailler seul que en équipe, j'aime les challenges et découvrir sans arrêt de nouvelles choses.
 Je souhaite me spécialiser dans le ***DevOps*** et la sécurité.
 
@@ -19,14 +19,14 @@ Anglais **C2** et Espagnol intermédiaire.
 ## Intérêts & Loisirs:
 Musique, Cinéma, Lecture, Sport *(Crossfit, Course, Yoga)*, Cuisine, Langues étrangères, Veille informatique, Gaming, Guitare.
 
-# Expériences Professionnelles
+# Expériences professionnelles
 
-## Ingénieur Système
+## Ingénieur Systèmes - Intégrateur
 **Capgemini, Rouen** - *(Septembre 2021 - )*
 
 - Intégrateur Systèmes Windows & RHEL
 - VMWare
-- Ansible *(Core, APP, Semaphore)*
+- Ansible *(Core, Ansible Automation Platform, Semaphore)*
 - IAM - IdentityIQ
 - Scripting Shell & PowerShell
 - Gestion Active Directory & Exchange
