@@ -122,19 +122,92 @@ header::after {
     padding: 0;
 }
 
-html {
-    margin-top: 2.5em;
-    padding-bottom: 20em;
-    font-size: 100%;
-    overflow-y: scroll;
+body {
+    border-radius: 20px;
+    /* font-family: Georgia, Palatino, 'Palatino Linotype', Times, 'Times New Roman', serif; */
+    --main-text-color: whitesmoke;
+    // --main-text-font: "Comic Sans MS", "Comic Sans", cursive;
+    /* --code-text-font: "Courier 10 Pitch", Courier, monospace; */
+    --code-text-color: #FF6138;
+    --code-text-font: "Gill Sans Extrabold", sans-serif;
+    --code-font-size: 100%;
+    color: var(--main-text-color);
+    font-family: var(--main-text-font);
 
-    -webkit-text-size-adjust: 100%;
-    -ms-text-size-adjust: 100%;
+    /* % Color definitions
+    % Awesome colors
+    \definecolor{awesome-emerald}{HTML}{00A388}
+    \definecolor{awesome-skyblue}{HTML}{0395DE}
+    \definecolor{awesome-red}{HTML}{DC3522}
+    \definecolor{awesome-pink}{HTML}{EF4089}
+    \definecolor{awesome-orange}{HTML}{FF6138}
+    \definecolor{awesome-nephritis}{HTML}{27AE60}
+    \definecolor{awesome-concrete}{HTML}{95A5A6}
+    \definecolor{awesome-darknight}{HTML}{131A28}  */
+    --awesome-emerald: #00A388;
+    --awesome-skyblue: #0395DE;
+    --awesome-red: #dc3522;
+    --awesome-pink: #EF4089;
+    --awesome-orange: #FF6138;
+    --awesome-nephritis: #27AE60;
+    --awesome-concrete: #95A5A6;
+    --awesome-darknight: #131A28;
+    --awesome-violet: #B200FF;
 
-    background-image: url("Dark.jpg");
-    background-repeat: repeat-y repeat-x;
-    background-position: right top;
-    scroll-behavior: smooth;   }
+    font-size: 12px;
+    line-height: 1.7;
+    padding: .125em 1em 0.5em 1em;
+    margin: auto;
+    /*width: 1000px;*/
+    max-width: 1000px;
+    width: 100%;
+    font-size: 16px;
+    background: #363636;
+}
+
+a {
+    text-decoration: none;
+    font-style: italic;
+    font-weight: normal;
+    transition: .4s;
+}
+
+/* unvisited link */
+a:link {
+    color: #0395DE;
+}
+
+/* visited link */
+a:visited {
+    color: #0395DE;
+}
+
+/* mouse over link */
+a:hover {
+    color: #0395DE;
+    background-color: whitesmoke;
+    border: 1px solid #0395DE;
+    padding: 5px;
+    font-weight: bold;
+    /* font-size: large; */
+    transition: .4s;
+}
+
+/* selected link */
+a:active {
+    color: #FF6138;
+    border: 1px solid #FF6138;
+    border-radius: 25px;
+}
+
+a:focus {
+    color: #FF6138;
+    border: 1px solid #FF6138;
+    background-color: yellow;
+    padding: 5px;
+}
+
+
 h1,
 h2,
 h3,
