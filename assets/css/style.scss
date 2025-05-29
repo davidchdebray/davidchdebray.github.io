@@ -8,7 +8,7 @@
    Check the theme’s documentation (or inspect its _sass partials) for available options.
 */
 $color-primary: #dc3522; // Example: header title color
-$color-secondary: #008451; // Example: subtitle color
+$color-secondary: #00A388; // Example: subtitle color
 $color-link: #0059ad; // Example: link color
 // $nav-bg: #e3e7e8; // Example: Navigation background
 
@@ -49,13 +49,13 @@ nav {
 h1 {
     font-size: x-large;
     font-weight: bold;
-    // color: $color-primary;
+    color: $color-primary;
 
     &:after {
         content: " ";
         display: block;
-        // border: 1px solid $color-primary;
-        border: 1px solid;
+        border: 1px solid $color-primary;
+        // border: 1px solid;
     }
 }
 
@@ -81,12 +81,10 @@ a {
     font-style: italic;
     font-weight: normal;
     transition: 0.4s;
-
     &:link,
     &:visited {
         color: $color-link;
     }
-
     &:hover {
         // background-color: whitesmoke;
         border: 1px solid $color-link;
@@ -94,26 +92,11 @@ a {
         font-weight: bold;
         transition: 0.4s;
     }
-
     &:active,
     &:focus {
         color: #FF7400;
         border: 1px solid #FF7400;
         background-color: yellow;
-    }
-}
-// Unordered List Custom Bullets
-ul {
-    list-style: none;
-
-    li {
-        &::before {
-            content: "\27AD"; // Unicode for a bullet (you can change as needed)
-            color: $color-link;
-            display: inline-block;
-            width: 1em;
-            margin-left: -1em;
-        }
     }
 }
 
