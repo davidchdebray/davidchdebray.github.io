@@ -15,6 +15,11 @@ plugins:
 # Markdown processing
 markdown: kramdown
 
+kramdown:
+  auto_ids: true      # ensures headings get an id automatically
+  toc_levels: 1..6     # include headers from h1 to h6 in your TOC
+
+
 # Optional plugins (e.g., RSS feed)
 plugins:
   - jekyll-feed
