@@ -21,8 +21,7 @@ plugins:
 
 # Social/contact information (custom variables)
 social:
-  email: "david.debray@pm.me"
-  linkedin: "https://www.linkedin.com/in/david-debray-a85b8629/"
-  telegram: "https://t.me/yourprofile"
-  twitter: "https://twitter.com/yourhandle"   # Optional: add more as needed
   website: "https://davidchdebray.github.io" 
+  email: "mailto:david.debray@pm.me"
+  linkedin: "https://www.linkedin.com/in/david-debray-a85b8629/"
+  telegram: "https://t.me/@D1d4v"

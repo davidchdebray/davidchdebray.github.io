@@ -1,76 +1,364 @@
----
- # This front matter is necessary for Jekyll to process the file with Sass. 
----
+--- # SCSS file generated from your original CSS. Jekyll will process this file. ---
 
-@import "tactile"; // This imports the tactile theme’s styles
+/* -----------------------------------------------
+   Navigation Styles
+----------------------------------------------- */
+nav {
+    display: inline-block;
+    text-align: center;
+    margin: 0 auto;
+    align-content: center;
 
-// /* Add your custom overrides here */
-// h1,
-// h2.main-title,
-// .header-title {
-//     color: #FF5733;
-// }
+    // Make third-level menu items display inline
+    li {
+        // First-level li
+        list-style: none;
+        position: relative;
+        float: left;
 
-// h2,
-// h3,
-// .subtitle {
-//     color: #C70039;
-// }
+        // For nested li li li elements, using nesting:
+        li {
+            li {
+                display: inline-block;
+            }
+        }
 
-// a {
-//     color: #900C3F;
-// }
+        &:hover {
+            a {
+                background-color: #363636;
+                font-size: large;
+                transition: 0.4s all ease;
+                padding: 5px;
 
-// a:hover {
-//     color: #581845;
-// }
+                &:hover {
+                    background-color: #e3e7e8;
+                }
+            }
 
-// # -------------------------------------------------------------------
-h1 {
-    font-size: 250%;
-    color: #DC3522;
+            ul {
+                display: block;
+            }
+        }
+    }
+
+    a {
+        padding: 10px;
+        background: #e3e7e8;
+        border-radius: 24px 4px;
+        border: 1px solid #0395DE;
+        display: block;
+        width: 200px;
+        align-items: center;
+    }
+
+    ul {
+        padding: 0;
+        margin: 0 auto;
+
+        ul {
+            padding: 0;
+            margin: 0;
+            position: absolute;
+            display: none;
+        }
+
+        li::before {
+            content: none;
+        }
+    }
+}
+
+/* -----------------------------------------------
+   Global HTML and CSS Variables
+----------------------------------------------- */
+html {
+    margin-top: 2.5em;
+    padding-bottom: 20em;
+    font-size: 100%;
+    overflow-y: scroll;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    scroll-behavior: smooth;
+    background-color: #111;
+    /* 
+  Optional: Uncomment to use a background image
+  background-image: url("https://...your-image-url...");
+  */
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+
+    // CSS custom properties (variables)
+    --awesome-emerald: #00A388;
+    --awesome-skyblue: #0395DE;
+    --awesome-red: #dc3522;
+    --awesome-pink: #EF4089;
+    --awesome-orange: #FF6138;
+    --awesome-nephritis: #27AE60;
+    --awesome-concrete: #95A5A6;
+    --awesome-darknight: #131A28;
+    --awesome-violet: #B200FF;
+}
+
+/* -----------------------------------------------
+   Body Styles
+----------------------------------------------- */
+body {
+    border-radius: 20px;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-size: 16px;
+    line-height: 1.7;
+    margin: auto;
+    width: 1000px;
+    color: white;
+    background: #363636;
+    border: 3px double #ccc;
+    padding: 2.5em;
+    -moz-box-shadow: 4px 4px 14px 7px #000;
+    -webkit-box-shadow: 4px 4px 14px 7px #000;
+    box-shadow: 4px 4px 14px 7px #aaa;
+}
+
+/* -----------------------------------------------
+   Anchor (Link) Styles
+----------------------------------------------- */
+a {
     text-decoration: none;
-    padding: 15px;
+    font-style: italic;
+    font-weight: normal;
+    transition: 0.4s;
+
+    &:link {
+        color: #0395DE;
+    }
+
+    &:visited {
+        color: #0395DE;
+    }
+
+    &:hover {
+        color: #0395DE;
+        background-color: whitesmoke;
+        border: 1px solid #0395DE;
+        padding: 5px;
+        font-weight: bold;
+        transition: 0.4s;
+    }
+
+    &:active {
+        color: #FF7400;
+        border: 1px solid #FF7400;
+        border-radius: 25px;
+        background-color: yellow;
+    }
+
+    &:focus {
+        color: #FF7400;
+        border: 1px solid #FF7400;
+        background-color: yellow;
+    }
+
+    &::selection {
+        background: yellow;
+        color: red;
+        font-weight: bolder;
+        padding: 5px;
+    }
+
+    &::-moz-selection {
+        background: rgba(255, 255, 0, 0.3);
+    }
+
+    // Additional ::selection rules can be merged or adjusted as needed
+    // &:hover::selection {
+    //   border: 1px solid black;
+    // }
 }
 
-h1::first-letter {
-    font-size: 300%;
-    font-family: "Lucida Calligraphy";
+/* -----------------------------------------------
+   General Element Styles
+----------------------------------------------- */
+p {
+    margin: 1em 0;
 }
 
-h1::before {
-    content: "\00a0  ";
-    display: block;
-    border: 25px transparent;
+img {
+    max-width: 100%;
 }
 
-h1:after {
-    content: " ";
-    display: block;
-    border: 1px solid white;
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    line-height: 100%;
+    font-weight: bold;
+}
+
+.title {
+    font-size: 3.5em;
+    text-align: center;
+}
+
+h1 {
+    font-size: xx-large;
+    color: #dc3522;
+
+    &:after {
+        content: " ";
+        display: block;
+        border: 1px solid white;
+    }
 }
 
 h2 {
-    font-size: 180%;
-    color: #00E08B;
-    padding: 15px;
-    padding-left: 10px;
+    font-size: x-large;
+    color: #00e08b;
     text-decoration: underline;
-    text-decoration-color: #00E08B;
-}
-
-h2::before {
-    content: "> ";
+    text-decoration-color: #00e08b;
+    padding-left: 5px;
 }
 
 h3 {
-    font-size: 140%;
+    font-size: 1.25em;
     color: #FF7400;
-    padding: 15px;
-    padding-left: 20px;
     text-decoration: underline;
     text-decoration-color: #FF7400;
+    padding-left: 10px;
 }
 
-h3::before {
-    content: ">> ";}
+h4 {
+    font-size: 1.2em;
+}
+
+h5 {
+    font-size: 1em;
+    color: #B200FF;
+}
+
+h6 {
+    font-size: 0.9em;
+}
+
+/* Blockquotes, Horizontal Rules, and Code Styles */
+blockquote {
+    margin: 0;
+    padding-left: 3em;
+    border-left: 0.5em solid #EEE;
+}
+
+hr {
+    display: block;
+    height: 2px;
+    border: 0;
+    border-top: 1px solid #aaa;
+    border-bottom: 1px solid #eee;
+    margin: 1em 0;
+    padding: 0;
+}
+
+pre,
+code,
+kbd,
+samp {
+    font-family: monospace, monospace;
+    font-size: 0.98em;
+}
+
+pre {
+    white-space: pre;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+/* -----------------------------------------------
+   Inline Elements
+----------------------------------------------- */
+b,
+strong {
+    font-weight: bold;
+}
+
+dfn {
+    font-style: italic;
+}
+
+ins {
+    background: #ff9;
+    text-decoration: none;
+}
+
+mark {
+    background: #ff0;
+    font-style: italic;
+    font-weight: bold;
+}
+
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sup {
+    top: -0.5em;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+/* -----------------------------------------------
+   Lists
+----------------------------------------------- */
+ul,
+ol {
+    margin: 1em 0;
+    padding: 0 0 0 2em;
+
+    li {
+        p:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+ul ul,
+ol ol {
+    margin: 0.3em 0;
+}
+
+// Unordered List Custom Bullets
+ul {
+    list-style: none;
+
+    li {
+        &::before {
+            content: "\27AD"; // Unicode for a bullet (you can change as needed)
+            color: yellow;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+    }
+}
+
+/* -----------------------------------------------
+   Footer
+----------------------------------------------- */
+.footer {
+    position: sticky;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--awesome-darknight);
+    color: #00A388;
+    text-align: center;
+    border-top-left-radius: 200% 750px;
+    border-top-right-radius: 200% 750px;
+}
