@@ -25,219 +25,34 @@
 //     color: #581845;
 // }
 
-
-// -------------------------------------------------------------------------
-@media only screen and (min-width: 100px) {
-#navbar {
-    position: fixed;
-    min-width: 290px;
-    top: 30px;
-    left: 0px;
-    width: 300px;
-    height: 100%;
-    border-right: solid;
-    border-color: rgba(0, 22, 22, 0.4);
-    font-family: timesnewroman;
-    font-size: 20px;
+// # -------------------------------------------------------------------
+h1,
+h2.main-title,
+.header-title {
+    color: #FF5733;
 }
 
-
-nav ul {
-    counter-reset: item;
-    list-style-type: none;
-    list-style: none;
-    /* list-style: disc inside url("orange.gif"); */
-}
-
-nav ul li {
-    color: #dc3522;
-    list-style: none;
-}
-
-nav ul li::before {
-    content: counter(item) ".  ";
-    counter-increment: item;
-    color: #dc3522;
-    /* content:  */
-    font-weight: bolder;
-}
-
-nav ul ul {
-    counter-reset: item_2;
-    list-style-type: none;
-}
-
-nav ul ul li:before {
-    content: counter(item_2) ".  ";
-    counter-increment: item_2;
-    color: #00e08b;
-}
-
-nav ul ul ul {
-    counter-reset: item_3;
-    list-style-type: none;
-}
-
-nav ul ul ul li:before {
-    content: counter(item_3) ".  ";
-    counter-increment: item_3;
-    color: #FF7400;
-}
-
-nav ul ul ul ul {
-    counter-reset: item_4;
-    list-style-type: none;
-}
-
-nav ul ul ul ul li:before {
-    content: counter(item_4) ".  ";
-    counter-increment: item_4;
-    color: #FF6138;
-}
-
-nav li:hover a {
-    /* background-color: #5f08ff; */
-    font-size: large;
-    transition: .4s all ease;
-    /* color: black; */
-    padding: 5px;
-}
-
-nav li:hover a:hover {
-    /* color: #ccc; */
-    font-size: x-large;
-    transition: .4 all ease;
-}
-
-nav li:active a:hover {
-    color: #FF6138;
-}
-
-header::after {
-    display: block;
-    height: 2px;
-    border: 0;
-    border-top: 1px solid #aaa;
-    border-bottom: 1px solid #eee;
-    margin: 1em 0;
-    padding: 0;
-}
-html {
-    margin-top: 2.5em;
-    padding-bottom: 20em;
-    font-size: 100%;
-    overflow-y: scroll;
-    -webkit-text-size-adjust: 100%;
-    -ms-text-size-adjust: 100%;
-    scroll-behavior: smooth;
-}
-
-body {
-    border-radius: 20px;
-    /* font-family: Georgia, Palatino, 'Palatino Linotype', Times, 'Times New Roman', serif; */
-    --main-text-color: whitesmoke;
-    // --main-text-font: "Comic Sans MS", "Comic Sans", cursive;
-    /* --code-text-font: "Courier 10 Pitch", Courier, monospace; */
-    --code-text-color: #FF6138;
-    --code-text-font: "Gill Sans Extrabold", sans-serif;
-    --code-font-size: 100%;
-    color: var(--main-text-color);
-    font-family: var(--main-text-font);
-
-    /* % Color definitions
-    % Awesome colors
-    \definecolor{awesome-emerald}{HTML}{00A388}
-    \definecolor{awesome-skyblue}{HTML}{0395DE}
-    \definecolor{awesome-red}{HTML}{DC3522}
-    \definecolor{awesome-pink}{HTML}{EF4089}
-    \definecolor{awesome-orange}{HTML}{FF6138}
-    \definecolor{awesome-nephritis}{HTML}{27AE60}
-    \definecolor{awesome-concrete}{HTML}{95A5A6}
-    \definecolor{awesome-darknight}{HTML}{131A28}  */
-    --awesome-emerald: #00A388;
-    --awesome-skyblue: #0395DE;
-    --awesome-red: #dc3522;
-    --awesome-pink: #EF4089;
-    --awesome-orange: #FF6138;
-    --awesome-nephritis: #27AE60;
-    --awesome-concrete: #95A5A6;
-    --awesome-darknight: #131A28;
-    --awesome-violet: #B200FF;
-
-    font-size: 12px;
-    line-height: 1.7;
-    padding: .125em 1em 0.5em 1em;
-    margin: auto;
-    /*width: 1000px;*/
-    max-width: 1000px;
-    width: 100%;
-    font-size: 16px;
-    background: #363636;
+h2,
+h3,
+.subtitle {
+    color: #C70039;
 }
 
 a {
-    text-decoration: none;
-    font-style: italic;
-    font-weight: normal;
-    transition: .4s;
+    color: #900C3F;
 }
 
-/* unvisited link */
-a:link {
-    color: #0395DE;
-}
-
-/* visited link */
-a:visited {
-    color: #0395DE;
-}
-
-/* mouse over link */
 a:hover {
-    color: #0395DE;
-    background-color: whitesmoke;
-    border: 1px solid #0395DE;
-    padding: 5px;
-    font-weight: bold;
-    /* font-size: large; */
-    transition: .4s;
+    color: #581845;
 }
 
-/* selected link */
-a:active {
-    color: #FF6138;
-    border: 1px solid #FF6138;
-    border-radius: 25px;
-}
-
-a:focus {
-    color: #FF6138;
-    border: 1px solid #FF6138;
-    background-color: yellow;
-    padding: 5px;
-}
-
-
-p {
-    margin: 1em 0;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    line-height: 100%;
-    font-weight: bold; 
-}
-
-/*::selection {text-shadow(shadow( $selection-bg,0,0.1em));} /* Modification de la selection pour les titres */
-.title {
-    font-size: 3.5em;
-    text-align: center;
-}
 h1 {
     font-size: 250%;
     color: #DC3522;
     text-decoration: none;
     padding: 15px;
 }
+
 h1::first-letter {
     font-size: 300%;
     font-family: "Lucida Calligraphy";
@@ -264,6 +79,10 @@ h2 {
     text-decoration-color: #00E08B;
 }
 
+h2::before {
+    content: "> ";
+}
+
 h3 {
     font-size: 140%;
     color: #FF7400;
@@ -273,59 +92,5 @@ h3 {
     text-decoration-color: #FF7400;
 }
 
-// h3::before {
-//     content: ">> ";
-// }
-
-h4 {
-    font-size: 125%;
-    color: #FFFE00;
-    padding: 15px;
-    padding-left: 30px;
-    text-decoration: underline;
-}
-
-h5 {
-    font-size: 115%;
-    color: #B200FF;
-    padding: 15px;
-    padding-left: 40px;
-    text-decoration: underline;
-}
-
-h6 {
-    font-size: 110%;
-    color: #EF4089;
-    padding: 15px;
-    padding-left: 50px;
-}
-
-hr {
-    display: block;
-    height: 2px;
-    border: 0;
-    border-top: 1px solid #aaa;
-    border-bottom: 1px solid #eee;
-    margin: 1em 0;
-    padding: 0; 
-}
-
-ul {
-    list-style: none;
-    /* Remove default bullets */
-}
-
-ul li::before {
-    content: "\27AD";
-    /* Add content: \2022 is the CSS Code/unicode for a bullet */
-    color: yellow;
-    /* Change the color */
-    /* font-weight: bold; If you want it to be bold */
-    display: inline-block;
-    /* Needed to add space between the bullet and the text */
-    width: 1em;
-    /* Also needed for space (tweak if needed) */
-    margin-left: -1em;
-    /* Also needed for space (tweak if needed) */ }
-
-}
+h3::before {
+    content: ">> ";}
