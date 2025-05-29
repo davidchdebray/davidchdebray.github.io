@@ -1,4 +1,9 @@
 <!-- # *David DEBRAY* -->
+
+* Table of Contents
+{:toc}
+
+
 # Présentation personnelle
 Curieux, débrouillard, autonome. Aussi bien capable de travailler seul que en équipe, j'aime les challenges et découvrir sans arrêt de nouvelles choses.
 Je souhaite me spécialiser dans le ***DevOps*** et la sécurité.
