@@ -10,7 +10,7 @@ Je souhaite me spécialiser dans le ***DevOps*** et la sécurité.
 
 Anglais **C2** et Espagnol intermédiaire.
 
-## Contact:
+## Contact
 <!-- <p style="text-align: center;">
   LinkedIn: [*David DEBRAY*](https://www.linkedin.com/in/david-debray-a85b8629/) / Site: [*davidchdebray.github.io*](https://davidchdebray.github.io) / Mail: [*david.debray@pm.me*](david.debray@pm.me)
 </p> -->
@@ -21,7 +21,7 @@ Anglais **C2** et Espagnol intermédiaire.
 
 
 
-## Intérêts & Loisirs:
+## Intérêts & Loisirs
 Musique, Cinéma, Lecture, Sport *(Crossfit, Course, Yoga)*, Cuisine, Langues étrangères, Veille informatique, Gaming, Guitare.
 
 # Expériences professionnelles
@@ -87,7 +87,7 @@ Musique, Cinéma, Lecture, Sport *(Crossfit, Course, Yoga)*, Cuisine, Langues é
 
 - Formation POEI **DevOps** [Dawan](https://dawan.fr/)
 
-## 2019-2021:
+## 2019-2021
 - **Formations sur** [***LinkedIn***](https://www.linkedin.com/in/david-debray-a85b8629/)
   + [Devenir un développeur Python](https://www.linkedin.com/learning/paths/devenir-un-developpeur-python)
   + [Devenir un Administrateur Système Linux](https://www.linkedin.com/learning/paths/devenir-un-administrateur-systeme-linux)
@@ -96,13 +96,13 @@ Musique, Cinéma, Lecture, Sport *(Crossfit, Course, Yoga)*, Cuisine, Langues é
   + Linux Essentials
   + Certified Entry-Level Python Programmer Certification
 
-## 2017-2019:
+## 2017-2019
 - **Responsable Ingénierie Systèmes & Réseaux** (Bac+4) [***RISR***](files/RISR.pdf), *CESI de Pau*
 
-## 2010-2014:
+## 2010-2014
 - **Manager des Systèmes d'Informations**, *EXIA de Pau*: Projets tutorés *(1 par trimestre)* & 1 stage de 3 mois et 1 stage de 4 mois.
 
-## 2010-2012:
+## 2010-2012
 - **Analyste Programmeur** (Bac+2), *EXIA de Pau*: Projets tutorés *(1 par trimestre)* & 2 fois 2 mois de stage.
 
 ---
