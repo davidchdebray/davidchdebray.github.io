@@ -9,7 +9,8 @@
 */
 $color-primary: #dc3522; // Example: header title color
 $color-secondary: #00A388; // Example: subtitle color
-$color-link: #0059ad; // Example: link color
+$color-tertiary: #FF7400;
+$color-link: #0059ad;    // Example: link color
 // $nav-bg: #e3e7e8; // Example: Navigation background
 
 /* -------------------------------------------------
@@ -68,7 +69,9 @@ h2 {
 }
 
 h3 {
-    font-size: 1.25em;
+    font-size: medium;
+    font-weight: bold;
+    color: $color-tertiary;
     // color: $color-link;
     text-decoration: underline;
     // text-decoration-color: $color-link;
@@ -94,7 +97,7 @@ a {
     }
     &:active,
     &:focus {
-        color: #FF7400;
+        color: $color-tertiary;
         // border: 1px solid #FF7400;
         background-color: yellow;
     }
