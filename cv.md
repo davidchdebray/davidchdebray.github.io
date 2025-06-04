@@ -15,7 +15,7 @@ classoption: "12pt"
 Curieux, débrouillard, autonome. Aussi bien capable de travailler seul que en équipe, j'aime les challenges et découvrir sans arrêt de nouvelles choses.
 Je souhaite me spécialiser dans le ***DevOps*** et la sécurité.
 
-Anglais **C2** et Espagnol intermédiaire.
+Anglais ***C2*** et Espagnol intermédiaire.
 
 ## Contact:
   - LinkedIn: [*David DEBRAY*](https://www.linkedin.com/in/david-debray-a85b8629/)
@@ -144,4 +144,4 @@ Musique, Cinéma, Lecture, Sport *(Crossfit, Course, Yoga)*, Cuisine, Langues é
 Planification, Gestion de Risques, Management d'équipe, Organisation de Budget, Clôture de Projet & REX, Processus ITIL, Contrat de service, Rédaction d'appel d'offre.
 
 ## Transverses
-Anglais **C2**, Espagnol intermédiaire, Communication, Formation aux utilisateurs, Traduction & Rédaction de Documentations Techniques & Manuels d'utilisation.
+Anglais ***C2***, Espagnol intermédiaire, Communication, Formation aux utilisateurs, Traduction & Rédaction de Documentations Techniques & Manuels d'utilisation.
