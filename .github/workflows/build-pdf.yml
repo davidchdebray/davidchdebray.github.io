@@ -1,4 +1,4 @@
-name: Build CV PDF
+name: Build CV PDF – separate jobs (uses pre‑built container)
 
 # -------------------------------------------------
 # When to run the workflow
@@ -7,110 +7,81 @@ on:
   push:
     paths:
       - 'cv.md'               # Re‑run when the source markdown changes
-  workflow_dispatch:          # Manual trigger from the UI
+  workflow_dispatch:          # Allows manual triggering from the UI
 
+# -------------------------------------------------
+# 1️⃣ Checkout job – fetches the repo
+# -------------------------------------------------
 jobs:
+  checkout:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+# -------------------------------------------------
+# 2️⃣ Build job – runs inside the custom Docker image
+# -------------------------------------------------
   build:
     runs-on: ubuntu-latest
+    needs: checkout                 # Wait for checkout to finish
+    permissions:
+      contents: read
     container:
-      image: ghcr.io/davidchdebray/pandoc-texlive-full:latest
+      image: ghcr.io/davidchdebray/pandoc-texlive-full:latest   # ← your image
     steps:
-      - uses: actions/checkout@v4
-      - name: Build PDF
+      # Even though we already checked out in the previous job,
+      # we need the code inside this container as well.
+      - name: Checkout repository again
+        uses: actions/checkout@v4
+
+      - name: Create output folder
+        run: mkdir -p files
+
+      - name: Convert markdown → PDF with Pandoc
         run: |
-          mkdir -p files
           pandoc cv.md \
             --template=.github/workflows/template.tex \
             --pdf-engine=xelatex \
             -o files/DavidDebrayCV.pdf
 
+# -------------------------------------------------
+# 3️⃣ Artifact (and optional commit) job
+# -------------------------------------------------
+  artifact:
+    runs-on: ubuntu-latest
+    needs: build                    # Wait until the PDF exists
+    permissions:
+      contents: read
+      # Uncomment the line below if you later decide to push the PDF back to the repo
+      # contents: write
+    steps:
+      - name: Checkout repository again
+        uses: actions/checkout@v4
 
+      - name: Upload PDF as a workflow artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: DavidDebrayCV
+          path: files/DavidDebrayCV.pdf
 
-# # -------------------------------------------------
-# # Jobs (stages)
-# # -------------------------------------------------
-# jobs:
-#   # -----------------------------------------------------------------
-#   # 1️⃣ Checkout the repository
-#   # -----------------------------------------------------------------
-#   checkout:
-#     runs-on: ubuntu-latest
-#     permissions:
-#       contents: read
-#     steps:
-#       - name: Checkout repository
-#         uses: actions/checkout@v4
-
-#   # -----------------------------------------------------------------
-#   # 2️⃣ Install system packages (Pandoc + LaTeX)
-#   # -----------------------------------------------------------------
-#   install:
-#     runs-on: ubuntu-latest
-#     needs: checkout                     # Wait for checkout to finish
-#     permissions:
-#       contents: read
-#     steps:
-#       - name: Install Pandoc & TeX Live
-#         run: |
-#           sudo apt-get update
-#           sudo apt-get install -y pandoc texlive-full #texlive-xetex texlive-fonts-recommended 
-
-#   # -----------------------------------------------------------------
-#   # 3️⃣ Convert markdown → PDF with Pandoc
-#   # -----------------------------------------------------------------
-#   build:
-#     runs-on: ubuntu-latest
-#     needs: install                     # Wait for installation to finish
-#     permissions:
-#       contents: read
-#     steps:
-#       - name: Checkout repository again
-#         uses: actions/checkout@v4      # Needed because each job starts fresh
-
-#       - name: Build PDF with Pandoc
-#         run: |
-#           # Ensure the output directory exists
-#           mkdir -p files
-#           pandoc cv.md \
-#             --template=.github/workflows/template.tex \
-#             --pdf-engine=xelatex \
-#             -o files/DavidDebrayCV.pdf
-
-#   # -----------------------------------------------------------------
-#   # 4️⃣ Upload the PDF as an artifact (and optional commit)
-#   # -----------------------------------------------------------------
-#   artifact:
-#     runs-on: ubuntu-latest
-#     needs: build                       # Wait for the PDF to be created
-#     permissions:
-#       contents: read
-#       # Uncomment the line below if you later decide to push the PDF back
-#       # contents: write
-#     steps:
-#       - name: Checkout repository again
-#         uses: actions/checkout@v4
-
-#       - name: Upload PDF artifact
-#         uses: actions/upload-artifact@v3
-#         with:
-#           name: DavidDebrayCV
-#           path: files/DavidDebrayCV.pdf
-
-#       # -------------------------------------------------
-#       # Optional: commit the PDF back to the repo
-#       # -------------------------------------------------
-#       # - name: Configure git
-#       #   run: |
-#       #     git config user.name "github-actions[bot]"
-#       #     git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-#       #
-#       # - name: Move PDF to generated/
-#       #   run: |
-#       #     mkdir -p generated
-#       #     mv files/DavidDebrayCV.pdf generated/
-#       #
-#       # - name: Commit and push PDF
-#       #   run: |
-#       #     git add generated/DavidDebrayCV.pdf
-#       #     git diff-index --quiet HEAD || git commit -m "Add generated CV PDF"
-#       #     git push origin HEAD:${{ github.ref }}
+      # -------------------------------------------------
+      # OPTIONAL: Commit the generated PDF back to the repo
+      # -------------------------------------------------
+      # - name: Configure git for committing
+      #   run: |
+      #     git config user.name "github-actions[bot]"
+      #     git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+      #
+      # - name: Move PDF to a permanent location (e.g., generated/)
+      #   run: |
+      #     mkdir -p generated
+      #     mv files/DavidDebrayCV.pdf generated/
+      #
+      # - name: Commit & push the PDF
+      #   run: |
+      #     git add generated/DavidDebrayCV.pdf
+      #     git diff-index --quiet HEAD || git commit -m "Add generated CV PDF"
+      #     git push origin HEAD:${{ github.ref }}
