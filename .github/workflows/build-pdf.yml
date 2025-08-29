@@ -98,7 +98,18 @@ jobs:
       - name: Ensure target folder exists
         run: mkdir -p files
 
-      # 4️⃣ Stage, commit, and push the new PDF (only if it changed)
+      # 4️⃣ Show a quick hash of the PDF (helps you see if it really changed)
+      - name: Show PDF SHA‑256
+        run: |
+          if [ -f files/DavidDebrayCV.pdf ]; then
+            sha=$(sha256sum files/DavidDebrayCV.pdf | awk '{print $1}')
+            echo "📄 PDF SHA‑256 = $sha"
+          else
+            echo "❌ PDF not found!"
+            exit 1
+          fi
+
+      # 5️⃣ Stage, commit, and push the PDF (always commit)
       - name: Commit and push PDF
         env:
           GIT_AUTHOR_NAME: github-actions[bot]
@@ -108,9 +119,9 @@ jobs:
         run: |
           # Force‑add the PDF in case the path is ignored by .gitignore
           git add -f files/DavidDebrayCV.pdf
-          if ! git diff --cached --quiet; then
-            git commit -m "Update CV PDF (auto‑generated)"
-            git push origin master
-          else
-            echo "PDF unchanged – nothing to push."
-          fi
+          
+          # Always create a commit – the hash step above lets you see if the content actually changed
+          git commit -m "Update CV PDF (auto‑generated)" || echo "No changes to commit (file identical)."
+          
+          # Push the commit (if there was nothing to commit, this is a no‑op)
+          git push origin master
