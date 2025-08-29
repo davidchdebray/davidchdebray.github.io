@@ -6,71 +6,83 @@ name: Build CV PDF
 on:
   push:
     paths:
-      - 'cv.md'               # rebuild when the source markdown changes
-  workflow_dispatch:          # also allow manual triggers from the UI
+      - 'cv.md'               # Re‑run when the source markdown changes
+  workflow_dispatch:          # Manual trigger from the UI
 
 # -------------------------------------------------
-# The job definition
+# Jobs (stages)
 # -------------------------------------------------
 jobs:
-  build-pdf:
-    runs-on: ubuntu-latest                # use GitHub's Linux runner
+  # -----------------------------------------------------------------
+  # 1️⃣ Checkout the repository
+  # -----------------------------------------------------------------
+  checkout:
+    runs-on: ubuntu-latest
     permissions:
-      contents: read                      # needed for checkout
-      # If you later push the PDF back, add write permission:
-      # contents: write
-
+      contents: read
     steps:
-      # -------------------------------------------------
-      # 1️⃣ Checkout the repository
-      # -------------------------------------------------
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      # -------------------------------------------------
-      # 2️⃣ Install system packages (Pandoc + LaTeX engine)
-      # -------------------------------------------------
-      - name: Install Pandoc & TeX Live 
+  # -----------------------------------------------------------------
+  # 2️⃣ Install system packages (Pandoc + LaTeX)
+  # -----------------------------------------------------------------
+  install:
+    runs-on: ubuntu-latest
+    needs: checkout                     # Wait for checkout to finish
+    permissions:
+      contents: read
+    steps:
+      - name: Install Pandoc & TeX Live
         run: |
           sudo apt-get update
           sudo apt-get install -y pandoc texlive-xetex texlive-fonts-recommended
           sudo apt-get install -y texlive-full
 
-      # -------------------------------------------------
-      # 3️⃣ (Optional) Run a preprocessing script
-      # -------------------------------------------------
-      # Example: you could insert a title block, fix front‑matter, etc.
-      # If you don’t need any preprocessing, you can delete this step.
-      #
-      # - name: Pre‑process markdown (optional)
-      #   run: |
-      #     # Example: prepend a YAML header if missing
-      #     if ! grep -q '^---' cv.md; then
-      #       echo -e "---\ntitle: Curriculum Vitae\nauthor: Your Name\n---\n$(cat cv.md)" > cv.tmp && mv cv.tmp cv.md
-      #     fi
+  # -----------------------------------------------------------------
+  # 3️⃣ Convert markdown → PDF with Pandoc
+  # -----------------------------------------------------------------
+  build:
+    runs-on: ubuntu-latest
+    needs: install                     # Wait for installation to finish
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout repository again
+        uses: actions/checkout@v4      # Needed because each job starts fresh
 
-      # -------------------------------------------------
-      # 4️⃣ Convert markdown → PDF with Pandoc
-      # -------------------------------------------------
       - name: Build PDF with Pandoc
         run: |
-          pandoc cv.md --template=.github/workflows/template.tex --pdf-engine=xelatex -o files/DavidDebrayCV.pdf #--verbose
+          # Ensure the output directory exists
+          mkdir -p files
+          pandoc cv.md \
+            --template=.github/workflows/template.tex \
+            --pdf-engine=xelatex \
+            -o files/DavidDebrayCV.pdf
+
+  # -----------------------------------------------------------------
+  # 4️⃣ Upload the PDF as an artifact (and optional commit)
+  # -----------------------------------------------------------------
+  artifact:
+    runs-on: ubuntu-latest
+    needs: build                       # Wait for the PDF to be created
+    permissions:
+      contents: read
+      # Uncomment the line below if you later decide to push the PDF back
+      # contents: write
+    steps:
+      - name: Checkout repository again
+        uses: actions/checkout@v4
+
+      - name: Upload PDF artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: DavidDebrayCV
+          path: files/DavidDebrayCV.pdf
 
       # -------------------------------------------------
-      # 5️⃣ Upload the PDF as a workflow artifact
+      # Optional: commit the PDF back to the repo
       # -------------------------------------------------
-      # - name: Upload PDF artifact
-      #   uses: actions/upload-artifact@v3
-      #   with:
-      #     name: DavidDebrayCV
-      #     path: files/DavidDebrayCV.pdf
-
-      # -------------------------------------------------
-      # 6️⃣ (Optional) Commit the PDF back to the repo
-      # -------------------------------------------------
-      # Uncomment the block below if you want the PDF stored in the repo
-      # (e.g., under a `generated/` folder or as a release asset).
-      #
       # - name: Configure git
       #   run: |
       #     git config user.name "github-actions[bot]"
@@ -79,10 +91,10 @@ jobs:
       # - name: Move PDF to generated/
       #   run: |
       #     mkdir -p generated
-      #     mv CV.pdf generated/
+      #     mv files/DavidDebrayCV.pdf generated/
       #
       # - name: Commit and push PDF
       #   run: |
-      #     git add generated/CV.pdf
-      #     git diff-index --quiet HEAD || git commit -m "Add generated CV.pdf"
+      #     git add generated/DavidDebrayCV.pdf
+      #     git diff-index --quiet HEAD || git commit -m "Add generated CV PDF"
       #     git push origin HEAD:${{ github.ref }}
