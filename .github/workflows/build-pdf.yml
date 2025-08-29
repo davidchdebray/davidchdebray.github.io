@@ -81,7 +81,7 @@ jobs:
       - name: Checkout Pages branch
         uses: actions/checkout@v4
         with:
-          ref: main
+          ref: master
           token: ${{ secrets.GITHUB_TOKEN }}
 
       # 2️⃣ Pull the artifact we just uploaded (so we have the fresh PDF locally)
@@ -106,7 +106,7 @@ jobs:
           git add files/DavidDebrayCV.pdf
           if ! git diff --cached --quiet; then
             git commit -m "Update CV PDF (auto‑generated)"
-            git push origin main
+            git push origin master
           else
             echo "No changes detected – PDF is already up‑to‑date."
           fi
