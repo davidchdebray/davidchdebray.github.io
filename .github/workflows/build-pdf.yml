@@ -1,0 +1,87 @@
+name: Build CV PDF
+
+# -------------------------------------------------
+# When to run the workflow
+# -------------------------------------------------
+on:
+  push:
+    paths:
+      - 'cv.md'               # rebuild when the source markdown changes
+  workflow_dispatch:          # also allow manual triggers from the UI
+
+# -------------------------------------------------
+# The job definition
+# -------------------------------------------------
+jobs:
+  build-pdf:
+    runs-on: ubuntu-latest                # use GitHub's Linux runner
+    permissions:
+      contents: read                      # needed for checkout
+      # If you later push the PDF back, add write permission:
+      # contents: write
+
+    steps:
+      # -------------------------------------------------
+      # 1️⃣ Checkout the repository
+      # -------------------------------------------------
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # -------------------------------------------------
+      # 2️⃣ Install system packages (Pandoc + LaTeX engine)
+      # -------------------------------------------------
+      - name: Install Pandoc & TeX Live 
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y pandoc texlive-xetex texlive-fonts-recommended
+
+      # -------------------------------------------------
+      # 3️⃣ (Optional) Run a preprocessing script
+      # -------------------------------------------------
+      # Example: you could insert a title block, fix front‑matter, etc.
+      # If you don’t need any preprocessing, you can delete this step.
+      #
+      # - name: Pre‑process markdown (optional)
+      #   run: |
+      #     # Example: prepend a YAML header if missing
+      #     if ! grep -q '^---' cv.md; then
+      #       echo -e "---\ntitle: Curriculum Vitae\nauthor: Your Name\n---\n$(cat cv.md)" > cv.tmp && mv cv.tmp cv.md
+      #     fi
+
+      # -------------------------------------------------
+      # 4️⃣ Convert markdown → PDF with Pandoc
+      # -------------------------------------------------
+      - name: Build PDF with Pandoc
+        run: |
+          pandoc cv.md --template=template.tex --pdf-engine=xelatex -o DavidDebrayCV.pdf #--verbose
+
+      # -------------------------------------------------
+      # 5️⃣ Upload the PDF as a workflow artifact
+      # -------------------------------------------------
+      - name: Upload PDF artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: DavidDebrayCV
+          path: files/DavidDebrayCV.pdf
+
+      # -------------------------------------------------
+      # 6️⃣ (Optional) Commit the PDF back to the repo
+      # -------------------------------------------------
+      # Uncomment the block below if you want the PDF stored in the repo
+      # (e.g., under a `generated/` folder or as a release asset).
+      #
+      # - name: Configure git
+      #   run: |
+      #     git config user.name "github-actions[bot]"
+      #     git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+      #
+      # - name: Move PDF to generated/
+      #   run: |
+      #     mkdir -p generated
+      #     mv CV.pdf generated/
+      #
+      # - name: Commit and push PDF
+      #   run: |
+      #     git add generated/CV.pdf
+      #     git diff-index --quiet HEAD || git commit -m "Add generated CV.pdf"
+      #     git push origin HEAD:${{ github.ref }}
