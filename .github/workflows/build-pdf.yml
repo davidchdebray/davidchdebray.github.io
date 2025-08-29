@@ -25,7 +25,7 @@ jobs:
       # 1️⃣ Checkout the repository
       # -------------------------------------------------
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v3
 
       # -------------------------------------------------
       # 2️⃣ Install system packages (Pandoc + LaTeX engine)
@@ -54,16 +54,16 @@ jobs:
       # -------------------------------------------------
       - name: Build PDF with Pandoc
         run: |
-          pandoc cv.md --template=.github/workflows/template.tex --pdf-engine=xelatex -o DavidDebrayCV.pdf #--verbose
+          pandoc cv.md --template=.github/workflows/template.tex --pdf-engine=xelatex -o files/DavidDebrayCV.pdf #--verbose
 
       # -------------------------------------------------
       # 5️⃣ Upload the PDF as a workflow artifact
       # -------------------------------------------------
-      - name: Upload PDF artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: DavidDebrayCV
-          path: files/DavidDebrayCV.pdf
+      # - name: Upload PDF artifact
+      #   uses: actions/upload-artifact@v3
+      #   with:
+      #     name: DavidDebrayCV
+      #     path: files/DavidDebrayCV.pdf
 
       # -------------------------------------------------
       # 6️⃣ (Optional) Commit the PDF back to the repo
