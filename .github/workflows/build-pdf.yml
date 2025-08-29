@@ -81,7 +81,7 @@ jobs:
       - name: Checkout Pages branch
         uses: actions/checkout@v4
         with:
-          ref: gh-pages           # <-- change if you use a different branch/folder
+          ref: main
           token: ${{ secrets.GITHUB_TOKEN }}
 
       # 2️⃣ Pull the artifact we just uploaded (so we have the fresh PDF locally)
