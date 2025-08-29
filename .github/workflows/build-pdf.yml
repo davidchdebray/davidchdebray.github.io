@@ -1,4 +1,4 @@
-name: Build CV PDF (stage‑by‑stage)
+name: Build CV PDF
 
 # -------------------------------------------------
 # When to run the workflow
@@ -10,106 +10,91 @@ on:
   workflow_dispatch:          # Manual trigger from the UI
 
 # -------------------------------------------------
-# 1️⃣ Checkout job
+# Jobs (stages)
 # -------------------------------------------------
 jobs:
+  # -----------------------------------------------------------------
+  # 1️⃣ Checkout the repository
+  # -----------------------------------------------------------------
   checkout:
     runs-on: ubuntu-latest
     permissions:
       contents: read
-    outputs:
-      # Export the workspace path so downstream jobs can reuse it
-      workspace: ${{ github.workspace }}
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-# -------------------------------------------------
-# 2️⃣ Install job (TinyTeX + Pandoc)
-# -------------------------------------------------
+  # -----------------------------------------------------------------
+  # 2️⃣ Install system packages (Pandoc + LaTeX)
+  # -----------------------------------------------------------------
   install:
     runs-on: ubuntu-latest
-    needs: checkout                 # Wait for checkout to finish
+    needs: checkout                     # Wait for checkout to finish
     permissions:
       contents: read
     steps:
-      - name: Checkout repository again
-        uses: actions/checkout@v4   # Fresh runner needs the code again
-
-      - name: Install TinyTeX (small, fast)
+      - name: Install Pandoc & TeX Live
         run: |
-          # Grab TinyTeX (≈150 MB) – far quicker than texlive‑full
-          wget -qO- "https://yihui.org/tinytex/install-bin.sh" | sh
-          # Install the few packages most CV templates need
-          ~/.TinyTeX/bin/x86_64-linux/tlmgr install \
-            geometry \
-            fontspec \
-            xunicode \
-            xltxtra \
-            hyperref
-          # Add TinyTeX to PATH for later steps
-          echo "$HOME/.TinyTeX/bin/x86_64-linux" >> $GITHUB_PATH
+          sudo apt-get update
+          sudo apt-get install -y pandoc texlive-xetex texlive-fonts-recommended
+          sudo apt-get install -y texlive-full
 
-      - name: Install latest Pandoc
-        run: |
-          wget -qO- https://github.com/jgm/pandoc/releases/download/3.5/pandoc-3.5-linux-amd64.tar.gz |
-          tar xz --strip-components=1 -C /usr/local bin/pandoc
-          chmod +x /usr/local/bin/pandoc
-
-# -------------------------------------------------
-# 3️⃣ Build PDF job
-# -------------------------------------------------
+  # -----------------------------------------------------------------
+  # 3️⃣ Convert markdown → PDF with Pandoc
+  # -----------------------------------------------------------------
   build:
     runs-on: ubuntu-latest
-    needs: install                 # Wait for the tools to be ready
+    needs: install                     # Wait for installation to finish
     permissions:
       contents: read
     steps:
       - name: Checkout repository again
-        uses: actions/checkout@v4
-
-      - name: Ensure output folder exists
-        run: mkdir -p files
+        uses: actions/checkout@v4      # Needed because each job starts fresh
 
       - name: Build PDF with Pandoc
         run: |
+          # Ensure the output directory exists
+          mkdir -p files
           pandoc cv.md \
             --template=.github/workflows/template.tex \
             --pdf-engine=xelatex \
             -o files/DavidDebrayCV.pdf
 
-# -------------------------------------------------
-# 4️⃣ Artifact (and optional commit) job
-# -------------------------------------------------
+  # -----------------------------------------------------------------
+  # 4️⃣ Upload the PDF as an artifact (and optional commit)
+  # -----------------------------------------------------------------
   artifact:
     runs-on: ubuntu-latest
-    needs: build                  # Wait until the PDF exists
+    needs: build                       # Wait for the PDF to be created
     permissions:
       contents: read
-      # Uncomment the line below if you later want to push the PDF back to the repo
+      # Uncomment the line below if you later decide to push the PDF back
       # contents: write
     steps:
       - name: Checkout repository again
         uses: actions/checkout@v4
 
-      - name: Upload PDF as workflow artifact
+      - name: Upload PDF artifact
         uses: actions/upload-artifact@v3
         with:
           name: DavidDebrayCV
           path: files/DavidDebrayCV.pdf
 
       # -------------------------------------------------
-      # OPTIONAL: Commit the generated PDF back to the repo
+      # Optional: commit the PDF back to the repo
       # -------------------------------------------------
       # - name: Configure git
       #   run: |
       #     git config user.name "github-actions[bot]"
       #     git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
       #
-      # - name: Move PDF to a permanent folder (e.g., generated/)
+      # - name: Move PDF to generated/
       #   run: |
       #     mkdir -p generated
       #     mv files/DavidDebrayCV.pdf generated/
       #
       # - name: Commit and push PDF
       #   run: |
+      #     git add generated/DavidDebrayCV.pdf
+      #     git diff-index --quiet HEAD || git commit -m "Add generated CV PDF"
+      #     git push origin HEAD:${{ github.ref }}
