@@ -6,7 +6,7 @@ name: Build CV PDF – separate jobs (uses pre‑built container)
 on:
   push:
     paths:
-      - 'cv.md'               # rebuild when the source markdown changes
+      - 'cv.md'               # rebuild whenever the markdown source changes
   workflow_dispatch:          # manual trigger from the UI
 
 # -------------------------------------------------
@@ -39,7 +39,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Create output folder
-        run: mkdir -p files               # <-- this is the folder that maps to /files/ on the site
+        run: mkdir -p files               # <-- this folder maps to /files/ on the site
 
       - name: Convert markdown → PDF with Pandoc
         run: |
@@ -102,7 +102,8 @@ jobs:
           GIT_COMMITTER_NAME: github-actions[bot]
           GIT_COMMITTER_EMAIL: 41898282+github-actions[bot]@users.noreply.github.com
         run: |
-          git add files/DavidDebrayCV.pdf
+          # Force‑add the PDF in case the path is ignored by .gitignore
+          git add -f files/DavidDebrayCV.pdf
           if ! git diff --cached --quiet; then
             git commit -m "Update CV PDF (auto‑generated)"
             git push origin master
