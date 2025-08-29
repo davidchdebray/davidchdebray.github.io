@@ -47,10 +47,7 @@ jobs:
 
       - name: Convert markdown → PDF with Pandoc
         run: |
-          pandoc cv.md \
-            --template=.github/workflows/template.tex \
-            --pdf-engine=xelatex \
-            -o files/DavidDebrayCV.pdf
+          pandoc cv.md --template=.github/workflows/template.tex --pdf-engine=xelatex -o files/DavidDebrayCV.pdf
 
 # -------------------------------------------------
 # 3️⃣ Artifact job – makes the PDF available to the next job
