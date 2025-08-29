@@ -41,6 +41,10 @@ jobs:
       - name: Create output folder
         run: mkdir -p files               # <-- this folder maps to /files/ on the site
 
+      # *** NEW STEP – delete any stale PDF before we recreate it ***
+      - name: Delete old PDF (if it exists)
+        run: rm -f files/DavidDebrayCV.pdf
+
       - name: Convert markdown → PDF with Pandoc
         run: |
           pandoc cv.md \
