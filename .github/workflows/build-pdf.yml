@@ -1,17 +1,54 @@
-name: Build CV PDF (fast)
+name: Build CV PDF (stage‑by‑stage)
 
+# -------------------------------------------------
+# When to run the workflow
+# -------------------------------------------------
 on:
   push:
-    paths: ['cv.md']
-  workflow_dispatch:
+    paths:
+      - 'cv.md'               # Re‑run when the source markdown changes
+  workflow_dispatch:          # Manual trigger from the UI
 
+# -------------------------------------------------
+# 1️⃣ Checkout job
+# -------------------------------------------------
 jobs:
-  build:
+  checkout:
     runs-on: ubuntu-latest
-    container:
-      image: ghcr.io/jakejarvis/tinytex:latest   # pre‑installed TinyTeX
+    permissions:
+      contents: read
+    outputs:
+      # Export the workspace path so downstream jobs can reuse it
+      workspace: ${{ github.workspace }}
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+# -------------------------------------------------
+# 2️⃣ Install job (TinyTeX + Pandoc)
+# -------------------------------------------------
+  install:
+    runs-on: ubuntu-latest
+    needs: checkout                 # Wait for checkout to finish
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout repository again
+        uses: actions/checkout@v4   # Fresh runner needs the code again
+
+      - name: Install TinyTeX (small, fast)
+        run: |
+          # Grab TinyTeX (≈150 MB) – far quicker than texlive‑full
+          wget -qO- "https://yihui.org/tinytex/install-bin.sh" | sh
+          # Install the few packages most CV templates need
+          ~/.TinyTeX/bin/x86_64-linux/tlmgr install \
+            geometry \
+            fontspec \
+            xunicode \
+            xltxtra \
+            hyperref
+          # Add TinyTeX to PATH for later steps
+          echo "$HOME/.TinyTeX/bin/x86_64-linux" >> $GITHUB_PATH
 
       - name: Install latest Pandoc
         run: |
@@ -19,16 +56,60 @@ jobs:
           tar xz --strip-components=1 -C /usr/local bin/pandoc
           chmod +x /usr/local/bin/pandoc
 
-      - name: Build PDF
+# -------------------------------------------------
+# 3️⃣ Build PDF job
+# -------------------------------------------------
+  build:
+    runs-on: ubuntu-latest
+    needs: install                 # Wait for the tools to be ready
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout repository again
+        uses: actions/checkout@v4
+
+      - name: Ensure output folder exists
+        run: mkdir -p files
+
+      - name: Build PDF with Pandoc
         run: |
-          mkdir -p files
           pandoc cv.md \
             --template=.github/workflows/template.tex \
             --pdf-engine=xelatex \
             -o files/DavidDebrayCV.pdf
 
-      - name: Upload artifact
-        uses: actions/upload-artifact@v4
+# -------------------------------------------------
+# 4️⃣ Artifact (and optional commit) job
+# -------------------------------------------------
+  artifact:
+    runs-on: ubuntu-latest
+    needs: build                  # Wait until the PDF exists
+    permissions:
+      contents: read
+      # Uncomment the line below if you later want to push the PDF back to the repo
+      # contents: write
+    steps:
+      - name: Checkout repository again
+        uses: actions/checkout@v4
+
+      - name: Upload PDF as workflow artifact
+        uses: actions/upload-artifact@v3
         with:
           name: DavidDebrayCV
           path: files/DavidDebrayCV.pdf
+
+      # -------------------------------------------------
+      # OPTIONAL: Commit the generated PDF back to the repo
+      # -------------------------------------------------
+      # - name: Configure git
+      #   run: |
+      #     git config user.name "github-actions[bot]"
+      #     git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+      #
+      # - name: Move PDF to a permanent folder (e.g., generated/)
+      #   run: |
+      #     mkdir -p generated
+      #     mv files/DavidDebrayCV.pdf generated/
+      #
+      # - name: Commit and push PDF
+      #   run: |
