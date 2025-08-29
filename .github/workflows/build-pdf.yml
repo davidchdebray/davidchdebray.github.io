@@ -7,10 +7,10 @@ on:
   push:
     paths:
       - 'cv.md'               # Re‑run when the source markdown changes
-  workflow_dispatch:          # Allows manual triggering from the UI
+  workflow_dispatch:          # Manual trigger
 
 # -------------------------------------------------
-# 1️⃣ Checkout job – fetches the repo
+# 1️⃣ Checkout job – fetches the repo (optional, kept for symmetry)
 # -------------------------------------------------
 jobs:
   checkout:
@@ -26,15 +26,12 @@ jobs:
 # -------------------------------------------------
   build:
     runs-on: ubuntu-latest
-    needs: checkout                 # Wait for checkout to finish
+    needs: checkout
     permissions:
       contents: read
     container:
-      image: ghcr.io/davidchdebray/pandoc-texlive-full:latest   # ← your image
-      options: --user root   # <‑‑ run as root
+      image: ghcr.io/davidchdebray/pandoc-texlive-full:latest
     steps:
-      # Even though we already checked out in the previous job,
-      # we need the code inside this container as well.
       - name: Checkout repository again
         uses: actions/checkout@v4
 
@@ -49,15 +46,13 @@ jobs:
             -o files/DavidDebrayCV.pdf
 
 # -------------------------------------------------
-# 3️⃣ Artifact (and optional commit) job
+# 3️⃣ Artifact job – uploads the PDF as a workflow artifact
 # -------------------------------------------------
   artifact:
     runs-on: ubuntu-latest
-    needs: build                    # Wait until the PDF exists
+    needs: build
     permissions:
       contents: read
-      # Uncomment the line below if you later decide to push the PDF back to the repo
-      # contents: write
     steps:
       - name: Checkout repository again
         uses: actions/checkout@v4
@@ -69,33 +64,33 @@ jobs:
           path: files/DavidDebrayCV.pdf
 
 # -------------------------------------------------
-# 4️⃣ Publish job – pushes the PDF to the Pages branch
+# 4️⃣ Publish job – pushes the PDF to the master branch
 # -------------------------------------------------
   publish:
     runs-on: ubuntu-latest
-    needs: artifact                # wait until the PDF is uploaded
+    needs: artifact
     permissions:
-      contents: write             # needed to push a commit
+      contents: write            # Needed to push a commit
     steps:
-      # 1️⃣ Checkout the repo on the branch that GitHub Pages serves
-      - name: Checkout Pages branch
+      # ----- 1️⃣ Checkout the master branch that GitHub Pages builds from -----
+      - name: Checkout master branch
         uses: actions/checkout@v4
         with:
-          ref: master
+          ref: master            # <-- your site’s source branch
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      # 2️⃣ Pull the artifact we just uploaded (so we have the fresh PDF locally)
+      # ----- 2️⃣ Pull the PDF artifact we just created -----
       - name: Download PDF artifact
         uses: actions/download-artifact@v4
         with:
           name: DavidDebrayCV
-          path: ./files           # matches the URL path
+          path: ./files          # matches the URL path
 
-      # 3️⃣ Move the PDF into the correct location (if needed)
+      # ----- 3️⃣ Ensure the target folder exists (just in case) -----
       - name: Ensure target folder exists
         run: mkdir -p files
 
-      # 4️⃣ Stage, commit, and push the new PDF
+      # ----- 4️⃣ Commit & push the PDF only if it changed -----
       - name: Commit and push PDF
         env:
           GIT_AUTHOR_NAME:  github-actions[bot]
@@ -108,5 +103,5 @@ jobs:
             git commit -m "Update CV PDF (auto‑generated)"
             git push origin master
           else
-            echo "No changes detected – PDF is already up‑to‑date."
+            echo "PDF unchanged – nothing to push."
           fi
