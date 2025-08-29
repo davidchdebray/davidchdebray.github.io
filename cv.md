@@ -29,7 +29,7 @@ Musique, Cinéma, Lecture, Sport *(Crossfit, Course, Yoga)*, Cuisine, Langues é
 
 # Expériences Professionnelles
 ## Ingénieur Système
-**Capgemini, Rouen** - *(Septembre 2021 - )*
+**Capgemini, Rouen** - *(2021 - Present)*
 
 - Intégrateur Systèmes Windows & RHEL
 - VMWare
@@ -41,7 +41,7 @@ Musique, Cinéma, Lecture, Sport *(Crossfit, Course, Yoga)*, Cuisine, Langues é
 - Rédaction de documentations techniques, notes d'exploitation
 
 ## Responsable Ingénierie Systèmes & Réseaux
-**Polyclinique de l'Ormeau, Tarbes** - *(Octobre 2017 - Septembre 2019)*
+**Polyclinique de l'Ormeau, Tarbes** - *(2017 - 2019)*
 
 - **Alternance** sur 2 ans en formation avec le **CESI** de Pau, formation [***RISR***](RISR.pdf) (Bac+4)
 - Migration de l'outil de Supervision: *The Dude* vers *PRTG*
@@ -50,7 +50,7 @@ Musique, Cinéma, Lecture, Sport *(Crossfit, Course, Yoga)*, Cuisine, Langues é
 - Helpdesk
 
 ## Technicien Helpdesk
-**MGI Consultants, Pau** - *(Février - Juin 2015)*
+**MGI Consultants, Pau** - *(2015)*
 
 - SPOC. Migration parc informatique Vista vers Windows 10.
 - Support et accompagnement dans la mise en place de nouveaux outils et des applications de mobilité.
