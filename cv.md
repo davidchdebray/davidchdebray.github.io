@@ -145,27 +145,3 @@ Planification, Gestion de Risques, Management d'équipe, Organisation de Budget,
 
 ## Transverses
 Anglais ***C2***, Espagnol intermédiaire, Communication, Formation aux utilisateurs, Traduction & Rédaction de Documentations Techniques & Manuels d'utilisation.
-
-
-# Testing CV build
-## Sub title test
-### Subsubtitle
-
-List:
-
-- Item
-- some other stuff
-- and on and on
-
-1. One
-2. Two
-3. Three
-
-> Quote
-
-```bash
-# Commentary
-echo "This is a code block"
-```
-
-New stuff here, and there...

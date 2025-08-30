@@ -1,40 +1,23 @@
-# -------------------------------------------------
-# 1️⃣ Base image
-# -------------------------------------------------
+# File: Dockerfile
+FROM ubuntu:22.04
 
-# LTS Ubuntu – stable and widely used
-FROM ubuntu:22.04   
-
-# -------------------------------------------------
-# 2️⃣ Set non‑interactive mode (prevents apt prompts)
-# -------------------------------------------------
+# noninteractive installs
 ENV DEBIAN_FRONTEND=noninteractive
 
-# -------------------------------------------------
-# 3️⃣ Update apt cache and install the two packages
-# -------------------------------------------------
-RUN apt-get update && \
-    apt-get install -y --no-install-recommends \
+# Install Pandoc, XeLaTeX engine and core TeX Live collections
+RUN apt-get update \
+    && apt-get install -y --no-install-recommends \
     pandoc \
-    texlive-full && \
-    # Clean up apt caches to keep the layer size as small as possible
-    rm -rf /var/lib/apt/lists/*
+    texlive-full \
+    # texlive-xetex \
+    # texlive-latex-recommended \
+    # texlive-latex-extra \
+    # texlive-fonts-recommended \
+    # fonts-dejavu-core \
+    && rm -rf /var/lib/apt/lists/*
 
-# -------------------------------------------------
-# 4️⃣ Verify the installations (optional, helpful for debugging)
-# -------------------------------------------------
-RUN pandoc --version && \
-    texlua --version && \
-    tlmgr --version
+# Workdir where your repo will be mounted
+WORKDIR /data
 
-# -------------------------------------------------
-# 5️⃣ Use a non‑root user (best practice for CI)
-# -------------------------------------------------
-RUN useradd -m -s /bin/bash runner
-USER runner
-WORKDIR /home/runner
-
-# -------------------------------------------------
-# 6️⃣ Default entrypoint – just a shell (the CI runner will invoke pandoc directly)
-# -------------------------------------------------
-ENTRYPOINT ["/bin/bash"]
+# Default entrypoint is pandoc; you still pass arguments on `docker run`
+ENTRYPOINT ["pandoc"]

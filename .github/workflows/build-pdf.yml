@@ -1,120 +1,62 @@
-name: Build CV PDF with custom container
+# File: .github/workflows/build-cv.yml
+name: Build CV PDF
 
-# -------------------------------------------------
-# When to run the workflow
-# -------------------------------------------------
 on:
   push:
-    paths:
-      - 'cv.md'               # rebuild whenever the markdown source changes
-  workflow_dispatch:          # manual trigger from the UI
+    branches: [ master ]
+    paths:  
+      - 'cv.md'
+  pull_request:
+    branches: [ master ]
+    paths:  
+      - 'cv.md'
 
-# -------------------------------------------------
-# 1️⃣ Checkout job – fetches the repo (kept for symmetry)
-# -------------------------------------------------
 jobs:
   checkout:
+    name: 1. Checkout Repository
     runs-on: ubuntu-latest
-    permissions:
-      contents: read
+    outputs:
+      workspace: ${{ github.workspace }}
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
+      - name: Checkout code
+        uses: actions/checkout@v3
 
-# -------------------------------------------------
-# 2️⃣ Build job – runs inside the custom Docker image
-# -------------------------------------------------
-  build:
+  build-image:
+    name: 2. Build Docker Image
     runs-on: ubuntu-latest
     needs: checkout
-    permissions:
-      contents: read
-    container:
-      image: ghcr.io/davidchdebray/pandoc-texlive-full:latest
-      options: --user root               # run as root so we can write anywhere
     steps:
-      # The repository isn’t automatically present inside the container,
-      # so we check it out again.
-      - name: Checkout repository again
-        uses: actions/checkout@v4
-
-      - name: Create output folder
-        run: mkdir -p files               # <-- maps to /files/ on the site
-
-      # *** NEW STEP – delete any stale PDF before we recreate it ***
-      - name: Delete old PDF (if it exists)
-        run: rm -f files/DavidDebrayCV.pdf
-
-      - name: Convert markdown → PDF with Pandoc
+      - name: Build cv-builder image
         run: |
-          pandoc cv.md --template=.github/workflows/template.tex --pdf-engine=xelatex -o files/DavidDebrayCV.pdf
+          docker build . \
+            -t cv-builder:latest
 
-# -------------------------------------------------
-# 3️⃣ Artifact job – makes the PDF available to the next job
-# -------------------------------------------------
-  artifact:
+  generate-pdf:
+    name: 3. Generate DavidDebrayCV.pdf
     runs-on: ubuntu-latest
-    needs: build
-    permissions:
-      contents: read
+    needs: build-image
     steps:
-      - name: Checkout repository again
-        uses: actions/checkout@v4
-
-      # NOTE: the **name** here must match exactly what the publish job expects
-      - name: Upload PDF as a workflow artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: DavidDebrayCV          # <-- SAME NAME used later
-          path: files/DavidDebrayCV.pdf
-
-# -------------------------------------------------
-# 4️⃣ Publish job – pushes the PDF to the **master** branch
-# -------------------------------------------------
-  publish:
-    runs-on: ubuntu-latest
-    needs: artifact
-    permissions:
-      contents: write               # needed to push a commit
-    steps:
-      # 1️⃣ Checkout the master branch that GitHub Pages builds from
-      - name: Checkout master branch
-        uses: actions/checkout@v4
-        with:
-          ref: master               # <-- your site’s source branch
-          token: ${{ secrets.GITHUB_TOKEN }}
-          fetch-depth: 0            # full history – avoids shallow‑clone fetch errors
-
-      # 2️⃣ Pull the PDF artifact we just uploaded
-      - name: Download PDF artifact
-        uses: actions/download-artifact@v4
-        with:
-          name: DavidDebrayCV       # <-- must match the upload name
-          path: ./files             # matches the URL path (/files/…)
-
-      # 3️⃣ Ensure the target folder exists (defensive)
-      - name: Ensure target folder exists
+      - name: Ensure output directory exists
         run: mkdir -p files
 
-      # 4️⃣ Show a quick hash of the PDF (helps you see if it really changed)
-      - name: Show PDF SHA‑256
+      - name: Run pandoc inside the container
         run: |
-          sha=$(sha256sum files/DavidDebrayCV.pdf | awk '{print $1}')
-          echo "📄 PDF SHA‑256 = $sha"
+          docker run --rm \
+            -v "${{ github.workspace }}":/data \
+            -w /data \
+            ghcr.io/davidchdebray/pandoc-texlive-full:latest \
+            cv.md \
+            --template=.github/workflows/template.tex \
+            --pdf-engine=xelatex \
+            -o files/DavidDebrayCV.pdf
 
-      # 5️⃣ Stage, commit, and push the new PDF (always commit)
-      - name: Commit and push PDF
-        env:
-          GIT_AUTHOR_NAME: github-actions[bot]
-          GIT_AUTHOR_EMAIL: 41898282+github-actions[bot]@users.noreply.github.com
-          GIT_COMMITTER_NAME: github-actions[bot]
-          GIT_COMMITTER_EMAIL: 41898282+github-actions[bot]@users.noreply.github.com
-        run: |
-          # Force‑add the PDF in case the path is ignored by .gitignore
-          git add -f files/DavidDebrayCV.pdf
-          
-          # Create a commit – if the PDF is identical Git will skip creating a new commit
-          git commit -m "Update CV PDF (auto‑generated)" || echo "No changes to commit (file identical)."
-          
-          # Push the commit (if there was nothing to commit, this is a no‑op)
-          git push origin master
+  upload-artifact:
+    name: 4. Upload PDF Artifact
+    runs-on: ubuntu-latest
+    needs: generate-pdf
+    steps:
+      - name: Upload DavidDebrayCV.pdf
+        uses: actions/upload-artifact@v3
+        with:
+          name: DavidDebrayCV.pdf
+          path: files/DavidDebrayCV.pdf
