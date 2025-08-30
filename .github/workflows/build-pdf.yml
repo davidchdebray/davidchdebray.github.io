@@ -49,72 +49,72 @@ jobs:
         run: |
           pandoc cv.md --template=.github/workflows/template.tex --pdf-engine=xelatex -o files/DavidDebrayCV.pdf
 
-# # -------------------------------------------------
-# # 3️⃣ Artifact job – makes the PDF available to the next job
-# # -------------------------------------------------
-#   artifact:
-#     runs-on: ubuntu-latest
-#     needs: build
-#     permissions:
-#       contents: read
-#     steps:
-#       - name: Checkout repository again
-#         uses: actions/checkout@v4
+# -------------------------------------------------
+# 3️⃣ Artifact job – makes the PDF available to the next job
+# -------------------------------------------------
+  artifact:
+    runs-on: ubuntu-latest
+    needs: build
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout repository again
+        uses: actions/checkout@v4
 
-#       # NOTE: the **name** here must match exactly what the publish job expects
-#       - name: Upload PDF as a workflow artifact
-#         uses: actions/upload-artifact@v4
-#         with:
-#           name: DavidDebrayCV          # <-- SAME NAME used later
-#           path: files/DavidDebrayCV.pdf
+      # NOTE: the **name** here must match exactly what the publish job expects
+      - name: Upload PDF as a workflow artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: DavidDebrayCV          # <-- SAME NAME used later
+          path: files/DavidDebrayCV.pdf
 
-# # -------------------------------------------------
-# # 4️⃣ Publish job – pushes the PDF to the **master** branch
-# # -------------------------------------------------
-#   publish:
-#     runs-on: ubuntu-latest
-#     needs: artifact
-#     permissions:
-#       contents: write               # needed to push a commit
-#     steps:
-#       # 1️⃣ Checkout the master branch that GitHub Pages builds from
-#       - name: Checkout master branch
-#         uses: actions/checkout@v4
-#         with:
-#           ref: master               # <-- your site’s source branch
-#           token: ${{ secrets.GITHUB_TOKEN }}
-#           fetch-depth: 0            # full history – avoids shallow‑clone fetch errors
+# -------------------------------------------------
+# 4️⃣ Publish job – pushes the PDF to the **master** branch
+# -------------------------------------------------
+  publish:
+    runs-on: ubuntu-latest
+    needs: artifact
+    permissions:
+      contents: write               # needed to push a commit
+    steps:
+      # 1️⃣ Checkout the master branch that GitHub Pages builds from
+      - name: Checkout master branch
+        uses: actions/checkout@v4
+        with:
+          ref: master               # <-- your site’s source branch
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0            # full history – avoids shallow‑clone fetch errors
 
-#       # 2️⃣ Pull the PDF artifact we just uploaded
-#       - name: Download PDF artifact
-#         uses: actions/download-artifact@v4
-#         with:
-#           name: DavidDebrayCV       # <-- must match the upload name
-#           path: ./files             # matches the URL path (/files/…)
+      # 2️⃣ Pull the PDF artifact we just uploaded
+      - name: Download PDF artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: DavidDebrayCV       # <-- must match the upload name
+          path: ./files             # matches the URL path (/files/…)
 
-#       # 3️⃣ Ensure the target folder exists (defensive)
-#       - name: Ensure target folder exists
-#         run: mkdir -p files
+      # 3️⃣ Ensure the target folder exists (defensive)
+      - name: Ensure target folder exists
+        run: mkdir -p files
 
-#       # 4️⃣ Show a quick hash of the PDF (helps you see if it really changed)
-#       - name: Show PDF SHA‑256
-#         run: |
-#           sha=$(sha256sum files/DavidDebrayCV.pdf | awk '{print $1}')
-#           echo "📄 PDF SHA‑256 = $sha"
+      # 4️⃣ Show a quick hash of the PDF (helps you see if it really changed)
+      - name: Show PDF SHA‑256
+        run: |
+          sha=$(sha256sum files/DavidDebrayCV.pdf | awk '{print $1}')
+          echo "📄 PDF SHA‑256 = $sha"
 
-#       # 5️⃣ Stage, commit, and push the new PDF (always commit)
-#       - name: Commit and push PDF
-#         env:
-#           GIT_AUTHOR_NAME: github-actions[bot]
-#           GIT_AUTHOR_EMAIL: 41898282+github-actions[bot]@users.noreply.github.com
-#           GIT_COMMITTER_NAME: github-actions[bot]
-#           GIT_COMMITTER_EMAIL: 41898282+github-actions[bot]@users.noreply.github.com
-#         run: |
-#           # Force‑add the PDF in case the path is ignored by .gitignore
-#           git add -f files/DavidDebrayCV.pdf
+      # 5️⃣ Stage, commit, and push the new PDF (always commit)
+      - name: Commit and push PDF
+        env:
+          GIT_AUTHOR_NAME: github-actions[bot]
+          GIT_AUTHOR_EMAIL: 41898282+github-actions[bot]@users.noreply.github.com
+          GIT_COMMITTER_NAME: github-actions[bot]
+          GIT_COMMITTER_EMAIL: 41898282+github-actions[bot]@users.noreply.github.com
+        run: |
+          # Force‑add the PDF in case the path is ignored by .gitignore
+          git add -f files/DavidDebrayCV.pdf
           
-#           # Create a commit – if the PDF is identical Git will skip creating a new commit
-#           git commit -m "Update CV PDF (auto‑generated)" || echo "No changes to commit (file identical)."
+          # Create a commit – if the PDF is identical Git will skip creating a new commit
+          git commit -m "Update CV PDF (auto‑generated)" || echo "No changes to commit (file identical)."
           
-#           # Push the commit (if there was nothing to commit, this is a no‑op)
-#           git push origin master
+          # Push the commit (if there was nothing to commit, this is a no‑op)
+          git push origin master
