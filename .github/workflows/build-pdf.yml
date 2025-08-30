@@ -75,10 +75,6 @@ jobs:
           persist-credentials: true
           fetch-depth: 0
 
-      - name: Copy generated PDF into repo
-        run: |
-          cp files/DavidDebrayCV.pdf files/DavidDebrayCV.pdf
-
       - name: Configure Git
         run: |
           git config user.name "github-actions[bot]"
