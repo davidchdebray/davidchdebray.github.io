@@ -1,12 +1,14 @@
-# File: .github/workflows/build-cv.yml
+# .github/workflows/build-cv.yml
 name: Build CV PDF
 
 on:
   workflow_dispatch:
+
   push:
     branches: [ master ]
     paths:
       - "cv.md"
+
   pull_request:
     branches: [ master ]
     paths:
@@ -14,31 +16,28 @@ on:
 
 jobs:
 
-  show-layout:
-    name: 1. Show directory layout
+  checkout:
+    name: 1. Checkout repository
     runs-on: ubuntu-latest
+    outputs:
+      repo-path: ${{ github.workspace }}
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-
-      - name: List workspace
-        run: |
-          echo "→ pwd: $(pwd)"
-          ls -R .
 
   ensure-output:
-    name: 2. Ensure output folder exists
+    name: 2. Ensure output folder
     runs-on: ubuntu-latest
+    needs: checkout
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-
-      - name: Make files/ directory
+      - uses: actions/checkout@v4
+      - name: Create files/ dir
         run: mkdir -p files
 
   pull-image:
     name: 3. Pull Docker image
     runs-on: ubuntu-latest
+    needs: checkout
     steps:
       - name: Pull pandoc-texlive-full
         run: docker pull ghcr.io/davidchdebray/pandoc-texlive-full:latest
@@ -50,13 +49,11 @@ jobs:
       - ensure-output
       - pull-image
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-
+      - uses: actions/checkout@v4
       - name: Generate DavidDebrayCV.pdf
         run: |
           docker run --rm \
-            -v "${{ github.workspace }}":/data \
+            -v "${{ needs.checkout.outputs.repo-path }}":/data \
             -w /data \
             ghcr.io/davidchdebray/pandoc-texlive-full:latest \
             --template=./.github/workflows/template.tex \
@@ -64,25 +61,40 @@ jobs:
             cv.md \
             -o files/DavidDebrayCV.pdf
 
+      - name: Upload PDF artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: cv-pdf
+          path: files/DavidDebrayCV.pdf
+
   commit-pdf:
-    name: 5. Commit & push updated PDF
+    name: 5. Commit & Push updated PDF
     runs-on: ubuntu-latest
     needs: render-pdf
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
         with:
           persist-credentials: true
           fetch-depth: 0
+
+      - name: Download generated PDF
+        uses: actions/download-artifact@v3
+        with:
+          name: cv-pdf
+          path: .
+
+      - name: Place PDF into files/
+        run: |
+          mkdir -p files
+          mv DavidDebrayCV.pdf files/DavidDebrayCV.pdf
 
       - name: Configure Git
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-      - name: Commit & push
+      - name: Commit & push if changed
         run: |
           git add files/DavidDebrayCV.pdf
           git diff --quiet --exit-code || \
             (git commit -m "ci: auto-update CV PDF [skip ci]" && git push)
-
