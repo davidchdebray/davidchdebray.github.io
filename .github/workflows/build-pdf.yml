@@ -53,7 +53,7 @@ jobs:
       - name: Generate DavidDebrayCV.pdf
         run: |
           docker run --rm \
-            -v "${{ needs.checkout.outputs.repo-path }}":/data \
+            -v "${{ github.workspace }}":/data \
             -w /data \
             ghcr.io/davidchdebray/pandoc-texlive-full:latest \
             --template=./.github/workflows/template.tex \
