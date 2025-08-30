@@ -39,7 +39,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Create output folder
-        run: mkdir -p files               # <-- this folder maps to /files/ on the site
+        run: mkdir -p files               # <-- maps to /files/ on the site
 
       # *** NEW STEP – delete any stale PDF before we recreate it ***
       - name: Delete old PDF (if it exists)
@@ -47,7 +47,10 @@ jobs:
 
       - name: Convert markdown → PDF with Pandoc
         run: |
-          pandoc cv.md --template=.github/workflows/template.tex --pdf-engine=xelatex -o files/DavidDebrayCV.pdf
+          pandoc cv.md \
+            --template=.github/workflows/template.tex \
+            --pdf-engine=xelatex \
+            -o files/DavidDebrayCV.pdf
 
 # -------------------------------------------------
 # 3️⃣ Artifact job – makes the PDF available to the next job
@@ -61,10 +64,11 @@ jobs:
       - name: Checkout repository again
         uses: actions/checkout@v4
 
+      # NOTE: the **name** here must match exactly what the publish job expects
       - name: Upload PDF as a workflow artifact
         uses: actions/upload-artifact@v4
         with:
-          name: DavidDebrayCV
+          name: DavidDebrayCV          # <-- SAME NAME used later
           path: files/DavidDebrayCV.pdf
 
 # -------------------------------------------------
@@ -84,11 +88,11 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           fetch-depth: 0            # full history – avoids shallow‑clone fetch errors
 
-      # 2️⃣ Pull the PDF artifact we just created
+      # 2️⃣ Pull the PDF artifact we just uploaded
       - name: Download PDF artifact
         uses: actions/download-artifact@v4
         with:
-          name: DavidDebrayCV
+          name: DavidDebrayCV       # <-- must match the upload name
           path: ./files             # matches the URL path (/files/…)
 
       # 3️⃣ Ensure the target folder exists (defensive)
@@ -98,15 +102,10 @@ jobs:
       # 4️⃣ Show a quick hash of the PDF (helps you see if it really changed)
       - name: Show PDF SHA‑256
         run: |
-          if [ -f files/DavidDebrayCV.pdf ]; then
-            sha=$(sha256sum files/DavidDebrayCV.pdf | awk '{print $1}')
-            echo "📄 PDF SHA‑256 = $sha"
-          else
-            echo "❌ PDF not found!"
-            exit 1
-          fi
+          sha=$(sha256sum files/DavidDebrayCV.pdf | awk '{print $1}')
+          echo "📄 PDF SHA‑256 = $sha"
 
-      # 5️⃣ Stage, commit, and push the PDF (always commit)
+      # 5️⃣ Stage, commit, and push the new PDF (always commit)
       - name: Commit and push PDF
         env:
           GIT_AUTHOR_NAME: github-actions[bot]
@@ -117,7 +116,7 @@ jobs:
           # Force‑add the PDF in case the path is ignored by .gitignore
           git add -f files/DavidDebrayCV.pdf
           
-          # Always create a commit – the hash step above lets you see if the content actually changed
+          # Create a commit – if the PDF is identical Git will skip creating a new commit
           git commit -m "Update CV PDF (auto‑generated)" || echo "No changes to commit (file identical)."
           
           # Push the commit (if there was nothing to commit, this is a no‑op)
