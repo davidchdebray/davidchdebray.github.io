@@ -42,14 +42,5 @@ msg() {
 
 # --------------------- Building html & pdf --------------------- #
 echo -e "\e[31;43m Building html & pdf... \e[0m"
-cp ../cv.md .
-
-# # Build HTML
-# pandoc cv.md -s -c style.css -A footer.html --toc -o DavidDebrayCV.html
-# mv DavidDebrayCV.html ../files/DavidDebrayCV.html
-# Build PDF
-pandoc cv.md --template=template.tex --pdf-engine=xelatex -o DavidDebrayCV.pdf #--verbose
-mv DavidDebrayCV.pdf ../files/DavidDebrayCV.pdf
-# Cleaning
-rm cv.md
+pandoc ../cv.md --template=../.github/workflows/template.tex --pdf-engine=xelatex -o ../files/DavidDebrayCV.pdf
 echo -e "\e[31;43m      ==> Done. \e[0m"

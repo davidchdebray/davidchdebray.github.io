@@ -145,6 +145,3 @@ Planification, Gestion de Risques, Management d'équipe, Organisation de Budget,
 
 ## Transverses
 Anglais ***C2***, Espagnol intermédiaire, Communication, Formation aux utilisateurs, Traduction & Rédaction de Documentations Techniques & Manuels d'utilisation.
-
-# Testing
-Testing CV build
