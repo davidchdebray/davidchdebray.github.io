@@ -3,4 +3,9 @@ assets/.DS_Store
 assets/.DS_Store
 # *.sh
 Docker_pandoc/*
-!Docker_pandoc/Dockerfile
+!Docker_pandoc/Dockerfile # keep the Dockerfile
+
+# Ignore environment files that may contain sensitive information
+Docker_pandoc/.env
+
+*.sh
