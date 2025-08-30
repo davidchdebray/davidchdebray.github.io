@@ -1,4 +1,4 @@
-# File: .github/workflows/build-cv.yml
+# .github/workflows/build-cv.yml
 name: Build CV PDF
 
 on:
@@ -6,31 +6,31 @@ on:
   push:
     branches: [ master ]
     paths:
-      - "cv.md"
+      - 'cv.md'
   pull_request:
     branches: [ master ]
     paths:
-      - "cv.md"
+      - 'cv.md'
 
 jobs:
-
-  checkout:
-    name: 1. Checkout repository
+  build:
+    name: Generate & Upload CV
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
+      - name: Checkout repository
         uses: actions/checkout@v3
 
-  generate-pdf:
-    name: 2. Generate DavidDebrayCV.pdf
-    runs-on: ubuntu-latest
-    needs: checkout
-    steps:
-      - name: Pull pandoc-texlive-full image
-        run: docker pull ghcr.io/davidchdebray/pandoc-texlive-full:latest
+      - name: Show directory layout
+        run: |
+          echo "→ pwd: $(pwd)"
+          echo "→ files in repo:"
+          ls -R .
 
-      - name: Ensure output directory exists
+      - name: Ensure output folder
         run: mkdir -p files
+
+      - name: Pull pandoc-texlive container
+        run: docker pull ghcr.io/davidchdebray/pandoc-texlive-full:latest
 
       - name: Render PDF via Docker
         run: |
@@ -38,18 +38,13 @@ jobs:
             -v "${{ github.workspace }}":/data \
             -w /data \
             ghcr.io/davidchdebray/pandoc-texlive-full:latest \
-            cv.md \
-            --template=.github/workflows/template.tex \
+            --template=./.github/workflows/template.tex \
             --pdf-engine=xelatex \
+            cv.md \
             -o files/DavidDebrayCV.pdf
 
-  upload-artifact:
-    name: 3. Upload PDF artifact
-    runs-on: ubuntu-latest
-    needs: generate-pdf
-    steps:
-      - name: Upload DavidDebrayCV.pdf
+      - name: Upload CV.pdf
         uses: actions/upload-artifact@v3
         with:
-          name: DavidDebrayCV.pdf
+          name: CV.pdf
           path: files/DavidDebrayCV.pdf
