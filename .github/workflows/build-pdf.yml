@@ -6,60 +6,57 @@ on:
   push:
     branches: [ master ]
     paths:
-      - 'cv.md'
+      - "cv.md"
   pull_request:
     branches: [ master ]
     paths:
-      - 'cv.md'
+      - "cv.md"
 
 jobs:
 
-  checkout:
-    name: 1. Checkout repository
+  show-layout:
+    name: 1. Show directory layout
     runs-on: ubuntu-latest
-    outputs:
-      repo-path: ${{ github.workspace }}
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
 
-  show-layout:
-    name: 2. Show directory layout
-    runs-on: ubuntu-latest
-    needs: checkout
-    steps:
-      - name: List all files
+      - name: List workspace
         run: |
-          echo "Working directory: ${{ needs.checkout.outputs.repo-path }}"
-          ls -R ${{ needs.checkout.outputs.repo-path }}
+          echo "→ pwd: $(pwd)"
+          ls -R .
 
   ensure-output:
-    name: 3. Ensure output folder exists
+    name: 2. Ensure output folder exists
     runs-on: ubuntu-latest
-    needs: checkout
     steps:
-      - name: Create files/ directory
-        run: mkdir -p ${{ needs.checkout.outputs.repo-path }}/files
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Make files/ directory
+        run: mkdir -p files
 
   pull-image:
-    name: 4. Pull Docker image
+    name: 3. Pull Docker image
     runs-on: ubuntu-latest
-    needs: checkout
     steps:
-      - name: docker pull pandoc-texlive-full
+      - name: Pull pandoc-texlive-full
         run: docker pull ghcr.io/davidchdebray/pandoc-texlive-full:latest
 
   render-pdf:
-    name: 5. Render PDF via Docker
+    name: 4. Render PDF via Docker
     runs-on: ubuntu-latest
     needs:
       - ensure-output
       - pull-image
     steps:
-      - name: Render DavidDebrayCV.pdf
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Generate DavidDebrayCV.pdf
         run: |
           docker run --rm \
-            -v "${{ needs.checkout.outputs.repo-path }}":/data \
+            -v "${{ github.workspace }}":/data \
             -w /data \
             ghcr.io/davidchdebray/pandoc-texlive-full:latest \
             --template=./.github/workflows/template.tex \
@@ -67,13 +64,29 @@ jobs:
             cv.md \
             -o files/DavidDebrayCV.pdf
 
-  upload-artifact:
-    name: 6. Upload CV artifact
+  commit-pdf:
+    name: 5. Commit & push updated PDF
     runs-on: ubuntu-latest
     needs: render-pdf
     steps:
-      - name: Upload DavidDebrayCV.pdf
-        uses: actions/upload-artifact@v4
+      - name: Checkout code
+        uses: actions/checkout@v4
         with:
-          name: DavidDebrayCV.pdf
-          path: files/DavidDebrayCV.pdf
+          persist-credentials: true
+          fetch-depth: 0
+
+      - name: Copy generated PDF into repo
+        run: |
+          cp files/DavidDebrayCV.pdf files/DavidDebrayCV.pdf
+
+      - name: Configure Git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Commit & push
+        run: |
+          git add files/DavidDebrayCV.pdf
+          git diff --quiet --exit-code || \
+            (git commit -m "ci: auto-update CV PDF [skip ci]" && git push)
+
