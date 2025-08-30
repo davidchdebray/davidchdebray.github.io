@@ -1,4 +1,4 @@
-# .github/workflows/build-cv.yml
+# File: .github/workflows/build-cv.yml
 name: Build CV PDF
 
 on:
@@ -13,29 +13,53 @@ on:
       - 'cv.md'
 
 jobs:
-  build:
-    name: Generate & Upload CV
+
+  checkout:
+    name: 1. Checkout repository
     runs-on: ubuntu-latest
+    outputs:
+      repo-path: ${{ github.workspace }}
     steps:
-      - name: Checkout repository
+      - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Show directory layout
+  show-layout:
+    name: 2. Show directory layout
+    runs-on: ubuntu-latest
+    needs: checkout
+    steps:
+      - name: List all files
         run: |
-          echo "→ pwd: $(pwd)"
-          echo "→ files in repo:"
-          ls -R .
+          echo "Working directory: ${{ needs.checkout.outputs.repo-path }}"
+          ls -R ${{ needs.checkout.outputs.repo-path }}
 
-      - name: Ensure output folder
-        run: mkdir -p files
+  ensure-output:
+    name: 3. Ensure output folder exists
+    runs-on: ubuntu-latest
+    needs: checkout
+    steps:
+      - name: Create files/ directory
+        run: mkdir -p ${{ needs.checkout.outputs.repo-path }}/files
 
-      - name: Pull pandoc-texlive container
+  pull-image:
+    name: 4. Pull Docker image
+    runs-on: ubuntu-latest
+    needs: checkout
+    steps:
+      - name: docker pull pandoc-texlive-full
         run: docker pull ghcr.io/davidchdebray/pandoc-texlive-full:latest
 
-      - name: Render PDF via Docker
+  render-pdf:
+    name: 5. Render PDF via Docker
+    runs-on: ubuntu-latest
+    needs:
+      - ensure-output
+      - pull-image
+    steps:
+      - name: Render DavidDebrayCV.pdf
         run: |
           docker run --rm \
-            -v "${{ github.workspace }}":/data \
+            -v "${{ needs.checkout.outputs.repo-path }}":/data \
             -w /data \
             ghcr.io/davidchdebray/pandoc-texlive-full:latest \
             --template=./.github/workflows/template.tex \
@@ -43,8 +67,13 @@ jobs:
             cv.md \
             -o files/DavidDebrayCV.pdf
 
-      - name: Upload CV.pdf
+  upload-artifact:
+    name: 6. Upload CV artifact
+    runs-on: ubuntu-latest
+    needs: render-pdf
+    steps:
+      - name: Upload DavidDebrayCV.pdf
         uses: actions/upload-artifact@v4
         with:
-          name: CV.pdf
+          name: DavidDebrayCV.pdf
           path: files/DavidDebrayCV.pdf
