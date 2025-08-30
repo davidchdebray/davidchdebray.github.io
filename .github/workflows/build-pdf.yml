@@ -2,6 +2,7 @@
 name: Build CV PDF
 
 on:
+  workflow_dispatch:
   push:
     branches: [ master ]
     paths:  
