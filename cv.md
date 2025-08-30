@@ -147,12 +147,29 @@ Planification, Gestion de Risques, Management d'équipe, Organisation de Budget,
 Anglais ***C2***, Espagnol intermédiaire, Communication, Formation aux utilisateurs, Traduction & Rédaction de Documentations Techniques & Manuels d'utilisation.
 
 
-### Testing CV Build
 
-Yo this is a simple test for workflow integration.
+---
 
-1. Is it working ? 
-2. What about now ??
-3. ???
-4. ????
-5. ?????
+---
+
+# Testing CV build
+## Sub title test
+### Subsubtitle
+
+List:
+
+- Item
+- some other stuff
+- and on and on
+
+1. One
+2. Two
+3. Three
+
+> Quote
+
+```bash
+# Commentary
+echo "This is a code block"
+```
+
