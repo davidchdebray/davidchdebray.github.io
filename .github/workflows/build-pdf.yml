@@ -1,6 +1,5 @@
 # .github/workflows/build-cv.yml
 name: Build CV PDF
-
 on:
   workflow_dispatch:
   push:
@@ -11,21 +10,20 @@ on:
     branches: [ master ]
     paths:
       - "cv.md"
-
+      
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
+      - name: Checkout repository
         uses: actions/checkout@v4
-
-      - name: Running system update
-        run: sudo apt-get update
+        with:
+          persist-credentials: true  # Needed for pushing
 
       - name: Install requirements
         run: sudo apt-get update && sudo apt-get install -y pandoc texlive-xetex texlive-fonts-extra
 
-      - name: Build PDF
+      - name: Generate PDF with Pandoc
         run: pandoc cv.md --template=.github/workflows/template.tex --pdf-engine=xelatex -o files/DavidDebrayCV.pdf
 
       - name: Upload PDF artifact
@@ -34,12 +32,12 @@ jobs:
           name: DavidDebrayCV
           path: files/DavidDebrayCV.pdf
 
-      - name: Commit and push updated CV
+      - name: Commit and push updated PDF
         run: |
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git config --global user.name "github-actions[bot]"
           git add files/DavidDebrayCV.pdf
-          git commit -m "Update DavidDebrayCV.pdf via workflow"
+          git diff --cached --quiet files/DavidDebrayCV.pdf || git commit -m "Update CV PDF via workflow"
           git push
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}    
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  
