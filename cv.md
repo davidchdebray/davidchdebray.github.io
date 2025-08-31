@@ -21,6 +21,7 @@ Anglais ***C2*** et Espagnol intermédiaire.
   - LinkedIn: [*David DEBRAY*](https://www.linkedin.com/in/david-debray-a85b8629/)
   - Website: [*davidchdebray.github.io*](https://davidchdebray.github.io)
   - Mail: [*david.debray@pm.me*](mailto:david.debray@pm.me)
+  - Github: [*davidchdebray.github.io*](https://davidchdebray.github.io/)
   <!-- - Telegram: ? -->
 
 
@@ -145,3 +146,4 @@ Planification, Gestion de Risques, Management d'équipe, Organisation de Budget,
 
 ## Transverses
 Anglais ***C2***, Espagnol intermédiaire, Communication, Formation aux utilisateurs, Traduction & Rédaction de Documentations Techniques & Manuels d'utilisation.
+
