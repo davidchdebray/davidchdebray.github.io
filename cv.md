@@ -148,3 +148,9 @@ Anglais ***C2***, Espagnol intermédiaire, Communication, Formation aux utilisat
 
 # Testing
 Testing CV build
+
+## New build test 
+
+- Running **CV Build** in *custom* `docker container`.
+
+Using [Github actions](https://davidchdebray.githu.io), `pandoc` & `textlive-full` packages with Ubuntu 22.04 image.
