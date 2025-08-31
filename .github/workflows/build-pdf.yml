@@ -11,16 +11,22 @@ on:
     branches: [ master ]
     paths:
       - "cv.md"
-      
+
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4 # Checkout the repository
       - name: Install dependencies
         run: |
           sudo apt-get update
-          sudo apt-get install -y pandoc texlive-xetex
-      - name: Build PDF
+          sudo apt-get install -y texlive-fonts-extra fonts-linuxlibertine
+        
+        
+  generate-pdf:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: generate-pdf
         run: |
           pandoc cv.md --template=.github/workflows/template.tex --pdf-engine=xelatex -o files/DavidDebrayCV.pdf
