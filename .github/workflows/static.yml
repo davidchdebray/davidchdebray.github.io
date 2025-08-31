@@ -9,7 +9,8 @@ on:
       - 'assets/**'
       - 'files/**'
       - '.github/workflows/static.yml'
-    # branches: ["master"]
+      - files/DavidDebrayCV.pdf
+    branches: ["master"]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
