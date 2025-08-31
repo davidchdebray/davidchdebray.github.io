@@ -17,7 +17,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Running system update
         run: sudo apt-get update
@@ -29,7 +29,7 @@ jobs:
         run: pandoc cv.md --template=.github/workflows/template.tex --pdf-engine=xelatex -o files/DavidDebrayCV.pdf
 
       - name: Upload PDF artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: DavidDebrayCV
           path: files/DavidDebrayCV.pdf
