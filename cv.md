@@ -154,3 +154,8 @@ Testing CV build
 - Running **CV Build** in *custom* `docker container`.
 
 Using [Github actions](https://github.com/davidchdebray/davidchdebray.github.io/actions), `pandoc` & `textlive-full` packages with Ubuntu 22.04 image.
+
+## New CV build without Docker
+
+Instead of Docker, using Github runner with pandoc and tex-live packages installed + artifact upload.
+
