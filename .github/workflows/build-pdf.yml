@@ -27,12 +27,9 @@ jobs:
         run: mkdir -p files
 
       - name: Generate DavidDebrayCV.pdf
+      # repository root is auto-mounted inside this container
         run: |
-          # repository root is auto-mounted inside this container
-          pandoc cv.md \
-            --template=.github/workflows/template.tex \
-            --pdf-engine=xelatex \
-            -o files/DavidDebrayCV.pdf
+          docker run --rm -v "$(pwd)":/data -w /data ghcr.io/davidchdebray/pandoc-texlive-full:latest cv.md --template=.github/workflows/template.tex --pdf-engine=xelatex -o files/DavidDebrayCV.pdf
 
       - name: Upload PDF artifact
         uses: actions/upload-artifact@v4
