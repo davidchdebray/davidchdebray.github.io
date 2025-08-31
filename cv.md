@@ -22,7 +22,7 @@ Anglais ***C2*** et Espagnol intermédiaire.
   - Website: [*davidchdebray.github.io*](https://davidchdebray.github.io)
   - Mail: [*david.debray@pm.me*](mailto:david.debray@pm.me)
   - Github: [*davidchdebray.github.io*](https://davidchdebray.github.io/)
-  <!-- - Telegram: ? -->
+  - Telegram: [*@D1d4v*](Telegram@D1d4v)
 
 
 ## Intérêts & Loisirs:
