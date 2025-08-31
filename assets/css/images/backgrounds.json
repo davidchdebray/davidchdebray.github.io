@@ -41,6 +41,13 @@
          "source": "HTLM5UP",
          "sourceUrl": "https://html5up.net/aerial",
          "id": "bg"
+      },
+      {
+         "filename": "backgrounds/Tahiti.jpeg",
+         "title": "Rangoroa, Tahiti",
+         "source": "Vacances perso",
+         "sourceUrl": "",
+         "id": ""
       }
    ]
 }
