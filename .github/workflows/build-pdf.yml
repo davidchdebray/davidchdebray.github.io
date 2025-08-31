@@ -10,7 +10,7 @@ on:
     branches: [ master ]
     paths:
       - "cv.md"
-      
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -40,4 +40,24 @@ jobs:
           git diff --cached --quiet files/DavidDebrayCV.pdf || git commit -m "Update CV PDF via workflow"
           git push
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  deploy:
+    needs: build
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          # Upload entire repository
+          path: '.'
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
