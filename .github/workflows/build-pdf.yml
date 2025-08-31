@@ -33,3 +33,13 @@ jobs:
         with:
           name: DavidDebrayCV
           path: files/DavidDebrayCV.pdf
+
+      - name: Commit and push updated CV
+        run: |
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "github-actions[bot]"
+          git add files/DavidDebrayCV.pdf
+          git commit -m "Update DavidDebrayCV.pdf via workflow"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}    
