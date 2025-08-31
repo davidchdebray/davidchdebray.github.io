@@ -11,6 +11,13 @@ on:
       - '.github/workflows/static.yml'
       - files/DavidDebrayCV.pdf
     branches: ["master"]
+  workflow_run:
+    # this must match the name: field in build-pdf.yml
+    workflows:
+      - Build CV PDF
+    # only fire when build-pdf has finished
+    types:
+      - completed
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
