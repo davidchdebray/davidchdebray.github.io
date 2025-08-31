@@ -24,6 +24,12 @@ jobs:
 
       - name: Install requirements
         run: sudo apt-get update && sudo apt-get install -y pandoc texlive-xetex texlive-fonts-extra
-        
+
       - name: Build PDF
         run: pandoc cv.md --template=.github/workflows/template.tex --pdf-engine=xelatex -o files/DavidDebrayCV.pdf
+
+      - name: Upload PDF artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: DavidDebrayCV
+          path: files/DavidDebrayCV.pdf
