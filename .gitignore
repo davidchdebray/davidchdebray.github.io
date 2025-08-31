@@ -9,3 +9,4 @@ Docker_pandoc/*
 Docker_pandoc/.env
 
 *.sh
+*.bak

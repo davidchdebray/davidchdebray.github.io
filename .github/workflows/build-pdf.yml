@@ -11,56 +11,16 @@ on:
     branches: [ master ]
     paths:
       - "cv.md"
-
+      
 jobs:
-
-  render-pdf:
-    name: 1. Render & upload PDF
+  build:
     runs-on: ubuntu-latest
-    container:
-      image: ghcr.io/davidchdebray/pandoc-texlive-full:latest
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
-      - name: Create output directory
-        run: mkdir -p files
-
-      - name: Generate DavidDebrayCV.pdf
-      # repository root is auto-mounted inside this container
+      - uses: actions/checkout@v3
+      - name: Install dependencies
         run: |
-          docker run --rm -v "$(pwd)":/data -w /data ghcr.io/davidchdebray/pandoc-texlive-full:latest cv.md --template=.github/workflows/template.tex --pdf-engine=xelatex -o files/DavidDebrayCV.pdf
-
-      - name: Upload PDF artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: cv-pdf
-          path: files/DavidDebrayCV.pdf
-
-  commit-pdf:
-    name: 2. Commit & push updated PDF
-    runs-on: ubuntu-latest
-    needs: render-pdf
-    steps:
-      - name: Checkout repository (with push access)
-        uses: actions/checkout@v4
-        with:
-          persist-credentials: true
-          fetch-depth: 0
-
-      - name: Download generated PDF
-        uses: actions/download-artifact@v4
-        with:
-          name: cv-pdf
-          path: files
-
-      - name: Configure Git user
+          sudo apt-get update
+          sudo apt-get install -y pandoc texlive-xetex
+      - name: Build PDF
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-
-      - name: Commit & push if changed
-        run: |
-          git add files/DavidDebrayCV.pdf
-          git diff --quiet --exit-code || \
-            (git commit -m "ci: auto-update CV PDF [skip ci]" && git push)
+          pandoc cv.md --template=.github/workflows/template.tex --pdf-engine=xelatex -o files/DavidDebrayCV.pdf
