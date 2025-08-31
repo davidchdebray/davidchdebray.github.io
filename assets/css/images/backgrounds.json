@@ -44,10 +44,17 @@
       },
       {
          "filename": "backgrounds/Tahiti.jpeg",
-         "title": "Rangoroa, Tahiti",
-         "source": "Vacances perso",
+         "title": "Rangoroa, Tahiti, Polinésie Française",
+         "source": "David DEBRAY",
          "sourceUrl": "",
          "id": ""
+      },
+      {
+         "filename": "backgrounds/pexels-mel-jlt-1582232815-27604498.jpg",
+         "title": "Moorea, Tahiti, Polinésie Française",
+         "source": "Mel Jlt",
+         "sourceUrl": "https://www.pexels.com/photo/coucher-de-soleil-27604498/",
+         "id": "coucher-de-soleil-27604498"
       }
    ]
 }
