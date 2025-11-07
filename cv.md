@@ -110,6 +110,8 @@ Musique, Cinéma, Lecture, Sport *(Crossfit, Course, Yoga)*, Cuisine, Langues é
 
 # Compétences
 ## Certifications
+
+- Google Cloud Platform (GCP) [Professional Cloud DevOps Engineer Certification](https://www.credly.com/badges/a42c3250-c31f-4c1a-b7d7-6de44834d819/public_url) *(05/11/2025)*
 - The Linux Foundation: [CKA: Certified Kubernetes Administrator](https://www.credly.com/badges/bbdcb0ef-5f6b-474d-b668-1fcf17567cf1/linked_in_profile) *(25/04/2024)*
 - Red Hat Accredited Professional: [Red Hat Delivery Specialist - Automation](Red Hat Delivery Specialist - Automation.pdf) *(14/04/2023)*
 - HashiCorp Certified: [Terraform Associate (002)](https://www.credly.com/badges/654a0b1c-887d-4d3a-9fd3-14a9cc9297bd/public_url) *(28/02/2023)*
