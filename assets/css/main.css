@@ -344,3 +344,85 @@
 		#header nav {
 			padding: 0 1em;
 		} } }
+
+
+/* ------------------------------------------------------ */
+/* Effet de zoom au survol des icônes (header + footer)   */
+/* ------------------------------------------------------ */
+
+#header nav li a,
+#footer ul li a {
+	transition: transform 0.25s ease-in-out;
+}
+
+#header nav li a:hover,
+#footer ul li a:hover {
+	transform: scale(1.25);
+}
+
+
+/* ------------------------------------------------------ */
+/* Tooltips Bootstrap toujours au-dessus du site           */
+/* ------------------------------------------------------ */
+
+.tooltip {
+	z-index: 999999 !important;
+}
+
+.tooltip .tooltip-inner {
+	font-size: 14px;
+	padding: 6px 10px;
+	background-color: rgba(0, 0, 0, 0.85);
+}
+
+.tooltip.top .tooltip-arrow {
+	border-top-color: rgba(0, 0, 0, 0.85);
+}
+
+/* Titres élégants et modernisés */
+#header h1,
+#header h2,
+#header h3 {
+	font-family: "Source Sans Pro", "Segoe UI", sans-serif;
+	font-weight: 300;
+	letter-spacing: 0.03em;
+	text-shadow: 0 4px 10px rgba(0, 0, 0, 0.55);
+	margin-bottom: 0.4em;
+	transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+/* Taille et hiérarchie visuelle */
+#header h1 {
+	font-size: 4.2em;
+	font-weight: 600;
+	letter-spacing: -0.02em;
+}
+#header h1::after {
+	content: "";
+	display: block;
+	width: 60px;
+	height: 2px;
+	background: rgba(255, 255, 255, 0.6);
+	margin: 0.4em auto 0.6em auto;
+	border-radius: 2px;
+}
+
+#header h2 {
+	font-size: 2.1em;
+	opacity: 0.9;
+}
+
+#header h3 {
+	font-size: 1.6em;
+	opacity: 0.85;
+	margin-bottom: 1.2em;
+	/* espace avec les icônes */
+}
+
+/* Effet subtil au survol */
+#header h1:hover,
+#header h2:hover,
+#header h3:hover {
+	opacity: 1;
+	transform: translateY(-2px);
+}
