@@ -34,29 +34,29 @@ Musique, Cinéma, Lecture, Sport *(Crossfit, Course, Yoga)*, Cuisine, Langues é
 - ITIL 4 Foundation [Certification](ITILv4-cert.pdf) *(12/10/2021)*
 
 ## COMPÉTENCES TECHNIQUES
-- **SecOps :** `Ethical Hacking` (Kali, Metasploit) • `Forensics` (Wireshark) • `Defense` (OpenVAS, NIST, MITRE) • `Capstone Project`
-- **DevOps :** `Cloud` (GCP Certified, AWS) • `IaC` (Terraform, Ansible, Puppet, Packer) • `K8s` • `Docker` • `CI/CD` (GitLab/GitHub)
-- **Infra & Virtu :** `Linux` (Debian, Arch, CentOS) • `Windows Server` (AD, GPO, Exchange) • `VMWare` • `Hyper-V` • `Veeam` (PRA/PCA)
-- **Réseaux & Sécu :** `Cisco` (VLAN, OSPF, EIGRP) • `Fortigate` • `pfSense` • `Supervision` (ELK, Prometheus, Grafana, PRTG)
-- **Automation & Doc :** `Python` • `Bash` • `PowerShell` • `Cron` • `Markdown` • `LaTeX` • `Jekyll` • `HTML/CSS`
+- **SecOps :** Kali, Metasploit, Wireshark, OpenVAS.
+- **DevOps :** Cloud *(GCP, AWS)*, IaC *(Terraform, Ansible, Puppet, Packer)*,  Kubernetes, Docker, CI/CD *(GitLab/GitHub, Jenkins)*.
+- **Infra & Virtu :** Linux *(Debian, Arch, CentOS)*, Windows Server *(AD, GPO, Exchange)*, VMWare/Hyper-V/Veeam, PRA/PCA.
+- **Réseaux & Sécu :** Cisco *(VLAN, OSPF, EIGRP)*, Supervision *(ELK, Prometheus, Grafana, PRTG)*.
+- **Automation & Doc :** Python, Bash, PowerShell, Cron, Markdown, LaTeX, Jekyll, HTML/CSS.
 
 ## GESTION DE PROJET & TRANSVERSES
-- **Management :** ITIL • Planification • Gestion de Risques • Budget • Appels d'offres • Contrat de service • REX
-- **Soft Skills :** Formation utilisateurs • Rédaction technique & manuels • Traduction • Communication inter-équipes
-- **Langues :** **Anglais (C2 - Bilingue)** • Espagnol (Intermédiaire)
+- **Management :** ITIL, Planification, Gestion de Risques, Budget, Appels d'offres, Contrat de service, REX
+- **Soft Skills :** Formation utilisateurs, Rédaction technique & manuels, Traduction, Communication inter-équipes
+- **Langues :** **Anglais (`C2` - Bilingue)**, Espagnol (niveau intermédiaire).
 
 
 # Expériences Professionnelles
 ## Ingénieur Système - DevOps
 **Capgemini, Rouen** - *(2021 - Present)*
 
-- Intégrateur Systèmes Windows & RHEL.
-- Ansible *(Core, APP, Semaphore)*.
-- IAM - IdentityIQ.
-- Scripting Shell & PowerShell.
-- Gestion Active Directory & Exchange.
-- Gestion d'incidents.
-- Rédaction de documentations techniques, notes d'exploitation.
+Intégrateur Systèmes Windows & RHEL.
+Ansible *(Core, APP, Semaphore)*.
+IAM - IdentityIQ.
+Scripting Shell & PowerShell.
+Gestion Active Directory & Exchange.
+Gestion d'incidents.
+Rédaction de documentations techniques, notes d'exploitation.
 
 ## Responsable Ingénierie Systèmes & Réseaux
 **Polyclinique de l'Ormeau, Tarbes** - *(2017 - 2019)*
