@@ -23,7 +23,6 @@ Musique, Cinéma, Lecture, Sport *(Crossfit, Course, Yoga)*, Cuisine, Langues é
 
 # Compétences
 ## Certifications & Acreditations
-
 - [IBM Ethical Hacking with Open Source Tools](https://coursera.org/share/c8aa261b1d8f53bc7cf9ecb158f72e7a) Coursera *(2026-02-15)*
 - Google Cloud Platform (GCP) [Professional Cloud DevOps Engineer Certification](https://www.credly.com/badges/a42c3250-c31f-4c1a-b7d7-6de44834d819/public_url) *(05/11/2025)*
 - The Linux Foundation: [CKA: Certified Kubernetes Administrator](https://www.credly.com/badges/bbdcb0ef-5f6b-474d-b668-1fcf17567cf1/linked_in_profile) *(25/04/2024)*
@@ -33,16 +32,16 @@ Musique, Cinéma, Lecture, Sport *(Crossfit, Course, Yoga)*, Cuisine, Langues é
 - Microsoft Azure Fundamentals [AZ-900](https://www.linkedin.com/posts/david-debray-a85b8629_microsoft-certified-azure-fundamentals-was-activity-6848978476737847296-x3Vx) *(29/09/2021)*
 - ITIL 4 Foundation [Certification](ITILv4-cert.pdf) *(12/10/2021)*
 
-## COMPÉTENCES TECHNIQUES
+## Compétences Techniques
 - **SecOps :** Kali, Metasploit, Wireshark, OpenVAS.
 - **DevOps :** Cloud *(GCP, AWS)*, IaC *(Terraform, Ansible, Puppet, Packer)*,  Kubernetes, Docker, CI/CD *(GitLab/GitHub, Jenkins)*.
 - **Infra & Virtu :** Linux *(Debian, Arch, CentOS)*, Windows Server *(AD, GPO, Exchange)*, VMWare/Hyper-V/Veeam, PRA/PCA.
 - **Réseaux & Sécu :** Cisco *(VLAN, OSPF, EIGRP)*, Supervision *(ELK, Prometheus, Grafana, PRTG)*.
 - **Automation & Doc :** Python, Bash, PowerShell, Cron, Markdown, LaTeX, Jekyll, HTML/CSS.
 
-## GESTION DE PROJET & TRANSVERSES
-- **Management :** ITIL, Planification, Gestion de Risques, Budget, Appels d'offres, Contrat de service, REX
-- **Soft Skills :** Formation utilisateurs, Rédaction technique & manuels, Traduction, Communication inter-équipes
+## Gestion de projets & Tansverses
+- **Management :** ITIL, Planification, Gestion de Risques, Budget, Appels d'offres, Contrat de service, REX.
+- **Soft Skills :** Formation utilisateurs, Rédaction technique & manuels, Traduction, Communication inter-équipes.
 - **Langues :** **Anglais (`C2` - Bilingue)**, Espagnol (niveau intermédiaire).
 
 
@@ -64,7 +63,7 @@ Rédaction de documentations techniques, notes d'exploitation.
 **Alternance** sur 2 ans en formation avec le **CESI** de Pau, formation [***RISR***](RISR.pdf) (Bac+4).
 Migration de l'outil de Supervision: *The Dude* vers *PRTG*.
 Migration de l'Antivirus: *Trend Micro* vers *Sophos*.
-Gestion de Projets / Applications (*[***WAPT***](https://www.tranquil.it/en/solutions/wapt/), GLPI, Supervision PRTG, Antivirus Sophos*).
+Gestion de Projets / Applications (*[**WAPT**](https://www.tranquil.it/en/solutions/wapt/), GLPI, Supervision PRTG, Antivirus Sophos*).
 Helpdesk.
 
 ## Technicien Helpdesk
