@@ -109,8 +109,9 @@ Musique, Cinéma, Lecture, Sport *(Crossfit, Course, Yoga)*, Cuisine, Langues é
 - **Analyste Programmeur** (Bac+2), *EXIA de Pau*: Projets tutorés *(1 par trimestre)* & 2 fois 2 mois de stage.
 
 # Compétences
-## Certifications
+## Certifications & Acreditations
 
+- [IBM Ethical Hacking with Open Source Tools](https://coursera.org/share/c8aa261b1d8f53bc7cf9ecb158f72e7a) Coursera *(2026-02-15)*
 - Google Cloud Platform (GCP) [Professional Cloud DevOps Engineer Certification](https://www.credly.com/badges/a42c3250-c31f-4c1a-b7d7-6de44834d819/public_url) *(05/11/2025)*
 - The Linux Foundation: [CKA: Certified Kubernetes Administrator](https://www.credly.com/badges/bbdcb0ef-5f6b-474d-b668-1fcf17567cf1/linked_in_profile) *(25/04/2024)*
 - Red Hat Accredited Professional: [Red Hat Delivery Specialist - Automation](Red Hat Delivery Specialist - Automation.pdf) *(14/04/2023)*
@@ -120,6 +121,13 @@ Musique, Cinéma, Lecture, Sport *(Crossfit, Course, Yoga)*, Cuisine, Langues é
 - ITIL 4 Foundation [Certification](ITILv4-cert.pdf) *(12/10/2021)*
 
 ## Techniques
+### SecOps
+- Ethical Hacking with ``Kali Linux``
+- Exploitation and Penetration Testing with ``Metasploit``
+- Network Traffic Analysis with ``Wireshark``
+- Incident Response and Defense with ``OpenVAS``
+- Ethical Hacking Capstone Project: Breach, Response, AI
+- 
 ### DevOps
 - Linux, Shell, Python
 - Git *(Github, GitLab)*, CI/CD
