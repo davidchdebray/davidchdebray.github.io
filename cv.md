@@ -28,6 +28,35 @@ Anglais ***C2*** et Espagnol intermédiaire.
 ## Intérêts & Loisirs:
 Musique, Cinéma, Lecture, Sport *(Crossfit, Course, Yoga)*, Cuisine, Langues étrangères, Veille informatique, Gaming, Guitare.
 
+
+# Compétences
+## Certifications & Acreditations
+
+- [IBM Ethical Hacking with Open Source Tools](https://coursera.org/share/c8aa261b1d8f53bc7cf9ecb158f72e7a) Coursera *(2026-02-15)*
+- Google Cloud Platform (GCP) [Professional Cloud DevOps Engineer Certification](https://www.credly.com/badges/a42c3250-c31f-4c1a-b7d7-6de44834d819/public_url) *(05/11/2025)*
+- The Linux Foundation: [CKA: Certified Kubernetes Administrator](https://www.credly.com/badges/bbdcb0ef-5f6b-474d-b668-1fcf17567cf1/linked_in_profile) *(25/04/2024)*
+- Red Hat Accredited Professional: [Red Hat Delivery Specialist - Automation](Red Hat Delivery Specialist - Automation.pdf) *(14/04/2023)*
+- HashiCorp Certified: [Terraform Associate (002)](https://www.credly.com/badges/654a0b1c-887d-4d3a-9fd3-14a9cc9297bd/public_url) *(28/02/2023)*
+- Microsoft Certified: Security, Compliance, and Identity Fundamentals [SC900](https://www.credly.com/badges/b0a65f46-7f22-4a0c-ac69-26ace19c4c4a?source=linked_in_profile) *(10/03/2022)*
+- Microsoft Azure Fundamentals [AZ-900](https://www.linkedin.com/posts/david-debray-a85b8629_microsoft-certified-azure-fundamentals-was-activity-6848978476737847296-x3Vx) *(29/09/2021)*
+- ITIL 4 Foundation [Certification](ITILv4-cert.pdf) *(12/10/2021)*
+
+## Techniques & Outillage
+**SecOps & Defense** | `Kali Linux`, `Metasploit`, `Wireshark`, `OpenVAS`, `NIST Framework`, `MITRE ATT&CK`.
+**DevOps & Cloud** | `GCP` (Certifié), `AWS`, `Kubernetes`, `Terraform`, `Ansible`, `Docker`, `CI/CD` (GitLab/GitHub), `Packer`, `Vagrant`.
+**Observabilité & Logs** | `Prometheus`, `Grafana`, `ELK Stack` (Elasticsearch, Logstash, Kibana).
+**Systèmes & Virtu.** | `Linux` (Debian, Arch, CentOS), `Windows Server` (AD, GPO, Exchange), `VMWare`, `Hyper-V`.
+**Réseaux & Sécurité** | `Cisco` (VLAN, OSPF, EIGRP), `Fortigate`, `pfSense`, `Veeam` (PRA/PCA), `Supervision` (Nagios, PRTG).
+**Scripting & Doc** | `Python`, `Bash`, `PowerShell` | `Markdown`, `LaTeX`, `Jekyll`, `HTML/CSS`.
+
+## Gestion de Projet & Soft Skills
+**Management** | Planification, Gestion des risques, Budget, Clôture & REX, Processus ITIL, Rédaction d'appels d'offres.
+**Langues** | **Anglais (C2)**, Espagnol (Intermédiaire).
+**Transverses** | Formation utilisateurs, Rédaction technique, Communication inter-équipes.
+
+
+
+
 # Expériences Professionnelles
 ## Ingénieur Système
 **Capgemini, Rouen** - *(2021 - Present)*
@@ -107,53 +136,3 @@ Musique, Cinéma, Lecture, Sport *(Crossfit, Course, Yoga)*, Cuisine, Langues é
 
 ## 2010-2012:
 - **Analyste Programmeur** (Bac+2), *EXIA de Pau*: Projets tutorés *(1 par trimestre)* & 2 fois 2 mois de stage.
-
-# Compétences
-## Certifications & Acreditations
-
-- [IBM Ethical Hacking with Open Source Tools](https://coursera.org/share/c8aa261b1d8f53bc7cf9ecb158f72e7a) Coursera *(2026-02-15)*
-- Google Cloud Platform (GCP) [Professional Cloud DevOps Engineer Certification](https://www.credly.com/badges/a42c3250-c31f-4c1a-b7d7-6de44834d819/public_url) *(05/11/2025)*
-- The Linux Foundation: [CKA: Certified Kubernetes Administrator](https://www.credly.com/badges/bbdcb0ef-5f6b-474d-b668-1fcf17567cf1/linked_in_profile) *(25/04/2024)*
-- Red Hat Accredited Professional: [Red Hat Delivery Specialist - Automation](Red Hat Delivery Specialist - Automation.pdf) *(14/04/2023)*
-- HashiCorp Certified: [Terraform Associate (002)](https://www.credly.com/badges/654a0b1c-887d-4d3a-9fd3-14a9cc9297bd/public_url) *(28/02/2023)*
-- Microsoft Certified: Security, Compliance, and Identity Fundamentals [SC900](https://www.credly.com/badges/b0a65f46-7f22-4a0c-ac69-26ace19c4c4a?source=linked_in_profile) *(10/03/2022)*
-- Microsoft Azure Fundamentals [AZ-900](https://www.linkedin.com/posts/david-debray-a85b8629_microsoft-certified-azure-fundamentals-was-activity-6848978476737847296-x3Vx) *(29/09/2021)*
-- ITIL 4 Foundation [Certification](ITILv4-cert.pdf) *(12/10/2021)*
-
-## Techniques
-### SecOps
-- Ethical Hacking with ``Kali Linux``
-- Exploitation and Penetration Testing with ``Metasploit``
-- Network Traffic Analysis with ``Wireshark``
-- Incident Response and Defense with ``OpenVAS``
-- Ethical Hacking Capstone Project: Breach, Response, AI
-- 
-### DevOps
-- Linux, Shell, Python
-- Git *(Github, GitLab)*, CI/CD
-- Vagrant, Packer
-- Docker, Ansible, Puppet
-- AWS, Kubernetes, Terraform
-- Prometheus & Grafana, ElasticSearch/Logstash/Kibana
-- DevOps Foundation
-
-### Systèmes & Réseaux
-- Windows Server *(AD, DNS, DHCP, GPO, Exchange, etc.)*
-- Linux/UNIX *(Debian, CentOS, Arch, MacOS)*
-- Réseaux *(CISCO, VLAN, Spanning Tree, HSRP, LACP, RIP, OSPF, EIGRP, Troubleshooting)*
-- Sécurité *(Pare-Feu Fortigate, PfSense, Kali Linux Pentesting)*
-- Virtualisation *(VMWare, Hyper-V, SAN)*
-- Sauvegarde & Restauration *(Veeam, PRA/PCA)*
-- Supervision *(Nagios, Centreon, TheDude, PRTG)*
-- Automatisation *(Scripting, cron, planification de tâche)*
-- Scripting/Programmation *(Shell, bat, Python, PowerShell)*
-
-### Documentation Skills
-- Markdown, LaTeX, Html, CSS, Jekyll
-
-## Gestion de Projet
-Planification, Gestion de Risques, Management d'équipe, Organisation de Budget, Clôture de Projet & REX, Processus ITIL, Contrat de service, Rédaction d'appel d'offre.
-
-## Transverses
-Anglais ***C2***, Espagnol intermédiaire, Communication, Formation aux utilisateurs, Traduction & Rédaction de Documentations Techniques & Manuels d'utilisation.
-
