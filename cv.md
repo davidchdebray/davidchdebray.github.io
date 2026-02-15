@@ -15,11 +15,7 @@ classoption: "12pt"
 Curieux, débrouillard, autonome. Aussi bien capable de travailler seul que en équipe, j'aime les challenges et découvrir sans arrêt de nouvelles choses.
 Je souhaite me spécialiser dans le ***DevOps*** et la sécurité.
 
-Anglais ***C2*** et Espagnol intermédiaire.
-
-## Contact:
-**Contact :** [LinkedIn](https://www.linkedin.com/in/david-debray-a85b8629/) • [Website](https://davidchdebray.github.io) • [Mail](mailto:david.debray@pm.me)
-
+**Contact :** [LinkedIn](https://www.linkedin.com/in/david-debray-a85b8629/) • [Website](https://davidchdebray.github.io) • [Mail](mailto:linkedin.kpbui@passmail.net)
 
 ## Intérêts & Loisirs:
 Musique, Cinéma, Lecture, Sport *(Crossfit, Course, Yoga)*, Cuisine, Langues étrangères, Veille informatique, Gaming, Guitare.
@@ -38,16 +34,16 @@ Musique, Cinéma, Lecture, Sport *(Crossfit, Course, Yoga)*, Cuisine, Langues é
 - ITIL 4 Foundation [Certification](ITILv4-cert.pdf) *(12/10/2021)*
 
 ## COMPÉTENCES TECHNIQUES
-**SecOps :** `Ethical Hacking` (Kali, Metasploit) • `Forensics` (Wireshark) • `Defense` (OpenVAS, NIST, MITRE) • `Capstone Project`
-**DevOps :** `Cloud` (GCP Certified, AWS) • `IaC` (Terraform, Ansible, Puppet, Packer) • `K8s` • `Docker` • `CI/CD` (GitLab/GitHub)
-**Infra & Virtu :** `Linux` (Debian, Arch, CentOS) • `Windows Server` (AD, GPO, Exchange) • `VMWare` • `Hyper-V` • `Veeam` (PRA/PCA)
-**Réseaux & Sécu :** `Cisco` (VLAN, OSPF, EIGRP) • `Fortigate` • `pfSense` • `Supervision` (ELK, Prometheus, Grafana, PRTG)
-**Automation & Doc :** `Python` • `Bash` • `PowerShell` • `Cron` • `Markdown` • `LaTeX` • `Jekyll` • `HTML/CSS`
+- **SecOps :** `Ethical Hacking` (Kali, Metasploit) • `Forensics` (Wireshark) • `Defense` (OpenVAS, NIST, MITRE) • `Capstone Project`
+- **DevOps :** `Cloud` (GCP Certified, AWS) • `IaC` (Terraform, Ansible, Puppet, Packer) • `K8s` • `Docker` • `CI/CD` (GitLab/GitHub)
+- **Infra & Virtu :** `Linux` (Debian, Arch, CentOS) • `Windows Server` (AD, GPO, Exchange) • `VMWare` • `Hyper-V` • `Veeam` (PRA/PCA)
+- **Réseaux & Sécu :** `Cisco` (VLAN, OSPF, EIGRP) • `Fortigate` • `pfSense` • `Supervision` (ELK, Prometheus, Grafana, PRTG)
+- **Automation & Doc :** `Python` • `Bash` • `PowerShell` • `Cron` • `Markdown` • `LaTeX` • `Jekyll` • `HTML/CSS`
 
 ## GESTION DE PROJET & TRANSVERSES
-**Management :** ITIL • Planification • Gestion de Risques • Budget • Appels d'offres • Contrat de service • REX
-**Soft Skills :** Formation utilisateurs • Rédaction technique & manuels • Traduction • Communication inter-équipes
-**Langues :** **Anglais (C2 - Bilingue)** • Espagnol (Intermédiaire)
+- **Management :** ITIL • Planification • Gestion de Risques • Budget • Appels d'offres • Contrat de service • REX
+- **Soft Skills :** Formation utilisateurs • Rédaction technique & manuels • Traduction • Communication inter-équipes
+- **Langues :** **Anglais (C2 - Bilingue)** • Espagnol (Intermédiaire)
 
 
 # Expériences Professionnelles
@@ -55,21 +51,21 @@ Musique, Cinéma, Lecture, Sport *(Crossfit, Course, Yoga)*, Cuisine, Langues é
 **Capgemini, Rouen** - *(2021 - Present)*
 
 - Intégrateur Systèmes Windows & RHEL.
-- Ansible *(Core, APP, Semaphore)*
-- IAM - IdentityIQ
-- Scripting Shell & PowerShell
-- Gestion Active Directory & Exchange
-- Gestion d'incidents
-- Rédaction de documentations techniques, notes d'exploitation
+- Ansible *(Core, APP, Semaphore)*.
+- IAM - IdentityIQ.
+- Scripting Shell & PowerShell.
+- Gestion Active Directory & Exchange.
+- Gestion d'incidents.
+- Rédaction de documentations techniques, notes d'exploitation.
 
 ## Responsable Ingénierie Systèmes & Réseaux
 **Polyclinique de l'Ormeau, Tarbes** - *(2017 - 2019)*
 
-- **Alternance** sur 2 ans en formation avec le **CESI** de Pau, formation [***RISR***](RISR.pdf) (Bac+4)
-- Migration de l'outil de Supervision: *The Dude* vers *PRTG*
-- Migration de l'Antivirus: *Trend Micro* vers *Sophos*
-- Gestion de Projets / Applications (*[***WAPT***](https://www.tranquil.it/en/solutions/wapt/), GLPI, Supervision PRTG, Antivirus Sophos*)
-- Helpdesk
+**Alternance** sur 2 ans en formation avec le **CESI** de Pau, formation [***RISR***](RISR.pdf) (Bac+4).
+Migration de l'outil de Supervision: *The Dude* vers *PRTG*.
+Migration de l'Antivirus: *Trend Micro* vers *Sophos*.
+Gestion de Projets / Applications (*[***WAPT***](https://www.tranquil.it/en/solutions/wapt/), GLPI, Supervision PRTG, Antivirus Sophos*).
+Helpdesk.
 
 ## Technicien Helpdesk
 **MGI Consultants, Pau** - *(2015)*
