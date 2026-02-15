@@ -21,8 +21,6 @@ Anglais ***C2*** et Espagnol intermédiaire.
   - LinkedIn: [*David DEBRAY*](https://www.linkedin.com/in/david-debray-a85b8629/)
   - Website: [*davidchdebray.github.io*](https://davidchdebray.github.io)
   - Mail: [*david.debray@pm.me*](mailto:david.debray@pm.me)
-  <!-- - Github: [*davidchdebray.github.io*](https://davidchdebray.github.io/)
-  - Telegram: [*@D1d4v*](Telegram@D1d4v) -->
 
 
 ## Intérêts & Loisirs:
