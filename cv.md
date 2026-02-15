@@ -18,9 +18,7 @@ Je souhaite me spécialiser dans le ***DevOps*** et la sécurité.
 Anglais ***C2*** et Espagnol intermédiaire.
 
 ## Contact:
-  - LinkedIn: [*David DEBRAY*](https://www.linkedin.com/in/david-debray-a85b8629/)
-  - Website: [*davidchdebray.github.io*](https://davidchdebray.github.io)
-  - Mail: [*david.debray@pm.me*](mailto:david.debray@pm.me)
+**Contact :** [LinkedIn](https://www.linkedin.com/in/david-debray-a85b8629/) • [Website](https://davidchdebray.github.io) • [Mail](mailto:david.debray@pm.me)
 
 
 ## Intérêts & Loisirs:
@@ -39,28 +37,24 @@ Musique, Cinéma, Lecture, Sport *(Crossfit, Course, Yoga)*, Cuisine, Langues é
 - Microsoft Azure Fundamentals [AZ-900](https://www.linkedin.com/posts/david-debray-a85b8629_microsoft-certified-azure-fundamentals-was-activity-6848978476737847296-x3Vx) *(29/09/2021)*
 - ITIL 4 Foundation [Certification](ITILv4-cert.pdf) *(12/10/2021)*
 
-## Techniques & Outillage
-**SecOps & Defense** | `Kali Linux`, `Metasploit`, `Wireshark`, `OpenVAS`, `NIST Framework`, `MITRE ATT&CK`.
-**DevOps & Cloud** | `GCP` (Certifié), `AWS`, `Kubernetes`, `Terraform`, `Ansible`, `Docker`, `CI/CD` (GitLab/GitHub), `Packer`, `Vagrant`.
-**Observabilité & Logs** | `Prometheus`, `Grafana`, `ELK Stack` (Elasticsearch, Logstash, Kibana).
-**Systèmes & Virtu.** | `Linux` (Debian, Arch, CentOS), `Windows Server` (AD, GPO, Exchange), `VMWare`, `Hyper-V`.
-**Réseaux & Sécurité** | `Cisco` (VLAN, OSPF, EIGRP), `Fortigate`, `pfSense`, `Veeam` (PRA/PCA), `Supervision` (Nagios, PRTG).
-**Scripting & Doc** | `Python`, `Bash`, `PowerShell` | `Markdown`, `LaTeX`, `Jekyll`, `HTML/CSS`.
+## COMPÉTENCES TECHNIQUES
+**SecOps :** `Ethical Hacking` (Kali, Metasploit) • `Forensics` (Wireshark) • `Defense` (OpenVAS, NIST, MITRE) • `Capstone Project`
+**DevOps :** `Cloud` (GCP Certified, AWS) • `IaC` (Terraform, Ansible, Puppet, Packer) • `K8s` • `Docker` • `CI/CD` (GitLab/GitHub)
+**Infra & Virtu :** `Linux` (Debian, Arch, CentOS) • `Windows Server` (AD, GPO, Exchange) • `VMWare` • `Hyper-V` • `Veeam` (PRA/PCA)
+**Réseaux & Sécu :** `Cisco` (VLAN, OSPF, EIGRP) • `Fortigate` • `pfSense` • `Supervision` (ELK, Prometheus, Grafana, PRTG)
+**Automation & Doc :** `Python` • `Bash` • `PowerShell` • `Cron` • `Markdown` • `LaTeX` • `Jekyll` • `HTML/CSS`
 
-## Gestion de Projet & Soft Skills
-**Management** | Planification, Gestion des risques, Budget, Clôture & REX, Processus ITIL, Rédaction d'appels d'offres.
-**Langues** | **Anglais (C2)**, Espagnol (Intermédiaire).
-**Transverses** | Formation utilisateurs, Rédaction technique, Communication inter-équipes.
-
-
+## GESTION DE PROJET & TRANSVERSES
+**Management :** ITIL • Planification • Gestion de Risques • Budget • Appels d'offres • Contrat de service • REX
+**Soft Skills :** Formation utilisateurs • Rédaction technique & manuels • Traduction • Communication inter-équipes
+**Langues :** **Anglais (C2 - Bilingue)** • Espagnol (Intermédiaire)
 
 
 # Expériences Professionnelles
-## Ingénieur Système
+## Ingénieur Système - DevOps
 **Capgemini, Rouen** - *(2021 - Present)*
 
-- Intégrateur Systèmes Windows & RHEL
-- VMWare
+- Intégrateur Systèmes Windows & RHEL.
 - Ansible *(Core, APP, Semaphore)*
 - IAM - IdentityIQ
 - Scripting Shell & PowerShell
@@ -80,44 +74,36 @@ Musique, Cinéma, Lecture, Sport *(Crossfit, Course, Yoga)*, Cuisine, Langues é
 ## Technicien Helpdesk
 **MGI Consultants, Pau** - *(2015)*
 
-- SPOC. Migration parc informatique Vista vers Windows 10.
-- Support et accompagnement dans la mise en place de nouveaux outils et des applications de mobilité.
+SPOC. Migration parc informatique Vista vers Windows 10.
+Support et accompagnement dans la mise en place de nouveaux outils et des applications de mobilité.
 
 ## Chef de Projet / Administrateur Systèmes & Réseaux
 **Institut du Travail Social, Pau** - *(Avril - Août 2014)*
 
-- Préparation de la nouvelle infrastructure & Implémentation. Formations et Documentations.
-- Déploiement clients légers (linux) & rédaction de documentation, formation des utilisateurs.
+Préparation de la nouvelle infrastructure & Implémentation. Formations et Documentations.
+Déploiement clients légers (linux) & rédaction de documentation, formation des utilisateurs.
 
 ## Chef de Projet / Auditeur / Administrateur Systèmes & Réseaux
 **Centre de Rééducation Fonctionnelle, Saint-Blancard** - *(Mai - Juin 2012 & Janvier - Mars 2013)*
 
-- Audit et réorganisation de l'infrastructure Réseau CISCO
-- Automatisation & Sécurisation du SI
-- Rédaction **PRA** & **PCA**.
-- Formations utilisateurs & Traduction de documents
+Audit et réorganisation de l'infrastructure Réseau CISCO.
+Automatisation & Sécurisation du SI.
+Rédaction **PRA** & **PCA**.
+Formations utilisateurs & Traduction de documents.
 
 ## Technicien maintenance / Conseiller commercial
 **LABAT, Pau** - *(Septembre - Octobre 2012)*
 
-- Réparation, montage, configuration, livraison & installation de matériel en magasin et chez clients.
-- Conseil client & Vente d’équipement
+Réparation, montage, configuration, livraison & installation de matériel en magasin et chez clients.
+Conseil client & Vente d’équipement
 
 # Formations
-## Février 2022
+- Février 2022 [SC-900: Azure Security Fundamentals](#certifications)
+- Septembre 2021 [ITIL v4 Foundation](#certifications)
+- Octobre 2021 [AZ-900: Azure Fundamentals](#certifications)
+- Juin 2021 - Août 2021: Formation POEI **DevOps** [Dawan](https://dawan.fr/)
 
-- [SC-900: Azure Security Fundamentals](#certifications)
-
-## Septembre - Octobre 2021
-
-- [ITIL v4 Foundation](#certifications)
-- [AZ-900: Azure Fundamentals](#certifications)
-
-## Juin 2021 - Août 2021
-
-- Formation POEI **DevOps** [Dawan](https://dawan.fr/)
-
-## 2019-2021:
+2019-2021:
 - **Formations sur** [***LinkedIn***](https://www.linkedin.com/in/david-debray-a85b8629/)
   + [Devenir un développeur Python](https://www.linkedin.com/learning/paths/devenir-un-developpeur-python)
   + [Devenir un Administrateur Système Linux](https://www.linkedin.com/learning/paths/devenir-un-administrateur-systeme-linux)
@@ -126,11 +112,6 @@ Musique, Cinéma, Lecture, Sport *(Crossfit, Course, Yoga)*, Cuisine, Langues é
   + Linux Essentials
   + Certified Entry-Level Python Programmer Certification
 
-## 2017-2019:
-- **Responsable Ingénierie Systèmes & Réseaux** (Bac+4) [***RISR***](RISR.pdf), *CESI de Pau*
-
-## 2010-2014:
-- **Manager des Systèmes d'Informations**, *EXIA de Pau*: Projets tutorés *(1 par trimestre)* & 1 stage de 3 mois et 1 stage de 4 mois.
-
-## 2010-2012:
-- **Analyste Programmeur** (Bac+2), *EXIA de Pau*: Projets tutorés *(1 par trimestre)* & 2 fois 2 mois de stage.
+- 2017-2019: **Responsable Ingénierie Systèmes & Réseaux** (Bac+4) [***RISR***](RISR.pdf), *CESI de Pau*
+- 2010-2014: **Manager des Systèmes d'Informations**, *EXIA de Pau*: Projets tutorés *(1 par trimestre)* & 1 stage de 3 mois et 1 stage de 4 mois.
+- 2010-2012: **Analyste Programmeur** (Bac+2), *EXIA de Pau*: Projets tutorés *(1 par trimestre)* & 2 fois 2 mois de stage.
