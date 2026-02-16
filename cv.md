@@ -45,6 +45,7 @@ Musique, Cinéma, Lecture, Sport *(Crossfit, Course, Yoga)*, Cuisine, Langues é
 - **Soft Skills :** Formation utilisateurs, Rédaction technique & manuels, Traduction, Communication inter-équipes.
 - **Langues :** Anglais `C2` - *[TOEIC](https://davidchdebray.github.io/files/TOEIC.jpg)*, Espagnol *([A2](https://davidchdebray.github.io/files/espanol.jpeg))*.
 
+---
 
 # Expériences Professionnelles
 ## Ingénieur Système - DevOps
@@ -53,14 +54,6 @@ Musique, Cinéma, Lecture, Sport *(Crossfit, Course, Yoga)*, Cuisine, Langues é
 Administration et intégration système en environnements mixtes Windows et RHEL.
 Automatisation de l'exploitation via Ansible *(Core, Semaphore, AAP)* et scripting Shell/PowerShell.
 Gestion opérationnelle des incidents et rédaction de documentations techniques et notes d'exploitation.
-
-<!-- Intégrateur Systèmes Windows & RHEL.
-Ansible *(Core, APP, Semaphore)*.
-Scripting Shell & PowerShell.
-Gestion d'incidents.
-Rédaction de documentations techniques, notes d'exploitation.
-IAM - IdentityIQ.
-Gestion Active Directory & Exchange. -->
 
 ## Responsable Ingénierie Systèmes & Réseaux
 **Polyclinique de l'Ormeau, Tarbes** - *(2017 - 2019)*
@@ -96,6 +89,8 @@ Formations utilisateurs & Traduction de documents.
 
 Réparation, montage, configuration, livraison & installation de matériel en magasin et chez clients.
 Conseil client & Vente d’équipement
+
+---
 
 # Etudes & Formations
 
