@@ -94,6 +94,5 @@ Conseil client & Vente d’équipement
 
 # Etudes & Formations
 
-- **Diplômes :** [**Manager SI**](https://davidchdebray.github.io) (2014) • [**RISR (Bac+4)**](https://davidchdebray.github.io/files/RISR17_Diplôme.pdf) (2019) • **Analyste Programmeur** (2012) — *CESI/EXIA Pau*
-- **Certifications :** [**SC-900**](#certifications) & [**AZ-900**](#certifications) (Azure) • [**ITIL v4**](#certifications) • **Python** (Linux Academy)
-- **Cursus :** [**POEI DevOps**](https://dawan.fr/) (2021) • Learning Paths [**DevOps**](https://www.linkedin.com/learning/paths/become-a-devops-engineer), [**Linux**](https://www.linkedin.com/learning/paths/devenir-un-administrateur-systeme-linux) & [**Python**](https://www.linkedin.com/learning/paths/devenir-un-developpeur-python) (LinkedIn)
+- **Diplômes : [**RISR (Bac+4)**](https://davidchdebray.github.io/files/RISR17_Diplôme.pdf) (2019) *CESI Pau* • **Analyste Programmeur** (2012) — *CESI/EXIA Pau*
+- **Cursus :** **POEI DevOps** (2021) - *Dawan* • Learning Paths: [**DevOps**](https://www.linkedin.com/learning/paths/become-a-devops-engineer), [**Linux**](https://www.linkedin.com/learning/paths/devenir-un-administrateur-systeme-linux) & [**Python**](https://www.linkedin.com/learning/paths/devenir-un-developpeur-python) - *LinkedIn*
