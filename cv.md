@@ -35,7 +35,7 @@ Musique, Cinéma, Lecture, Sport *(Crossfit, Course, Yoga)*, Cuisine, Langues é
 ## Compétences Techniques
 - **SecOps :** Kali, Metasploit, Wireshark, OpenVAS.
 - **DevOps :** Cloud *(GCP, AWS)*, IaC *(Terraform, Ansible, Puppet, Packer)*,  Kubernetes, Docker, CI/CD *(GitLab/GitHub, Jenkins)*.
-- **Infra & Virtu :** Linux *(Debian, Arch, CentOS)*, Windows Server *(AD, GPO, Exchange)*, VMWare/Hyper-V/Veeam, PRA/PCA.
+- **Infra & Virtu :** Linux *(Debian, Arch, RHEL)*, Windows Server , VMWare/Hyper-V/Proxmox, Veeam, PRA/PCA.
 - **Réseaux & Sécu :** Cisco *(VLAN, OSPF, EIGRP)*, Supervision *(ELK, Prometheus, Grafana, PRTG)*.
 - **Automation & Doc :** Python, Bash, PowerShell, Cron, Markdown, LaTeX, Jekyll, HTML/CSS.
 
@@ -49,13 +49,17 @@ Musique, Cinéma, Lecture, Sport *(Crossfit, Course, Yoga)*, Cuisine, Langues é
 ## Ingénieur Système - DevOps
 **Capgemini, Rouen** - *(2021 - Present)*
 
-Intégrateur Systèmes Windows & RHEL.
+Administration et intégration système en environnements mixtes Windows et RHEL. 
+Automatisation de l'exploitation via Ansible *(Core, Semaphore, AAP)* et scripting Shell/PowerShell. 
+Gestion opérationnelle des incidents et rédaction de documentations techniques et notes d'exploitation.
+
+<!-- Intégrateur Systèmes Windows & RHEL.
 Ansible *(Core, APP, Semaphore)*.
-IAM - IdentityIQ.
 Scripting Shell & PowerShell.
-Gestion Active Directory & Exchange.
 Gestion d'incidents.
 Rédaction de documentations techniques, notes d'exploitation.
+IAM - IdentityIQ.
+Gestion Active Directory & Exchange. -->
 
 ## Responsable Ingénierie Systèmes & Réseaux
 **Polyclinique de l'Ormeau, Tarbes** - *(2017 - 2019)*
