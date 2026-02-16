@@ -42,7 +42,7 @@ Musique, Cinéma, Lecture, Sport *(Crossfit, Course, Yoga)*, Cuisine, Langues é
 ## Gestion de projets & Tansverses
 - **Management :** ITIL, Planification, Gestion de Risques, Budget, Appels d'offres, Contrat de service, REX.
 - **Soft Skills :** Formation utilisateurs, Rédaction technique & manuels, Traduction, Communication inter-équipes.
-- **Langues :** **Anglais (`C2` - [TOEIC](/files/TOEIC.jpg))**, Espagnol *([A2](/files/espanol.jpeg))*.
+- **Langues :** **Anglais (`C2` - [TOEIC](https://davidchdebray.github.io/files/TOEIC.jpg))**, Espagnol *([A2](https://davidchdebray.github.io/files/espanol.jpeg))*.
 
 
 # Expériences Professionnelles
@@ -64,7 +64,7 @@ Gestion Active Directory & Exchange. -->
 ## Responsable Ingénierie Systèmes & Réseaux
 **Polyclinique de l'Ormeau, Tarbes** - *(2017 - 2019)*
 
-**Alternance** sur 2 ans en formation avec le **CESI** de Pau, formation [***RISR***](/files/RISR17_Diplôme.pdf) (Bac+4).
+**Alternance** sur 2 ans en formation avec le **CESI** de Pau, formation [***RISR***](https://davidchdebray.github.io/files/RISR17_Diplôme.pdf) (Bac+4).
 Migration de l'outil de Supervision: *The Dude* vers *PRTG*.
 Migration de l'Antivirus: *Trend Micro* vers *Sophos*.
 Gestion de Projets / Applications (*[**WAPT**](https://www.tranquil.it/en/solutions/wapt/), GLPI, Supervision PRTG, Antivirus Sophos*).
@@ -112,6 +112,6 @@ Conseil client & Vente d’équipement
   + Linux Essentials
   + Certified Entry-Level Python Programmer Certification
 
-- 2017-2019: **Responsable Ingénierie Systèmes & Réseaux** (Bac+4) [***RISR***](/files/RISR17_Diplôme.pdf), *CESI de Pau*
+- 2017-2019: **Responsable Ingénierie Systèmes & Réseaux** (Bac+4) [***RISR***](https://davidchdebray.github.io/files/RISR17_Diplôme.pdf), *CESI de Pau*
 - 2010-2014: **Manager des Systèmes d'Informations**, *EXIA de Pau*: Projets tutorés *(1 par trimestre)* & 1 stage de 3 mois et 1 stage de 4 mois.
 - 2010-2012: **Analyste Programmeur** (Bac+2), *EXIA de Pau*: Projets tutorés *(1 par trimestre)* & 2 fois 2 mois de stage.
