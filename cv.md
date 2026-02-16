@@ -20,6 +20,7 @@ Je souhaite me spécialiser dans le ***DevOps*** et la ***sécurité***.
 ## Intérêts & Loisirs:
 Musique, Cinéma, Lecture, Sport *(Crossfit, Course, Yoga)*, Cuisine, Langues étrangères, Veille informatique, Gaming, Guitare.
 
+---
 
 # Compétences
 ## Certifications & Acreditations
@@ -42,15 +43,15 @@ Musique, Cinéma, Lecture, Sport *(Crossfit, Course, Yoga)*, Cuisine, Langues é
 ## Gestion de projets & Tansverses
 - **Management :** ITIL, Planification, Gestion de Risques, Budget, Appels d'offres, Contrat de service, REX.
 - **Soft Skills :** Formation utilisateurs, Rédaction technique & manuels, Traduction, Communication inter-équipes.
-- **Langues :** **Anglais (`C2` - [TOEIC](https://davidchdebray.github.io/files/TOEIC.jpg))**, Espagnol *([A2](https://davidchdebray.github.io/files/espanol.jpeg))*.
+- **Langues :** Anglais `C2` - *[TOEIC](https://davidchdebray.github.io/files/TOEIC.jpg)*, Espagnol *([A2](https://davidchdebray.github.io/files/espanol.jpeg))*.
 
 
 # Expériences Professionnelles
 ## Ingénieur Système - DevOps
 **Capgemini, Rouen** - *(2021 - Present)*
 
-Administration et intégration système en environnements mixtes Windows et RHEL. 
-Automatisation de l'exploitation via Ansible *(Core, Semaphore, AAP)* et scripting Shell/PowerShell. 
+Administration et intégration système en environnements mixtes Windows et RHEL.
+Automatisation de l'exploitation via Ansible *(Core, Semaphore, AAP)* et scripting Shell/PowerShell.
 Gestion opérationnelle des incidents et rédaction de documentations techniques et notes d'exploitation.
 
 <!-- Intégrateur Systèmes Windows & RHEL.
