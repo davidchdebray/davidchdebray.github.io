@@ -91,5 +91,9 @@ Conseil client & Vente d’équipement
 
 # Etudes & Formations
 
-- **Diplômes : [**RISR (Bac+4)**](https://davidchdebray.github.io/files/RISR17_Diplôme.pdf) (2019) *CESI Pau* • **Analyste Programmeur** (2012) — *CESI/EXIA Pau*
-- **Cursus :** **POEI DevOps** (2021) - *Dawan* • Learning Paths: [**DevOps**](https://www.linkedin.com/learning/paths/become-a-devops-engineer), [**Linux**](https://www.linkedin.com/learning/paths/devenir-un-administrateur-systeme-linux) & [**Python**](https://www.linkedin.com/learning/paths/devenir-un-developpeur-python) - *LinkedIn*
+- Diplômes : 
+  - [**RISR (Bac+4)**](https://davidchdebray.github.io/files/RISR17_Diplôme.pdf) (2019) *CESI Pau*
+  - **Analyste Programmeur** (2012) — *CESI/EXIA Pau*
+- Cursus : 
+  - POEI **DevOps** (2021) - *Dawan*
+  - LinkedIn Learning Paths: [**DevOps**](https://www.linkedin.com/learning/paths/become-a-devops-engineer), [**Linux**](https://www.linkedin.com/learning/paths/devenir-un-administrateur-systeme-linux) & [**Python**](https://www.linkedin.com/learning/paths/devenir-un-developpeur-python)
