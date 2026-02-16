@@ -45,7 +45,6 @@ Musique, Cinéma, Lecture, Sport *(Crossfit, Course, Yoga)*, Cuisine, Langues é
 - **Soft Skills :** Formation utilisateurs, Rédaction technique & manuels, Traduction, Communication inter-équipes.
 - **Langues :** Anglais `C2` - *[TOEIC](https://davidchdebray.github.io/files/TOEIC.jpg)*, Espagnol *([A2](https://davidchdebray.github.io/files/espanol.jpeg))*.
 
----
 
 # Expériences Professionnelles
 ## Ingénieur Système - DevOps
@@ -89,8 +88,6 @@ Formations utilisateurs & Traduction de documents.
 
 Réparation, montage, configuration, livraison & installation de matériel en magasin et chez clients.
 Conseil client & Vente d’équipement
-
----
 
 # Etudes & Formations
 
