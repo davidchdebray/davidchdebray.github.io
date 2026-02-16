@@ -13,7 +13,7 @@ classoption: "12pt"
 # Ingénieur Systèmes & Réseaux - DevOps
 ## Présentation Personnelle
 Curieux, débrouillard, autonome. Aussi bien capable de travailler seul que en équipe, j'aime les challenges et découvrir sans arrêt de nouvelles choses.
-Je souhaite me spécialiser dans le ***DevOps*** et la sécurité.
+Je souhaite me spécialiser dans le ***DevOps*** et la ***sécurité***.
 
 **Contact :** [LinkedIn](https://www.linkedin.com/in/david-debray-a85b8629/) • [Website](https://davidchdebray.github.io) • [Mail](mailto:linkedin.kpbui@passmail.net)
 
@@ -103,6 +103,7 @@ Conseil client & Vente d’équipement
 - Juin 2021 - Août 2021: Formation POEI **DevOps** [Dawan](https://dawan.fr/)
 
 2019-2021:
+
 - **Formations sur** [***LinkedIn***](https://www.linkedin.com/in/david-debray-a85b8629/)
   + [Devenir un développeur Python](https://www.linkedin.com/learning/paths/devenir-un-developpeur-python)
   + [Devenir un Administrateur Système Linux](https://www.linkedin.com/learning/paths/devenir-un-administrateur-systeme-linux)
