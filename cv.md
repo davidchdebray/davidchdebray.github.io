@@ -18,7 +18,7 @@ Je souhaite me spécialiser dans le ***DevOps*** et la ***sécurité***.
 **Contact :** [LinkedIn](https://www.linkedin.com/in/david-debray-a85b8629/) • [Website](https://davidchdebray.github.io) • [Mail](mailto:linkedin.kpbui@passmail.net)
 
 ## Intérêts & Loisirs:
-Musique, Cinéma, Lecture, Sport *(Crossfit, Course, Yoga)*, Cuisine, Langues étrangères, Veille informatique, Gaming, Guitare.
+Musique, cinéma, lecture, sport *(crossfit, course, yoga)*, cuisine, langues étrangères, veille, guitare.
 
 ---
 
