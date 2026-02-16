@@ -97,22 +97,8 @@ Formations utilisateurs & Traduction de documents.
 Réparation, montage, configuration, livraison & installation de matériel en magasin et chez clients.
 Conseil client & Vente d’équipement
 
-# Formations
-- Février 2022 [SC-900: Azure Security Fundamentals](#certifications)
-- Septembre 2021 [ITIL v4 Foundation](#certifications)
-- Octobre 2021 [AZ-900: Azure Fundamentals](#certifications)
-- Juin 2021 - Août 2021: Formation POEI **DevOps** [Dawan](https://dawan.fr/)
+# Etudes & Formations
 
-2019-2021:
-
-- **Formations sur** [***LinkedIn***](https://www.linkedin.com/in/david-debray-a85b8629/)
-  + [Devenir un développeur Python](https://www.linkedin.com/learning/paths/devenir-un-developpeur-python)
-  + [Devenir un Administrateur Système Linux](https://www.linkedin.com/learning/paths/devenir-un-administrateur-systeme-linux)
-  + [Become a DevOps Engineer](https://www.linkedin.com/learning/paths/become-a-devops-engineer)
-- **Formations sur** [***Linux Academy***](https://linuxacademy.com)
-  + Linux Essentials
-  + Certified Entry-Level Python Programmer Certification
-
-- 2017-2019: **Responsable Ingénierie Systèmes & Réseaux** (Bac+4) [***RISR***](https://davidchdebray.github.io/files/RISR17_Diplôme.pdf), *CESI de Pau*
-- 2010-2014: **Manager des Systèmes d'Informations**, *EXIA de Pau*: Projets tutorés *(1 par trimestre)* & 1 stage de 3 mois et 1 stage de 4 mois.
-- 2010-2012: **Analyste Programmeur** (Bac+2), *EXIA de Pau*: Projets tutorés *(1 par trimestre)* & 2 fois 2 mois de stage.
+- **Diplômes :** [**Manager SI**](https://davidchdebray.github.io) (2014) • [**RISR (Bac+4)**](https://davidchdebray.github.io/files/RISR17_Diplôme.pdf) (2019) • **Analyste Programmeur** (2012) — *CESI/EXIA Pau*
+- **Certifications :** [**SC-900**](#certifications) & [**AZ-900**](#certifications) (Azure) • [**ITIL v4**](#certifications) • **Python** (Linux Academy)
+- **Cursus :** [**POEI DevOps**](https://dawan.fr/) (2021) • Learning Paths [**DevOps**](https://www.linkedin.com/learning/paths/become-a-devops-engineer), [**Linux**](https://www.linkedin.com/learning/paths/devenir-un-administrateur-systeme-linux) & [**Python**](https://www.linkedin.com/learning/paths/devenir-un-developpeur-python) (LinkedIn)
