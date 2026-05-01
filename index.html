@@ -12,11 +12,15 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+  <!-- Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,900" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" />
+
   <!-- Bootstrap -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
     integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-  <!-- Font Awesome (une seule inclusion suffit) -->
+  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
     integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 
@@ -53,34 +57,62 @@
   <div id="wrapper">
     <div id="bg">
       <div id="header">
-        <h1>David DEBRAY</h1>
+        <!-- H1 avec police calligraphique (gérée via CSS) -->
+        <h1>David Debray</h1>
         <h2 class="titles">Ingénieur Systèmes & Réseaux / DevOps</h2>
-        <h3 class="titles">@Capgemini</h3> <!-- Bloc principal -->
+        <h3 class="titles">@Capgemini</h3>
+        
+        <!-- Navigation Principale -->
         <nav>
           <ul>
-            <li> <a href="https://www.linkedin.com/in/david-debray-a85b8629/" data-toggle="tooltip" data-placement="left"
-                title="LinkedIn" target="_blank" class="fab fa-linkedin"> <span class="label">LinkedIn</span> </a> </li>
-            <li> <a href="/files/DavidDebrayCV.pdf" data-toggle="tooltip" data-placement="bottom" title="Curriculum Vitae"
-                style="font-weight:bold;" target="_blank" class="fas fa-file-pdf"> <span class="label">Mon CV</span> </a>
+            <li>
+              <a href="https://www.linkedin.com/in/david-debray-a85b8629/" 
+                 data-toggle="tooltip" 
+                 data-placement="left"
+                 title="LinkedIn" 
+                 target="_blank" 
+                 class="fab fa-linkedin"> 
+                <span class="label">LinkedIn</span> 
+              </a>
             </li>
-            <li> <a href="mailto:linkedin.kpbui@passmail.net" data-toggle="tooltip" data-placement="right" title="Contact"
-                class="fas fa-envelope"> <span class="label">Me contacter</span> </a> </li>
-          </ul>
-        </nav> <!-- Titre Referals -->
-        <h4 class="titles" style="margin-top: 1.5em; font-size: 1.2em;">Referals</h4> <!-- Bloc Referals -->
-        <nav>
-          <ul>
-            <li> <a href="https://www.freeletics.com/t/104389492" data-toggle="tooltip" data-placement="left"
-                title="Freeletics" target="_blank" class="fas fa-dumbbell"> <span class="label">Freeletics</span> </a> </li>
-            <li> <a href="https://pr.tn/ref/KF43M5ZSKCF0" data-toggle="tooltip" data-placement="right" title="ProtonMail"
-                target="_blank" class="fas fa-lock"> <span class="label">ProtonMail</span> </a> </li>
+            <li>
+              <a href="/files/DavidDebrayCV.pdf" 
+                 data-toggle="tooltip" 
+                 data-placement="bottom" 
+                 title="Curriculum Vitae"
+                 style="font-weight:bold;" 
+                 target="_blank" 
+                 class="fas fa-file-pdf"> 
+                <span class="label">Mon CV</span> 
+              </a>
+            </li>
+            <li>
+              <a href="mailto:linkedin.kpbui@passmail.net" 
+                 data-toggle="tooltip" 
+                 data-placement="bottom" 
+                 title="Contact"
+                 class="fas fa-envelope"> 
+                <span class="label">Me contacter</span> 
+              </a>
+            </li>
+            <!-- NOUVELLE ICÔNE REFERALS -->
+            <li>
+              <a href="referrals.html" 
+                 data-toggle="tooltip" 
+                 data-placement="right" 
+                 title="Programme de Parrainage"
+                 target="_self" 
+                 class="fas fa-users"> 
+                <span class="label">Referals</span> 
+              </a>
+            </li>
           </ul>
         </nav>
       </div>
     </div>
   </div>
 
-  <!-- FOOTER NON MODIFIÉ -->
+  <!-- FOOTER -->
   <footer id="footer">
     <a id="background_loc" class="background_copyright hyperlink_nodecoration" target="_blank"></a>
   </footer>
