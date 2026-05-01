@@ -1,5 +1,5 @@
 /* ======================================================
-   DAVID DEBRAY - CSS COMPLET & OPTIMISÉ
+   DAVID DEBRAY - CSS COMPLET & FINALISÉ
    ====================================================== */
 
 /* --- IMPORTATION DES POLICES --- */
@@ -8,7 +8,7 @@
 @import url("font-awesome.min.css");
 
 /* --- RESET CSS --- */
-html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,theader,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
 article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block;}
 body{line-height:1;}
 ol,ul{list-style:none;}
@@ -52,11 +52,6 @@ a:hover{border-color:transparent;}
     text-transform:none!important;
 }
 .icon>.label{display:none;}
-
-/* --- OMBRES PORTÉES (FORCE APPLIED) --- */
-/* H2 a une ombre plus marquée (8px) que les autres (5px) */
-h1, h3, h4, a { text-shadow: #000 5px 5px 5px !important; }
-h2 { text-shadow: #000 8px 8px 4px !important; }
 
 /* --- ANIMATIONS --- */
 @keyframes wrapper{0%{opacity:0;}100%{opacity:1;}}
@@ -152,15 +147,15 @@ h2 { text-shadow: #000 8px 8px 4px !important; }
     top:0;
     transform:translate3d(0,0,0);
     width:5.35em;
-    /* MODIFICATION : Espacement accru entre les icônes */
-    margin: 0 25px !important; /* 25px à gauche et droite de chaque icône */
+    /* ESPACEMENT ACCRU ENTRE LES ICÔNES */
+    margin: 0 25px !important; 
 }
 
-/* Délais d'animation pour les icônes */
+/* Délais d'animation */
 #header nav li:nth-child(1){animation-delay:2.5s;}
 #header nav li:nth-child(2){animation-delay:2.75s;}
 #header nav li:nth-child(3){animation-delay:3s;}
-#header nav li:nth-child(4){animation-delay:3.25s;} /* Ajouté pour l'icône Referrals */
+#header nav li:nth-child(4){animation-delay:3.25s;} /* Referrals */
 #header nav li:nth-child(5){animation-delay:3.5s;}
 #header nav li:nth-child(6){animation-delay:3.75s;}
 #header nav li:nth-child(7){animation-delay:4s;}
@@ -173,6 +168,8 @@ h2 { text-shadow: #000 8px 8px 4px !important; }
     text-decoration:none;
     -webkit-tap-highlight-color:transparent;
     -webkit-touch-callout:none;
+    /* SUPPRESSION DU TRAIT SOUS LES ICÔNES */
+    border-bottom: none !important;
 }
 #header nav a:before{
     border-radius:100%;
@@ -216,9 +213,9 @@ h2 { text-shadow: #000 8px 8px 4px !important; }
 #bottom-left{bottom:0;left:0;z-index:100;}
 .background-info{font-weight:300;}
 
-/* --- STYLES DES TITRES (MODIFIÉS) --- */
+/* --- STYLES DES TITRES (MODIFIÉS : RELIEF & BARRES) --- */
 
-/* Règle commune pour la barre décorative (H1 et H2) */
+/* 1. BARRE DÉCORATIVE IDENTIQUE (H1 et H2) */
 #header h1::after,
 #header h2::after {
     content: "";
@@ -231,8 +228,23 @@ h2 { text-shadow: #000 8px 8px 4px !important; }
     opacity: 1 !important;
 }
 
-/* H1 : Police Calligraphique */
+/* 2. RELIEF ET CONTOUR NOIR (H1, H2, H3) */
+#header h1, #header h2, #header h3 {
+    /* Contour noir fin pour l'effet de découpe */
+    -webkit-text-stroke: 1px black;
+    /* Ombre portée pour le relief 3D */
+    text-shadow: 
+        2px 2px 0px #000, 
+        4px 4px 8px rgba(0,0,0,0.9) !important;
+    color: #fff !important;
+}
+
+/* Ajustement spécifique H1 (Calligraphie) - contour plus fin */
 #header h1 {
+    -webkit-text-stroke: 0.8px black;
+    text-shadow: 
+        1px 1px 0px #000, 
+        3px 3px 6px rgba(0,0,0,0.8) !important;
     font-family: "Great Vibes", cursive !important;
     font-size: 5.5em !important;
     font-weight: 400 !important;
@@ -240,16 +252,20 @@ h2 { text-shadow: #000 8px 8px 4px !important; }
     line-height: 1.2;
 }
 
-/* H2 : Police Standard (Source Sans Pro) avec barre identique */
+/* H2 : Police Standard avec contour et ombre renforcée */
 #header h2 {
     font-family: "Source Sans Pro", "Segoe UI", sans-serif !important;
     font-size: 2.5em !important;
     font-weight: 600 !important;
     opacity: 0.9 !important;
     margin-bottom: 0.4em;
+    /* Ombre spécifique plus marquée pour le H2 */
+    text-shadow: 
+        3px 3px 0px #000, 
+        6px 6px 10px rgba(0,0,0,0.9) !important;
 }
 
-/* H3 et H4 : Pas de barre, style standard */
+/* H3 : Style standard */
 #header h3{
     font-size:1.6em;
     font-weight:600;
@@ -293,7 +309,7 @@ h2 { text-shadow: #000 8px 8px 4px !important; }
         0%{transform:translate3d(0,0,0);}
         100%{transform:translate3d(-300px,0,0);}
     }
-    #header h1{font-size:2.5em !important;} /* Ajustement mobile pour la calligraphie */
+    #header h1{font-size:2.5em !important;}
     #header h2{font-size:1.8em !important;}
     #header p{font-size:1em;}
     #header nav{font-size:1em;}
